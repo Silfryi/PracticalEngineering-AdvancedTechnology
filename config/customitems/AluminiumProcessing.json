@@ -1,0 +1,58 @@
+{
+    "fluids":[
+        {
+            "name":"cryolite",
+            "textureName": "cryolite",
+            "temperature": 1253,
+            "density": 2000,
+            "viscosity": 10000,            
+            "isGas": false
+        },
+        {
+            "name":"aluminium",
+            "textureName": "aluminum",
+            "temperature": 993,
+            "density": 2000,
+            "viscosity": 10000,            
+            "isGas": false
+        },
+        {
+            "name":"impuresodiumaluminate",
+            "textureName": "sodiumaluminate",
+            "temperature": 300,
+            "density": 1600,
+            "viscosity": 1200,            
+            "isGas": false
+        },
+        {
+            "name":"sodiumaluminate",
+            "textureName": "sodiumaluminate",
+            "temperature": 300,
+            "density": 1500,
+            "viscosity": 1200,            
+            "isGas": false
+        }
+    ],
+    "items":[
+		{
+            "name": "cryolite_crystal",
+            "textureName": "cryolite_crystal"
+		},
+		{
+            "name": "sodium_hydroxide",
+            "textureName": "sodium_hydroxide"
+		},
+		{
+            "name": "alumina_flakes",
+            "textureName": "alumina_flakes"
+		},
+		{
+            "name": "red_mud",
+            "textureName": "red_mud"
+		},
+		{
+            "name": "aluminium_hydroxide",
+            "textureName": "aluminium_hydroxide"
+		}
+    ]
+}

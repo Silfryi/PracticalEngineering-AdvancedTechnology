@@ -1,0 +1,94 @@
+{  
+	"Regolith Wasteland-Boulders-Large-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 2,
+			"count": 2
+		},
+		"block": [
+		    {"name":"advancedRocketry:moonTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":30},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:moonTurf", "advancedRocketry:moonTurf_dark"],
+		"numClusters": 1,
+		"chunkChance": 384,
+		"clusterSize": 5,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Regolith Wasteland"}
+		]
+    },
+	"Regolith Wasteland-Boulders-Medium-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 2,
+			"count": 1
+		},
+		"block": [
+		    {"name":"advancedRocketry:moonTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":30},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:moonTurf", "advancedRocketry:moonTurf_dark"],
+		"numClusters": 2,
+		"chunkChance": 96,
+		"clusterSize": 2,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Regolith Wasteland"}
+		]
+    },
+	"Regolith Wasteland-Boulders-Small-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 1,
+			"count": 1
+		},
+		"block": [
+		    {"name":"advancedRocketry:moonTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":30},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:moonTurf", "advancedRocketry:moonTurf_dark"],
+		"numClusters": 4,
+		"chunkChance": 48,
+		"clusterSize": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Regolith Wasteland"}
+		]
+    },
+	"Darkened Regolith Flats-Boulders-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 2,
+			"count": 1
+		},
+		"block": [
+		    {"name":"advancedRocketry:moonTurf_dark", "weight":50},
+			{"name":"minecraft:stone", "weight":30},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:moonTurf", "advancedRocketry:moonTurf_dark"],
+		"numClusters": 3,
+		"chunkChance": 64,
+		"clusterSize": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Darkened Regolith Flats"}
+		]
+    }
+}

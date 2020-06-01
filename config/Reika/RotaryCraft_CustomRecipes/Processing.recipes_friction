@@ -1,0 +1,91 @@
+{
+	type = "annealed_copper"
+	input = "ImmersiveEngineering:metal"
+	output = "customitems:annealedcopper"
+	temperature = 900
+	duration = 300
+}
+{
+	type = "graphite"
+	input = "customitems:graphite_dust"
+	output = "ReactorCraft:reactorcraft_item_crafting:13"
+	temperature = 500
+	duration = 200
+}
+{
+	type = "graphite_charcoal"
+	input = "customitems:charcoal_dust"
+	output = "ReactorCraft:reactorcraft_item_crafting:13"
+	temperature = 400
+	duration = 100
+}
+{
+	type = "alumina"
+	input = "RotaryCraft:rotarycraft_item_modextracts:27"
+	output = "customitems:alumina_flakes"
+	temperature = 1000
+	duration = 160
+}
+{
+	type = "alumina_aluminium_hydroxide"
+	input = "customitems:aluminium_hydroxide"
+	output = "customitems:alumina_flakes"
+	temperature = 1100
+	duration = 120
+}
+{
+	type = "aluminium"
+	input = "ImmersiveEngineering:metal:11"
+	output = "ImmersiveEngineering:metal:1"
+	temperature = 1000
+	duration = 200
+}
+{
+	type = "tungsten"
+	input = "RotaryCraft:rotarycraft_item_modingots:21"
+	output = "Eln:Eln.sharedItem:517"
+	temperature = 1200
+	duration = 300
+}
+{
+	type = "titanium"
+	input = "libVulpes:libVulpesproductdust:7"
+	output = "libVulpes:libVulpesproductingot:7"
+	temperature = 1400
+	duration = 300
+}
+{
+	type = "titanium_aluminide"
+	input = "advancedRocketry:advancedRocketryproductdust:0"
+	output = "advancedRocketry:advancedRocketryproductingot:0"
+	temperature = 1600
+	duration = 600
+}
+{
+	type = "conduit_binder"
+	input = "EnderIO:itemMaterial:2"
+	output = "EnderIO:itemMaterial:1"
+	temperature = 1660
+	duration = 600
+}
+{
+	type = "iridium"
+	input = "libVulpes:libVulpesproductdust:10"
+	output = "libVulpes:libVulpesproductingot:10"
+	temperature = 1800
+	duration = 300
+}
+{
+	type = "platinum"
+	input = "customitems:ammoniumchloroplatinate"
+	output = "RotaryCraft:rotarycraft_item_modingots:43"
+	temperature = 1800
+	duration = 300
+}
+{
+	type = "titanium_iridium"
+	input = "advancedRocketry:advancedRocketryproductdust:1"
+	output = "advancedRocketry:advancedRocketryproductingot:1"
+	temperature = 1960
+	duration = 600
+}

@@ -1,0 +1,113 @@
+{
+    type = "ethylene"
+    fluid_in = {
+        type = "ethanol"
+        amount = 200
+    }
+    fluid_out = {
+        type = "plastic"
+        amount = 1000
+    }
+    temp_curve = 0
+    base_time = 100
+    min_temperature = 400
+}
+{
+    type = "ethylene_rotarycraft_ethanol"
+    fluid_in = {
+        type = "rc ethanol"
+        amount = 200
+    }
+    fluid_out = {
+        type = "plastic"
+        amount = 1000
+    }
+    temp_curve = 1
+    base_time = 100
+    min_temperature = 400
+}
+{
+    type = "sulfur_trioxide"
+    fluid_in = {
+        type = "rc oxygen"
+        amount = 300
+    }
+    item_in = {
+        items = {
+            "ore:dustSulfur"
+        }
+        number_to_use = 1
+        consumption_chance = 100
+    }
+    fluid_out = {
+        type = "sulfurtrioxide"
+        amount = 100
+    }
+    temp_curve = 0
+    base_time = 100
+    min_temperature = 450
+}
+
+{
+    type = "hydrofluoric_acid"
+    fluid_in = {
+        type = "sulfuricacid"
+        amount = 100
+    }
+    item_in = {
+        items = {
+            "ore:gemFluorite"
+        }
+        number_to_use = 1
+        consumption_chance = 100
+    }
+    fluid_out = {
+        type = "rc hydrofluoric acid"
+        amount = 200
+    }
+    temp_curve = 0
+    base_time = 100
+    min_temperature = 30
+}
+{
+    type = "cryolite"
+    fluid_in = {
+        type = "rc hydrofluoric acid"
+        amount = 1200
+    }
+    item_in = {
+        items = {
+            "customitems:alumina_flakes"
+        }
+        number_to_use = 1
+        consumption_chance = 100
+    }
+    item_in_2 = {
+        items = {
+            "customitems:sodium_hydroxide"
+        }
+        number_to_use = 6
+        consumption_chance = 100
+    }
+    fluid_out = {
+        type = "cryolite"
+        amount = 200
+    }
+    temp_curve = 0
+    base_time = 500
+    min_temperature = 1000
+}
+{
+    type = "regolith_helium3"
+    fluid_in = {
+        type = "regolith"
+        amount = 200
+    }
+    fluid_out = {
+        type = "helium3"
+        amount = 1
+    }
+    temp_curve = 0
+    base_time = 300
+    min_temperature = 1000
+}

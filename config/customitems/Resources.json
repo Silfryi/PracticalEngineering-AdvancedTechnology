@@ -1,0 +1,351 @@
+{
+     "items":[
+		{
+            "name": "annealedcopper",
+            "textureName": "annealed_copper_ingot"
+		},
+		{
+            "name": "annealedcopperwire",
+            "textureName": "annealed_copper_wire"
+		},
+		{
+            "name": "tungsten_alloy_steel_rod",
+            "textureName": "tungsten_alloy_steel_rod"
+		},
+		{
+            "name": "graphite_dust",
+            "textureName": "graphite_dust"
+		},
+		{
+            "name": "charcoal_dust",
+            "textureName": "charcoal_dust"
+		},
+		{
+            "name": "energetic_alloy_dust",
+            "textureName": "energetic_alloy_dust"
+		},
+		{
+            "name": "rubber_sheet",
+            "textureName": "rubber_sheet"
+		},
+		{
+            "name": "emptyAdvancedPCB",
+            "textureName": "empty_advanced_PCB"
+		},
+		{
+            "name": "unassembledAdvancedPCB",
+            "textureName": "unassembled_advanced_PCB"
+		}
+    ],
+    "fluids":[
+        //RP-1 Fluids
+        {
+            "name":"highgradekerosene",
+            "textureName": "highgradekerosene",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        {
+            "name":"RP-1",
+            "textureName": "RP-1",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        //Miscelaneous Fluids
+        {
+            "name":"rubber",
+            "textureName": "rubber",
+            "temperature": 753,
+            "density": 2000,
+            "viscosity": 10000,            
+            "isGas": false
+        },
+        {
+            "name":"steam",
+            "textureName": "steam",
+            "temperature": 750,
+            "density": -1000,
+            "viscosity": 200,            
+            "isGas": true
+        },
+        {
+            "name":"sulfurtrioxide",
+            "textureName": "sulfurtrioxide",
+            "temperature": 300,
+            "density": 1920,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        {
+            "name":"sulfuricacid",
+            "textureName": "sulfuricacid",
+            "temperature": 300,
+            "density": 1830,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        {
+            "name":"helium3",
+            "textureName": "helium3",
+            "temperature": 300,
+            "density": -1000,
+            "viscosity": 10,            
+            "isGas": true
+        },
+        {
+            "name":"hydrogenperoxide",
+            "textureName": "hydrogenperoxide",
+            "temperature": 300,
+            "density": 1400,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        {
+            "name":"hydrazine",
+            "textureName": "hydrazine",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1010,            
+            "isGas": false
+        }
+    ],
+    "blocks": [
+        //Kimberlite
+        {
+            "textureName": "kimberlite",
+            "name": "kimberlite",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 20.0,            
+            "hardness": 4.0,
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "kimberlite_gravel",
+            "name": "kimberlite_gravel",
+            "toolClass": "shovel",
+            "stepSound": "gravel",
+            "material": "clay",
+            "resistance": 10.0,            
+            "hardness": 2.0,
+            "harvestLevel": 3,
+            "type": "falling"
+        },
+        {
+            "textureName": "kimberlite_sand",
+            "name": "kimberlite_sand",
+            "toolClass": "shovel",
+            "stepSound": "sand",
+            "material": "sand",
+            "resistance": 10.0,            
+            "hardness": 2.0,
+            "harvestLevel": 3,
+            "type": "falling"
+        },
+        //Bedrock Replacements
+        {
+            "textureName": "hardened_stone",
+            "name": "hardened_stone",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 1.8E7,            
+            "hardness": 1.8E7
+        },
+        {
+            "textureName": "hardened_ice",
+            "name": "hardened_ice",
+            "toolClass": "pickaxe",
+            "stepSound": "packedIce",
+            "material": "packedIce",
+            "resistance": 1.8E7,            
+            "hardness": 1.8E7
+        },
+        //Miscelaneous
+        {
+            "textureName": "impure_graphite",
+            "name": "impure_graphite",
+            "dropItemName": "customitems:graphite_dust",
+            "minItemDrop": 4,
+            "maxItemDrop": 8,
+            "eachExtraItemDropChance": 75,
+            "toolClass": "jackhammer",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 80.0,            
+            "hardness": 32.0,
+            "harvestLevel": 2
+        },
+        {
+            "textureName": "anchored_machine_structure",
+            "name": "anchored_machine_structure",
+            "toolClass": "pickaxe",
+            "stepSound": "iron",
+            "material": "iron",
+            "resistance": 40.0,            
+            "hardness": 8.0,
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "permafrost",
+            "name": "permafrost",
+            "toolClass": "jackhammer",
+            "stepSound": "ice",
+            "material": "packedIce",
+            "resistance": 40.0,            
+            "hardness": 16.0,
+            "harvestLevel": 1
+        },
+        //Red Sandstone
+        {
+			"name": "red_sandstone",
+			"multipleTextures": {
+                "xpos": "red_sandstone_normal",
+                "xneg": "red_sandstone_normal",
+                "zpos": "red_sandstone_normal",
+                "zneg": "red_sandstone_normal",
+                "ypos": "red_sandstone_top",
+                "yneg": "red_sandstone_bottom"
+            },
+            "toolClass": "pickaxe",
+            "material": "rock",
+            "resistance": 4,
+            "harvestLevel": 0,
+            "hardness": 0.8
+		},
+		{
+			"name": "chiseled_red_sandstone",
+			"multipleTextures": {
+                "xpos": "red_sandstone_carved",
+                "xneg": "red_sandstone_carved",
+                "zpos": "red_sandstone_carved",
+                "zneg": "red_sandstone_carved",
+                "ypos": "red_sandstone_top",
+                "yneg": "red_sandstone_bottom"
+            },
+            "toolClass": "pickaxe",
+            "material": "rock",
+            "resistance": 4,
+            "harvestLevel": 0,
+            "hardness": 0.8
+		},
+		{
+			"name": "smooth_red_sandstone",
+			"multipleTextures": {
+                "xpos": "red_sandstone_smooth",
+                "xneg": "red_sandstone_smooth",
+                "zpos": "red_sandstone_smooth",
+                "zneg": "red_sandstone_smooth",
+                "ypos": "red_sandstone_top",
+                "yneg": "red_sandstone_bottom"
+            },
+           	"toolClass": "pickaxe",
+            "material": "rock",
+            "resistance": 4,
+            "harvestLevel": 0,
+            "hardness": 0.8
+		},
+		{
+			"name": "red_sandstone_slab",
+			"multipleTextures": {
+                "xpos": "red_sandstone_normal",
+                "xneg": "red_sandstone_normal",
+                "zpos": "red_sandstone_normal",
+                "zneg": "red_sandstone_normal",
+                "ypos": "red_sandstone_top",
+                "yneg": "red_sandstone_bottom"
+            },
+            "toolClass": "pickaxe",
+            "material": "rock",
+            "resistance": 4,
+            "harvestLevel": 0,
+            "hardness": 0.8,
+            "type": "slab"
+		},
+		{
+			"name": "red_sandstone_stairs",
+			"multipleTextures": {
+                "xpos": "red_sandstone_normal",
+                "xneg": "red_sandstone_normal",
+                "zpos": "red_sandstone_normal",
+                "zneg": "red_sandstone_normal",
+                "ypos": "red_sandstone_top",
+                "yneg": "red_sandstone_bottom"
+            },
+            "toolClass": "pickaxe",
+            "material": "rock",
+            "resistance": 4,
+            "harvestLevel": 0,
+            "hardness": 0.8,
+            "type": "stairs"
+		},
+		//Dark Quartz
+		{
+            "name": "dark_quartz_pillar",
+            "multipleTextures": {
+                "xpos": "dark_quartz_block_lines",               
+                "ypos": "dark_quartz_block_lines_top"              
+            },            
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 4,            
+            "hardness": 0.8,
+            "type": "pillars"
+        },
+        {
+            "name": "dark_quartz",
+            "multipleTextures": {
+                "xpos": "dark_quartz_block_side",
+                "xneg": "dark_quartz_block_side",
+                "zpos": "dark_quartz_block_side",
+                "zneg": "dark_quartz_block_side",
+                "ypos": "dark_quartz_block_top",
+                "yneg": "dark_quartz_block_bottom"
+            },          
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 4,            
+            "hardness": 0.8
+        },
+        {
+            "name": "dark_quartz_slab",
+            "multipleTextures": {
+                "xpos": "dark_quartz_block_side",
+                "xneg": "dark_quartz_block_side",
+                "zpos": "dark_quartz_block_side",
+                "zneg": "dark_quartz_block_side",
+                "ypos": "dark_quartz_block_top",
+                "yneg": "dark_quartz_block_bottom"
+            },          
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 4,            
+            "hardness": 0.8,
+            "type": "slab"
+        },
+        {
+            "name": "chiseled_dark_quartz",
+            "multipleTextures": {
+                "xpos": "dark_quartz_block_chiseled",
+                "xneg": "dark_quartz_block_chiseled",
+                "zpos": "dark_quartz_block_chiseled",
+                "zneg": "dark_quartz_block_chiseled",
+                "ypos": "dark_quartz_block_chiseled_top",
+                "yneg": "dark_quartz_block_chiseled_top"
+            },            
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 4,            
+            "hardness": 0.8
+        }
+    ]
+}

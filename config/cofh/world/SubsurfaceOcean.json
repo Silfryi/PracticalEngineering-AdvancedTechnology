@@ -1,0 +1,182 @@
+{
+    "Subsurface Ocean-Bedrock Replacement-Ocean Floor": {
+        "template": "uniform",
+        "block": "customitems:hardened_ice",
+        "material": [
+            "minecraft:bedrock",
+            "minecraft:water"
+        ],
+        "numClusters": 8192,
+        "clusterSize": 1,
+        "minHeight": 2,
+        "maxHeight": 3,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Bedrock Replacement-Ocean Floor": {
+        "template": "uniform",
+        "block": "customitems:hardened_ice",
+        "material": [
+            "minecraft:bedrock",
+            "minecraft:water"
+        ],
+        "numClusters": 8192,
+        "clusterSize": 1,
+        "minHeight": 4,
+        "maxHeight": 5,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Boulders-Surface": {
+        "template": "surface",
+        "generator": {
+            "type": "boulder",
+            "sizeVariance": 2,
+            "count": 4
+        },
+        "block": [
+            {"name":"chisel:packedice", "metadata":1, "weight":40},
+            {"name":"minecraft:packed_ice", "weight":10},
+            {"name":"chisel:packedice", "metadata":2, "weight":10},
+            {"name":"chisel:ice", "metadata":1, "weight":30},
+            {"name":"chisel:ice", "metadata":2, "weight":10}
+        ],
+        "material": [
+            {"name":"minecraft:snow"}
+        ],
+        "numClusters": 1,
+        "chunkChance": 16,
+        "clusterSize": 2,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Boulders-Ocean Floor": {
+        "template": "uniform",
+        "generator": {
+            "type": "boulder",
+            "sizeVariance": 2,
+            "count": 2
+        },
+        "block": [
+            {"name":"chisel:packedice", "metadata":1, "weight":30},
+            {"name":"minecraft:packed_ice", "weight":20},
+            {"name":"chisel:packedice", "metadata":2, "weight":20},
+            {"name":"chisel:ice", "metadata":1, "weight":20},
+            {"name":"chisel:ice", "metadata":2, "weight":10}
+        ],
+        "material": [
+            {"name":"customitems:hardened_ice"},
+            {"name":"minecraft:water"}
+        ],
+        "minHeight": 4,
+        "maxHeight": 8,
+        "numClusters": 1,
+        "chunkChance": 8,
+        "clusterSize": 3,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Stalagmites-Ocean Floor": {
+        "template": "uniform",
+        "generator": {
+            "type": "stalagmite",
+            "genBody": "minecraft:water",
+            "minHeight": 12,
+            "heightVariance": 4,
+            "genSize": 2,
+            "sizeVariance": 1
+        },
+        "block": [
+            {"name":"chisel:packedice", "metadata":1, "weight":30},
+            {"name":"minecraft:packed_ice", "weight":20},
+            {"name":"chisel:packedice", "metadata":2, "weight":20},
+            {"name":"chisel:ice", "metadata":1, "weight":20},
+            {"name":"chisel:ice", "metadata":2, "weight":10}
+        ],
+        "material": [
+            {"name":"customitems:hardened_ice"}
+        ],
+        "minHeight": 4,
+        "maxHeight": 8,
+        "numClusters": 1,
+        "chunkChance": 12,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Stalactites-Ocean Ceiling": {
+        "template": "uniform",
+        "generator": {
+            "type": "stalactite",
+            "genBody": "minecraft:water",
+            "minHeight": 12,
+            "heightVariance": 4,
+            "genSize": 2,
+            "sizeVariance": 1
+        },
+        "block": [
+            {"name":"chisel:packedice", "metadata":1, "weight":30},
+            {"name":"minecraft:packed_ice", "weight":20},
+            {"name":"chisel:packedice", "metadata":2, "weight":20},
+            {"name":"chisel:ice", "metadata":1, "weight":20},
+            {"name":"chisel:ice", "metadata":2, "weight":10}
+        ],
+        "material": [
+            {"name":"chisel:packedice", "metadata":1}
+        ],
+        "minHeight": 20,
+        "maxHeight": 36,
+        "numClusters": 1,
+        "chunkChance": 12,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    },
+    "Subsurface Ocean-Hydrothermal Vents-Ocean Floor": {
+        "template": "uniform",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 2,
+            "height": 1
+        },
+        "block": [
+            {"name":"chisel:packedice", "metadata":1, "weight":35},
+            {"name":"customitems:hardened_ice", "weight":20},
+            {"name":"minecraft:packed_ice", "weight":15},
+            {"name":"minecraft:water", "weight":10},
+            {"name":"minecraft:obsidian", "weight":10},
+            {"name":"GeoStrata:geostrata_block_vent", "weight":10},
+            {"name":"GeoStrata:geostrata_block_vent", "metadata":1, "weight":5}
+        ],
+        "material": [
+            "minecraft:water",
+            "customitems:hardened_ice"
+        ],
+        "clusterSize": 12,
+        "chunkChance": 48,
+        "numClusters": 1,
+        "minHeight": 3,
+        "maxHeight": 4,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Subsurface Ocean"}
+        ]
+    }
+}

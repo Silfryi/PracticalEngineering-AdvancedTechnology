@@ -1,0 +1,8 @@
+{
+	type = "dilithium_crystal"
+	input = "libVulpes:libVulpesproductdust:0"
+	input_fluid = "helium3"
+	input_amount = 100
+	output = "libVulpes:libVulpesproductcrystal:0"
+	duration = 1
+}

@@ -1,0 +1,72 @@
+{
+    "Carbon Wasteland-Lonsdaleite-Bedrock": {
+	    "template": "uniform",
+		"block": {"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2},
+		"material": "customitems:impure_graphite",
+		"numClusters": 8192,
+		"clusterSize": 1,
+		"minHeight": 2,
+        "maxHeight": 3,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Carbon Wasteland"}
+		]
+	},
+    "Carbon Wasteland-Lonsdaleite-Bottom": {
+	    "template": "uniform",
+		"block": {"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2},
+		"material": "customitems:impure_graphite",
+		"numClusters": 8192,
+		"clusterSize": 1,
+		"minHeight": 4,
+        "maxHeight": 5,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Carbon Wasteland"}
+		]
+	},
+	"Carbon Wasteland-Lonsdaleite-Middle": {
+	    "template": "normal",
+		"block": {"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2},
+		"material": "customitems:impure_graphite",
+		"numClusters": 4096,
+		"clusterSize": 1,
+		"meanHeight": 6,
+        "maxVariance": 0,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Carbon Wasteland"}
+		]
+	},
+	"Carbon Wasteland-Lonsdaleite-Top": {
+	    "template": "uniform",
+		"block": {"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2},
+		"material": "customitems:impure_graphite",
+		"numClusters": 8192,
+		"clusterSize": 1,
+		"minHeight": 7,
+        "maxHeight": 8,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Carbon Wasteland"}
+		]
+	},
+	"Carbon Wasteland-Diamond-Scatter": {
+	    "template": "normal",
+		"block": {"name":"chisel:diamond_block", "metadata":8},
+		"material": {"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2},
+		"numClusters": 8,
+		"clusterSize": 1,
+		"meanHeight": 6,
+        "maxVariance": 2,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Carbon Wasteland"}
+		]
+	}
+}

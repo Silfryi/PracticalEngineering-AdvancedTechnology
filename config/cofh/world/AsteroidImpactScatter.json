@@ -1,0 +1,30 @@
+{
+    "Asteroid Impact-Metal Mix-Underground": {
+	    "template": "normal",
+		"block": [
+		    {"name":"minecraft:gold_ore", "weight": 5},
+		    {"name":"ElectriCraft:electricraft_block_ore", "metadata": 3, "weight": 5},
+		    {"name":"ElectriCraft:electricraft_block_ore", "metadata": 5, "weight": 2.5},
+		    {"name":"ReactorCraft:reactorcraft_block_ore", "metadata": 2, "weight": 2.5},
+		    {"name":"ReactorCraft:reactorcraft_block_ore", "metadata": 3, "weight": 2.5},
+			{"name":"libVulpes:libVulpesore0", "metadata": 10, "weight": 2.5},
+			{"name":"minecraft:stone", "weight": 80}
+		],
+		"meanHeight": 72,
+		"maxVariance": 2,
+		"clusterSize": 1,
+		"numClusters": 256,
+		"chunkChance": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Regolith Wasteland"},
+			{"type": "name", "entry": "Darkened Regolith Flats"}
+		],
+		"dimensionRestriction": "whitelist",
+        "dimensions": [
+            15,
+            31
+        ]
+    }
+}

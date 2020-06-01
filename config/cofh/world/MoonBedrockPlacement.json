@@ -1,0 +1,16 @@
+{
+    "Kepler-3-Moon-Bedrock Placement": {
+	    "template": "normal",
+		"block": "minecraft:bedrock",
+		"material": "minecraft:stone",
+		"numClusters": 100,
+		"clusterSize": 1,
+		"meanHeight": 4,
+        "maxVariance": 0,
+        "retrogen": false,
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            6
+        ]
+	}
+}

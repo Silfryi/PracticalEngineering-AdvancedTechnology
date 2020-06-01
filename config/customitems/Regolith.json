@@ -1,0 +1,33 @@
+{
+     "items":[
+		{
+            "name": "regolith_dust",
+            "textureName": "regolith_dust"
+		},
+		{
+            "name": "regolith_metal_alloy_dust",
+            "textureName": "regolith_metal_alloy_dust"
+		}
+    ],
+    "fluids":[
+        //Miscelaneous Fluids
+        {
+            "name":"regolith",
+            "textureName": "regolith",
+            "temperature": 1900,
+            "density": 1500,
+            "viscosity": 10000,            
+            "isGas": false
+        },
+        {
+            "name":"regolithmetalalloy",
+            "textureName": "regolithmetalalloy",
+            "temperature": 1900,
+            "density": 1500,
+            "viscosity": 10000,            
+            "isGas": false
+        }
+    ],
+    "blocks": [
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    type = "aluminium"
+    fluid_in = {
+        type = "cryolite"
+        amount = 400
+    }
+    item_in = {
+        is_catalyst = false
+        items = {
+            "customitems:alumina_flakes"
+        }
+    }
+    fluid_out_up = {
+        type = "cryolite"
+        amount = 400
+    }
+    fluid_out_down = {
+        type = "aluminium"
+        amount = 144
+    }
+    temperature = 1000
+}
+{
+    type = "water"
+    fluid_in = {
+        type = "water"
+        amount = 100
+    }
+    fluid_out_up = {
+        type = "hydrogen"
+        amount = 100
+    }
+    fluid_out_down = {
+        type = "rc oxygen"
+        amount = 50
+    }
+}
+{
+    type = "regolith"
+    fluid_in = {
+        type = "regolith"
+        amount = 100
+    }
+    fluid_out_up = {
+        type = "rc oxygen"
+        amount = 45
+    }
+    fluid_out_down = {
+        type = "regolithmetalalloy"
+        amount = 12
+    }
+    temperature = 1190
+}

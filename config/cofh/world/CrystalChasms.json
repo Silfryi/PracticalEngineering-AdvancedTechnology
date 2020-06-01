@@ -1,0 +1,21 @@
+{
+    "Crystal Chasms-Geodes-Underground": {
+		"template": "uniform",
+		"generator": {
+			"type": "geode",
+              "crust": "advancedRocketry:tile.geode",
+			"hollow": "true",
+			"filler": "GeoStrata:geostrata_block_rfcrystalseed"
+		},
+		"material": "minecraft:stone",
+		"block": "GeoStrata:geostrata_block_rfcrystalseed",
+		"chunkChance": 16,
+		"numClusters": 1,
+		"minHeight": 32,
+		"maxHeight": 64,
+		"biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "CrystalChasms"}
+		]
+	}
+}

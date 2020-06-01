@@ -1,0 +1,282 @@
+<!-->
+    <Recipe timeRequired="NUMBER" power="NUMBER">
+        <input>
+            <fluidStack>FLUID NAME SIZE</fluidStack>
+            <itemStack>ITEM_NAME SIZE META</itemStack>
+            <oreDict>OREDICT_NAME SIZE</oreDict>
+        </input>
+        <output>
+            <fluidStack>FLUID_NAME SIZE</fluidStack>
+            <itemStack>ITEM_NAME SIZE META</itemStack>
+            <oreDict>OREDICT_NAME SIZE</oreDict>
+        </output>
+    </Recipe>
+    
+    Can have Multiple In/Outputs
+    Some Machines can only Accept either Fluids or Items
+    
+    timeRequired="NUMBER"    how long a Recipe takes, Unit is in Ticks.
+    power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+    
+    The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+<!-->Basic Material Processing<!-->
+    <Recipe timeRequired="100" power ="252">
+        <input>
+            <oreDict>gemFluorite</oreDict>
+            <fluidStack>sulfuricacid;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>rc hydrofluoric acid;200</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="252">
+        <input>
+            <fluidStack>rc sodium;100</fluidStack>
+            <fluidStack>water;100</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:sodium_hydroxide;1</itemStack>
+            <fluidStack>hydrogen;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="252">
+        <input>
+            <fluidStack>nitrogen;100</fluidStack>
+            <fluidStack>rc oxygen;200</fluidStack>
+        </input>
+        <output>
+            <fluidStack>nitrogendioxide;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power ="504">
+        <input>
+            <fluidStack>rc oxygen;200</fluidStack>
+            <fluidStack>hydrogen;200</fluidStack>
+        </input>
+        <output>
+            <fluidStack>hydrogenperoxide;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="128" power ="252">
+        <input>
+            <fluidStack>rc chlorine;100</fluidStack>
+            <fluidStack>hydrogen;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>hydrochloricacid;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="252">
+        <input>
+            <fluidStack>nitrogendioxide;200</fluidStack>
+            <fluidStack>hydrogenperoxide;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>nitricacid;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="128" power ="63">
+        <input>
+            <fluidStack>nitricacid;100</fluidStack>
+            <fluidStack>hydrochloricacid;300</fluidStack>
+        </input>
+        <output>
+            <fluidStack>aquaregia;400</fluidStack>
+        </output>
+    </Recipe>
+<!-->Bayer Process<!-->
+    <Recipe timeRequired="512" power ="504">
+        <input>
+            <itemStack>customitems:alumina_flakes</itemStack>
+            <fluidStack>rc hydrofluoric acid;1200</fluidStack>
+            <itemStack>customitems:sodium_hydroxide;6</itemStack>
+        </input>
+        <output>
+            <fluidStack>water;900</fluidStack>
+            <itemStack>customitems:cryolite_crystal;2</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power ="2016">
+        <input>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;1;27</itemStack>
+            <itemStack>customitems:sodium_hydroxide;2</itemStack>
+            <fluidStack>water;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>impuresodiumaluminate;200</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="1008">
+        <input>
+            <oreDict>dustQuicklime;2</oreDict>
+            <fluidStack>impuresodiumaluminate;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>sodiumaluminate;100</fluidStack>
+            <itemStack>customitems:red_mud</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power ="1008">
+        <input>
+            <fluidStack>sodiumaluminate;200</fluidStack>
+            <fluidStack>water;400</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:aluminium_hydroxide;2</itemStack>
+            <itemStack>customitems:sodium_hydroxide;2</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="128" power ="504">
+        <input>
+            <itemStack>customitems:red_mud;8</itemStack>
+            <fluidStack>sulfuricacid;100</fluidStack>
+        </input>
+        <output>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;1;255</itemStack>
+            <itemStack>RotaryCraft:rotarycraft_item_extracts;3;25</itemStack>
+        </output>
+    </Recipe>
+    
+<!-->Titanium Processing<!-->
+    <Recipe timeRequired="1024" power ="8064">
+        <input>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;1;255</itemStack>
+            <fluidStack>rc chlorine;400</fluidStack>
+            <itemStack>customitems:graphite_dust;2</itemStack>
+        </input>
+        <output>
+            <fluidStack>rocketfuel;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="2048" power ="4032">
+        <input>
+            <fluidStack>rc sodium;400</fluidStack>
+            <fluidStack>rocketfuel;100</fluidStack>
+        </input>
+        <output>
+            <itemStack>libVulpes:libVulpesproductdust;1;7</itemStack>
+            <itemStack>RotaryCraft:rotarycraft_item_powders;3;5</itemStack>
+        </output>
+    </Recipe>
+
+<!-->Platinum and Iridium Processing<!-->
+    <Recipe timeRequired="512" power="2016">
+        <input>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;8;175</itemStack>
+            <fluidStack>water;100</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:platinumgroupsludgeplatinum</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power="2016">
+        <input>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;8;31</itemStack>
+            <fluidStack>water;100</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:platinumgroupsludgeiridium</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="1024" power="16131">
+        <input>
+            <itemStack>customitems:platinumgroupsludgeplatinum;4</itemStack>
+            <fluidStack>aquaregia;400</fluidStack>
+        </input>
+        <output>
+            <fluidStack>aquaregiaplatinum;400</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="1024" power="16131">
+        <input>
+            <itemStack>customitems:platinumgroupsludgeiridium;4</itemStack>
+            <fluidStack>aquaregia;200</fluidStack>
+        </input>
+        <output>
+            <itemStack>libVulpes:libVulpesproductdust;1;10</itemStack>
+            <fluidStack>aquaregiaplatinum;200</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="1024" power="4032">
+        <input>
+            <itemStack>ReactorCraft:reactorcraft_item_raw;16;3</itemStack>
+            <fluidStack>aquaregiaplatinum;400</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:ammoniumchloroplatinate</itemStack>
+            <fluidStack>aquaregia;400</fluidStack>
+        </output>
+    </Recipe>
+
+<!-->Rocket Fuel (RP-1 and Hydrazine)<!-->
+    <Recipe timeRequired="512" power ="252">
+        <input>
+            <fluidStack>hydrogen;300</fluidStack>
+            <fluidStack>kerosene;15000</fluidStack>
+        </input>
+        <output>
+            <fluidStack>highgradekerosene;15000</fluidStack>
+            <itemStack>RotaryCraft:rotarycraft_item_modingots;1;48</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power ="31">
+        <input>
+            <fluidStack>rc liquid oxygen;250</fluidStack>
+            <fluidStack>highgradekerosene;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>rp-1;350</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power ="1008">
+        <input>
+            <fluidStack>rc ammonia;200</fluidStack>
+            <fluidStack>hydrogenperoxide;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>hydrazine;100</fluidStack>
+        </output>
+    </Recipe>
+
+<!-->Miscellaneous<!-->
+    <Recipe timeRequired="256" power ="504">
+        <input>
+            <itemStack>Eln:Eln.sharedItem;3;4096</itemStack>
+            <oreDict>dustSulfur;1</oreDict>
+        </input>
+        <output>
+            <fluidStack>rubber;1296</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="40" power ="63">
+        <input>
+            <itemStack>advancedRocketry:item.carbonScrubberCartridge;1;32767</itemStack>
+        </input>
+        <output>
+            <itemStack>advancedRocketry:item.carbonScrubberCartridge</itemStack>
+            <itemStack>minecraft:coal;1;1</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="1008">
+        <input>
+            <itemStack>GeoStrata:geostrata_block_rfcrystalseed;16</itemStack>
+            <itemStack>ElectriCraft:electricraft_item_crystal;1;4</itemStack>
+        </input>
+        <output>
+            <itemStack>ElectriCraft:electricraft_item_crystal;1;6</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power ="2016">
+        <input>
+            <oreDict>dustSilicon;4</oreDict>
+            <oreDict>dustTitaniumAluminide;2</oreDict>
+            <oreDict>dustNetherQuartz;2</oreDict>
+            <itemStack>EnderIO:itemMaterial;1;8</itemStack>
+        </input>
+        <output>
+            <itemStack>EnderIO:itemMaterial;24;2</itemStack>
+        </output>
+    </Recipe>
+</Recipes>

@@ -1,0 +1,30 @@
+{
+    type = "HSLA"
+	input = "RotaryCraft:rotarycraft_item_shaftcraft:1"
+	output_fluid = {
+	    type = "molten hsla"
+		amount = 144
+	}
+	temperature = 1448
+	energy = 615000000
+}
+{
+    type = "cryolite"
+	input = "customitems:cryolite_crystal"
+	output_fluid = {
+	    type = "cryolite"
+		amount = 100
+	}
+	temperature = 1012
+	energy = 2100000
+}
+{
+    type = "regolith"
+	input = "customitems:regolith_dust"
+	output_fluid = {
+	    type = "regolith"
+		amount = 100
+	}
+	temperature = 1650
+	energy = 1557000000
+}

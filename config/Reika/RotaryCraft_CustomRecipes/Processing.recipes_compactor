@@ -1,0 +1,7 @@
+{
+	type = "diamond_dust"
+	input = "ElectriCraft:electricraft_item_crafting:1"
+	output = "minecraft:diamond*3"
+	temperature = 600
+	pressure = 400000
+}

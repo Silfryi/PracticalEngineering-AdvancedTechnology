@@ -1,0 +1,24 @@
+{
+	type = "dilithium_dust"
+	input_fluid = "rc lithium"
+	input_amount = 250
+	output = "libVulpes:libVulpesproductdust:0"
+}
+{
+	type = "aluminium_dust"
+	input_fluid = "aluminium"
+	input_amount = 144
+	output = "ImmersiveEngineering:metal:11"
+}
+{
+	type = "rubber"
+	input_fluid = "rubber"
+	input_amount = 144
+	output = "Eln:Eln.sharedItem:4097"
+}
+{
+	type = "regolith_metal_alloy_dust"
+	input_fluid = "regolithmetalalloy"
+	input_amount = 144
+	output = "customitems:regolith_metal_alloy_dust"
+}

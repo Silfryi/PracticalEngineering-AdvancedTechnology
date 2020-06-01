@@ -1,0 +1,191 @@
+{
+    "Medium-Oil-Deposit-Underground": {
+        "template": "fractal",
+        "generator": {
+            "type": "boulder",
+            "sizeVariance": 2,
+            "count": 1
+        },
+        "block": "PneumaticCraft:oil",
+        "material": "minecraft:stone",
+        "numClusters": 8,
+        "chunkChance": 1536,
+        "clusterSize": 14,
+        "minHeight": 20,
+        "veinHeight": 8,
+        "veinDiameter": 192,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "OCEAN"},
+            {"type": "dictionary", "entry": "CONIFEROUS"}
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "High-Oil-Deposit-Underground": {
+        "template": "fractal",
+        "generator": {
+            "type": "boulder",
+            "sizeVariance": 2,
+            "count": 1
+        },
+        "block": "PneumaticCraft:oil",
+        "material": "minecraft:stone",
+        "numClusters": 8,
+        "chunkChance": 1024,
+        "clusterSize": 14,
+        "minHeight": 20,
+        "veinHeight": 8,
+        "veinDiameter": 192,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "name", "entry": "Rocky Steppe"}
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "Low-Oil-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 384,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "dictionary", "entry": "OCEAN"},
+            {"type": "dictionary", "entry": "CONIFEROUS"},
+            {"type": "dictionary", "entry": "MOUNTAIN"},
+            {"type": "name", "entry": "Rocky Steppe"}
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "Medium-Oil-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 256,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "High-Oil-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 512,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "dictionary", "entry": "CONIFEROUS"},
+            {"type": "name", "entry": "Rocky Steppe"}
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    }
+    /*"All-Oil-Spout-Underground": {
+        "template": "normal",
+        "generator": {
+            "type": "small-tree",
+            "genMaterial": [
+                "minecraft:stone",
+                "minecraft:dirt",
+                "minecraft:grass",
+                "minecraft:air",
+                "PneumaticCraft:oil"
+            ],
+            "minHeight": 24,
+            "heightVariance": 4,
+            "treeChecks": false,
+            "leaves": "minecraft:air",
+            "relaxedGrowth": true,
+            "waterLoving": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": "PneumaticCraft:oil",
+        "numClusters": 1,
+        "chunkChance": 1,
+        "meanHeight": 52,
+        "maxVariance": 0,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            1
+        ]
+    },*/
+}

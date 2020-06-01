@@ -1,0 +1,10 @@
+{
+	type = "fused_quartz"
+	input = "minecraft:quartz"
+	output = "EnderIO:blockFusedQuartz"
+}
+{
+	type = "TCPH_steel"
+	input = "Eln:Eln.sharedItem:9"
+	output = "Eln:Eln.sharedItem:519"
+}

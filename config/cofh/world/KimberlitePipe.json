@@ -1,0 +1,37 @@
+{
+	"All-Kimberlite Pipes-Underground": {
+	    "template": "uniform",
+		"generator": {
+		    "type": "stalactite",
+			"genBody": [
+			    "minecraft:stone",
+				"minecraft:gravel",
+				"minecraft:dirt",
+				"minecraft:sandstone",
+			    "customitems:permafrost"
+			],
+			"minHeight": 88,
+			"heightVariance": 8,
+		    "genSize": 4,
+			"sizeVariance": 1
+		},
+		"block": [
+		    {"name":"customitems:kimberlite", "weight":78.75},
+			{"name":"minecraft:diamond_ore", "weight":20},
+			{"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2, "weight":0.25},
+			{"name":"customitems:impure_graphite", "weight":1}
+		],
+		"material": [
+		    "minecraft:dirt",
+			"customitems:permafrost",
+			"minecraft:stone"
+		],
+		"minHeight": 56,
+        "maxHeight": 72,
+		"numClusters": 1,
+		"chunkChance": 32,
+        "retrogen": false,
+		"biomeRestriction": "none",
+        "biomes": []
+	}
+}

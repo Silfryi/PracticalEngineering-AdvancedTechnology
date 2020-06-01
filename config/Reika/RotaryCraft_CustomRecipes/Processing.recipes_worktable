@@ -1,0 +1,8 @@
+{
+	type = "neutron_reflector"
+	shaped = true
+	input_top = "ReactorCraft:reactorcraft_item_crafting:13, ReactorCraft:reactorcraft_item_crafting:13, ReactorCraft:reactorcraft_item_crafting:13"
+	input_middle = "ReactorCraft:reactorcraft_item_crafting:13, ImmersiveEngineering:storage:2, ReactorCraft:reactorcraft_item_crafting:13"
+	input_bottom = "ReactorCraft:reactorcraft_item_crafting:13, ReactorCraft:reactorcraft_item_crafting:13, ReactorCraft:reactorcraft_item_crafting:13"
+	output = "ReactorCraft:reactorcraft_item_placer:32"
+}

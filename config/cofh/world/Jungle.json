@@ -1,0 +1,44 @@
+{
+    "Jungle-Boulders-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 1,
+			"count": 5
+		},
+		"block": [
+		    {"name":"minecraft:stone", "weight":20},
+		    {"name":"minecraft:cobblestone", "weight":30},
+		    {"name":"minecraft:mossy_cobblestone", "weight":30},
+			{"name":"CaveBiomes:mossy_stone", "weight":20}
+		],
+		"material": {"name":"minecraft:dirt", "metadata":1},
+		"numClusters": 1,
+		"chunkChance": 16,
+		"clusterSize": 3,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+		    {"type": "dictionary", "entry": "JUNGLE", "whitelist": false},
+		    {"type": "dictionary", "entry": "FOREST"}
+		]
+	},
+	"Jungle-Mossy Dirt-Surface": {
+	    "template": "surface",
+		"block": [
+		    {"name":"minecraft:dirt", "metadata":1, "weight": 70},
+			{"name":"CaveBiomes:mossy_dirt", "weight": 30}
+		],
+		"material": {"name":"minecraft:dirt", "metadata":1},
+		"followTerrain": "true",
+		"numClusters": 16,
+		"clusterSize": 8,
+		"chunkChance": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+		    {"type": "dictionary", "entry": "JUNGLE", "whitelist": false},
+		    {"type": "dictionary", "entry": "FOREST"}
+		]
+	}
+}

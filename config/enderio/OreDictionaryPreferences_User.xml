@@ -1,0 +1,9 @@
+<!--
+Entries in this file take precedence over the values in the core file
+-->
+
+<OreDictionaryPreferences>
+  <preference oreDictionary="dustCoal" >
+    <itemStack modID="RotaryCraft" itemName="rotarycraft_item_powders" itemMeta="10" />
+  </preference>
+</OreDictionaryPreferences>

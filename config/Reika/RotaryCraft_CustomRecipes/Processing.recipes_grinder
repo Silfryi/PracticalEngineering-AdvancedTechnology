@@ -1,0 +1,110 @@
+{
+	type = "sky_stone"
+	input = "appliedenergistics2:tile.BlockSkyStone"
+	output = "appliedenergistics2:item.ItemMultiMaterial:45"
+}
+{
+	type = "regolith"
+	ore_input = "turfMoon"
+	output = "customitems:regolith_dust"
+}
+{
+	type = "charcoal"
+	input = "minecraft:coal:1"
+	output = "customitems:charcoal_dust"
+}
+{
+	type = "graphite"
+	input = "ReactorCraft:reactorcraft_item_crafting:13"
+	output = "customitems:graphite_dust"
+}
+{
+	type = "tungstite"
+	input = "RotaryCraft:rotarycraft_item_modextracts:87"
+	output = "Eln:Eln.sharedItem:6"
+}
+{
+	type = "iron"
+	ore_input = "ingotIron"
+	output = "ImmersiveEngineering:metal:8"
+}
+{
+	type = "gold"
+	ore_input = "ingotGold"
+	output = "ImmersiveEngineering:metal:9"
+}
+{
+	type = "copper"
+	ore_input = "ingotCopper"
+	output = "ImmersiveEngineering:metal:10"
+}
+{
+	type = "tin"
+	ore_input = "ingotTin"
+	output = "libVulpes:libVulpesproductdust:5"
+}
+{
+	type = "lead"
+	ore_input = "ingotLead"
+	output = "ImmersiveEngineering:metal:12"
+}
+{
+	type = "silver"
+	ore_input = "ingotSilver"
+	output = "ImmersiveEngineering:metal:13"
+}
+{
+	type = "nickel"
+	ore_input = "ingotNickel"
+	output = "ImmersiveEngineering:metal:14"
+}
+{
+	type = "silicon"
+	ore_input = "ingotSilicon"
+	output = "libVulpes:libVulpesproductdust:3"
+}
+{
+	type = "constantan"
+	ore_input = "ingotConstantan"
+	output = "ImmersiveEngineering:metal:15"
+}
+{
+	type = "electrum"
+	ore_input = "ingotElectrum"
+	output = "ImmersiveEngineering:metal:16"
+}
+{
+	type = "steel"
+	ore_input = "ingotSteel"
+	output = "libVulpes:libVulpesproductdust:6"
+}
+{
+	type = "tungsten"
+	ore_input = "ingotTungsten"
+	output = "RotaryCraft:rotarycraft_item_modingots:21"
+}
+{
+	type = "aluminium"
+	input = "ImmersiveEngineering:metal:1"
+	output = "ImmersiveEngineering:metal:11"
+}
+{
+	type = "titanium"
+	ore_input = "ingotTitanium"
+	output = "libVulpes:libVulpesproductdust:7"
+}
+{
+	type = "iridium"
+	ore_input = "ingotIridium"
+	output = "libVulpes:libVulpesproductdust:10"
+}
+{
+	type = "titanium_aluminide"
+	ore_input = "ingotTitaniumAluminide"
+	output = "advancedRocketry:advancedRocketryproductdust"
+}
+{
+	type = "titanium_iridium_alloy"
+	ore_input = "ingotTitaniumIridium"
+	output = "advancedRocketry:advancedRocketryproductdust:1"
+}

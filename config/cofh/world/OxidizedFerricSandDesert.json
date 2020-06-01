@@ -1,0 +1,74 @@
+{  
+	"Oxidized Ferric Sand Desert-Boulders-Large-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 2,
+			"count": 2
+		},
+		"block": [
+		    {"name":"advancedRocketry:blockHotTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":25},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:iron_ore", "weight":5},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:blockHotTurf"],
+		"numClusters": 1,
+		"chunkChance": 384,
+		"clusterSize": 5,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Oxidized Ferric Sand Desert"}
+		]
+    },
+	"Oxidized Ferric Sand Desert-Boulders-Medium-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 2,
+			"count": 1
+		},
+		"block": [
+		    {"name":"advancedRocketry:blockHotTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":25},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:iron_ore", "weight":5},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:blockHotTurf"],
+		"numClusters": 2,
+		"chunkChance": 96,
+		"clusterSize": 2,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Oxidized Ferric Sand Desert"}
+		]
+    },
+	"Oxidized Ferric Sand Desert-Boulders-Small-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 1,
+			"count": 1
+		},
+		"block": [
+		    {"name":"advancedRocketry:blockHotTurf", "weight":50},
+			{"name":"minecraft:stone", "weight":25},
+			{"name":"minecraft:cobblestone", "weight":15},
+			{"name":"minecraft:iron_ore", "weight":5},
+			{"name":"minecraft:gravel", "weight":5}
+		],
+		"material": ["advancedRocketry:blockHotTurf"],
+		"numClusters": 4,
+		"chunkChance": 48,
+		"clusterSize": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Oxidized Ferric Sand Desert"}
+		]
+    }
+}

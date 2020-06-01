@@ -1,0 +1,74 @@
+{
+    "items":[
+        //Wires
+		{
+            "name": "copper_wire",
+            "textureName": "copper_wire"
+		},
+		{
+            "name": "electrum_wire",
+            "textureName": "electrum_wire"
+		},
+		{
+            "name": "aluminium_wire",
+            "textureName": "aluminium_wire"
+		},
+		{
+            "name": "steel_wire",
+            "textureName": "steel_wire"
+		},
+		//Molds
+		{
+            "name": "wire_mold",
+            "textureName": "wire_mold"
+		},
+		{
+            "name": "casing_mold",
+            "textureName": "casing_mold"
+		}
+    ],
+    //Steel Tools
+    "pickaxes": [
+		{
+            "name": "steel_pickaxe",
+            "textureName": "steel_pickaxe",
+            "harvestLevel": 2,
+            "maxUses": 641,
+            "efficiencyOnProperMaterial": 7,
+            "damageVsEntity": 2.5,
+            "enchantability": 12
+		}
+    ],
+    "shovels": [
+		{
+            "name": "steel_shovel",
+            "textureName": "steel_shovel",
+            "harvestLevel": 2,
+            "maxUses": 641,
+            "efficiencyOnProperMaterial": 1,
+            "damageVsEntity": 2.5,
+            "enchantability": 12
+		}
+    ],
+    "axes": [
+		{
+            "name": "steel_axe",
+            "textureName": "steel_axe",
+            "harvestLevel": 2,
+            "maxUses": 641,
+            "efficiencyOnProperMaterial": 1,
+            "damageVsEntity": 2.5,
+            "enchantability": 12
+		}
+    ],
+    "swords": [
+		{
+            "name": "steel_sword",
+            "textureName": "steel_sword",
+            "maxUses": 641,
+            "efficiencyOnProperMaterial": 7,
+            "damageVsEntity": 2.5,
+            "enchantability": 12
+		}
+    ]
+}

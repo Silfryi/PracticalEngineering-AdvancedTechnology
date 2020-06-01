@@ -1,0 +1,66 @@
+{
+    "fluids":[
+        {
+            "name": "aquaregia",
+            "textureName": "aquaregia",
+            "temperature": 300,
+            "density": 1100,
+            "viscosity": 1000,            
+            "isGas": false
+        },
+        {
+            "name": "nitrogendioxide",
+            "textureName": "nitrogendioxide",
+            "temperature": 300,
+            "density": -1000,
+            "viscosity": 10,            
+            "isGas": true
+        }, 
+        {
+            "name": "nitricacid",
+            "textureName": "nitricacid",
+            "temperature": 300,
+            "density": 1500,
+            "viscosity": 1000,            
+            "isGas": false
+        }, 
+        {
+            "name": "hydrochloricacid",
+            "textureName": "hydrochloricacid",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000,            
+            "isGas": false
+        }, 
+        {
+            "name": "aquaregiaplatinum",
+            "textureName": "aquaregia",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000,            
+            "isGas": false
+        }, 
+        {
+            "name": "impureaquaregia",
+            "textureName": "impureaquaregia",
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000,            
+            "isGas": false
+        }
+    ],
+    "items":[
+		{
+            "name": "platinumgroupsludgeplatinum",
+            "textureName": "platinum_group_sludge"
+		},
+		{
+            "name": "platinumgroupsludgeiridium",
+            "textureName": "platinum_group_sludge"
+		},
+		{
+            "name": "ammoniumchloroplatinate",
+            "textureName": "ammonium_chloroplatinate"
+		}
+    ]
+}

@@ -1,0 +1,106 @@
+{
+	type = "vitrified_sand"
+	primary_input = {
+		items = {
+			"minecraft:glass"
+		}
+		consumption_chance = 100
+		number_to_use = 1
+	}
+	main_item = {
+		"minecraft:sand"
+	}	
+	required_main_item = 1
+	match_number_exactly = false
+	has_bonus = true
+	xp = 1
+	temperature = 800
+	alloying = true
+	output = "advancedRocketry:tile.vitrifiedSand"
+	output_nbt = {
+
+	}
+}
+{
+	type = "magnetite_coke"
+	primary_input = {
+		items = {
+			"RotaryCraft:rotarycraft_item_compacts:8"
+		}
+		consumption_chance = 100
+		number_to_use = 3
+	}
+	secondary_input = {
+		items = {
+			"ReactorCraft:reactorcraft_item_raw:4"
+		}
+		consumption_chance = 100
+		number_to_use = 3
+	}
+	main_item = {
+		"ReactorCraft:reactorcraft_item_raw:6"
+	}	
+	required_main_item = 1
+	match_number_exactly = false
+	has_bonus = true
+	xp = 1
+	temperature = 600
+	alloying = false
+	output = "minecraft:iron_ingot"
+	output_nbt = {
+
+	}
+}
+{
+	type = "magnetite_charcoal"
+	primary_input = {
+		items = {
+			"minecraft:coal:1"
+		}
+		consumption_chance = 80
+		number_to_use = 3
+	}
+	secondary_input = {
+		items = {
+			"ReactorCraft:reactorcraft_item_raw:4"
+		}
+		consumption_chance = 100
+		number_to_use = 3
+	}
+	main_item = {
+		"ReactorCraft:reactorcraft_item_raw:6"
+	}	
+	required_main_item = 1
+	match_number_exactly = false
+	has_bonus = true
+	xp = 1
+	temperature = 600
+	alloying = false
+	output = "minecraft:iron_ingot"
+	output_nbt = {
+
+	}
+}
+{
+	type = "tungsten"
+	primary_input = {
+		items = {
+			"customitems:graphite_dust"
+		}
+		consumption_chance = 100
+		number_to_use = 12
+	}
+	main_item = {
+		"Eln:Eln.sharedItem:6"
+	}	
+	required_main_item = 1
+	match_number_exactly = false
+	has_bonus = false
+	xp = 3
+	temperature = 1200
+	alloying = false
+	output = "RotaryCraft:rotarycraft_item_modingots:21"
+	output_nbt = {
+
+	}
+}

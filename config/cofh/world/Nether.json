@@ -1,0 +1,94 @@
+{
+    "Nether-Fire Water-Roof": {
+        "template": "normal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": "true",
+            "outlineBlock": "customitems:hardened_stone"
+        },
+        "block": "EnderIO:blockFire_water",
+        "material": [
+            "customitems:hardened_stone",
+            "minecraft:netherrack"
+        ],
+        "meanHeight": 127,
+        "maxVariance": 1,
+        "numClusters": 1,
+        "chunkChance": 24,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "NETHER"}
+        ]
+    },
+    "Nether-Obsidian Stalagmites-Lava Lakes": {
+        "template": "fractal",
+        "generator": {
+            "type": "stalagmite",
+            "genBody": [
+            {"name":"minecraft:lava"},
+            {"name":"minecraft:air"}
+            ],
+            "minHeight": 32,
+            "heightVariance": 8,
+            "genSize": 3,
+            "sizeVariance": 1
+        },
+        "block": [
+            {"name":"minecraft:obsidian", "weight":65},
+            {"name":"chisel:obsidian", "metadata":7, "weight":15},
+            {"name":"chisel:obsidian", "metadata":5, "weight":10},
+            {"name":"chisel:obsidian", "metadata":8, "weight":5},
+            {"name":"chisel:obsidian", "metadata":3, "weight":5}
+        ],
+        "material": [
+            {"name":"minecraft:netherrack"}
+        ],
+        "numClusters": 12,
+        "chunkChance": 192,
+        "minHeight": 16,
+        "veinHeight": 8,
+        "veinDiameter": 32,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "NETHER"}
+        ]
+    },
+    "Nether-Glowstone Stalactites-Ceilings": {
+        "template": "fractal",
+        "generator": {
+            "type": "stalactite",
+            "genBody": [
+            {"name":"minecraft:air"}
+            ],
+            "minHeight": 16,
+            "heightVariance": 12,
+            "genSize": 1,
+            "sizeVariance": 1
+        },
+        "block": [
+            {"name":"chisel:glowstone", "metadata":6, "weight":60},
+            {"name":"chisel:glowstone", "metadata":1, "weight":20},
+            {"name":"chisel:glowstone", "metadata":7, "weight":15},
+            {"name":"chisel:glowstone", "metadata":10, "weight":5}
+        ],
+        "material": [
+            {"name":"minecraft:netherrack"}
+        ],
+        "numClusters": 8,
+        "chunkChance": 128,
+        "minHeight": 64,
+        "veinHeight": 8,
+        "veinDiameter": 16,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "NETHER"}
+        ]
+    }
+}

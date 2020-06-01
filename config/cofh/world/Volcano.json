@@ -1,0 +1,127 @@
+{    
+    "Exinct Volcano-Lava-Basalt-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "lake",
+			"useMaterial": true,
+            "outlineBlock": "GeoStrata:geostrata_rock_basalt_cobble"
+		},
+		"block": [
+		    {"name":"minecraft:lava"}
+		],
+		"material": "GeoStrata:geostrata_rock_basalt_cobble",
+		"numClusters": 1,
+		"chunkChance": 8,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	},
+	"Extinct Volcano-Boulders-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 1,
+			"count": 5
+		},
+		"block": [
+		    {"name":"GeoStrata:geostrata_rock_pumice_smooth", "weight":60},
+			{"name":"GeoStrata:geostrata_rock_pumice_cobble", "weight":40}
+		],
+		"material": "GeoStrata:geostrata_rock_basalt_cobble",
+		"numClusters": 1,
+		"chunkChance": 12,
+		"clusterSize": 3,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	},
+    "Volcano-Lava-Basalt-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "lake",
+			"useMaterial": true,
+            "outlineBlock": "GeoStrata:geostrata_rock_basalt_cobble"
+		},
+		"block": [
+		    {"name":"minecraft:lava"}
+		],
+		"material": "GeoStrata:geostrata_rock_basalt_smooth",
+		"numClusters": 1,
+		"chunkChance": 2,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	},
+	"Volcano-Lava-Pumice-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "lake",
+			"useMaterial": true,
+            "outlineBlock": "GeoStrata:geostrata_rock_pumice_cobble"
+		},
+		"block": [
+		    {"name":"minecraft:lava"}
+		],
+		"material": "GeoStrata:geostrata_rock_basalt_smooth",
+		"numClusters": 1,
+		"chunkChance": 8,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	},
+	"Volcano-Boulders-Surface": {
+	    "template": "surface",
+		"generator": {
+		    "type": "boulder",
+		    "sizeVariance": 1,
+			"count": 5
+		},
+		"block": [
+		    {"name":"GeoStrata:geostrata_rock_pumice_smooth", "weight":60},
+			{"name":"GeoStrata:geostrata_rock_pumice_cobble", "weight":40}
+		],
+		"material": "GeoStrata:geostrata_rock_basalt_smooth",
+		"numClusters": 1,
+		"chunkChance": 16,
+		"clusterSize": 3,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	},
+	"Volcano-Lava Stalagmites-Surface": {
+	    "template": "uniform",
+		"generator": {
+		    "type": "stalagmite",
+			"genBody": [
+    			"GeoStrata:geostrata_rock_basalt_smooth",
+				"GeoStrata:geostrata_rock_basalt_cobble",
+				"minecraft:air"
+			],
+			"minHeight": 56,
+			"heightVariance": 8,
+		    "genSize": 1,
+			"sizeVariance": 0
+		},
+		"block": "minecraft:lava",
+		"material": "GeoStrata:geostrata_rock_basalt_smooth",
+		"minHeight": 32,
+        "maxHeight": 48,
+		"numClusters": 1,
+		"chunkChance": 96,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Volcano"}
+		]
+	}
+}

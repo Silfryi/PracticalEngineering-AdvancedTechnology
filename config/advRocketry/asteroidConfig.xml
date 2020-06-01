@@ -1,0 +1,88 @@
+<Asteroids>
+	<asteroid name="Nickel-Iron Asteroid" distance="80" mass="2400" massVariability="0.2" probability="0.149" richness="0.9" richnessVariability="0.1" timeMultiplier="64">
+		<ore itemStack="minecraft:iron_ore" chance="85"/>
+		<ore itemStack="ElectriCraft:electricraft_block_ore 3" chance="15"/>
+	</asteroid>
+	<asteroid name="Platinum-Group Asteroid" distance="125" mass="800" massVariability="0.1" probability="0.05" richness="0.75" richnessVariability="0.1" timeMultiplier="96">
+		<ore itemStack="minecraft:gold_ore" chance="30"/>
+		<ore itemStack="ElectriCraft:electricraft_block_ore 5" chance="30"/>
+		<ore itemStack="ReactorCraft:reactorcraft_block_ore 3" chance="20"/>
+		<ore itemStack="libVulpes:libVulpesore0 10" chance="10"/>
+		<ore itemStack="minecraft:cobblestone" chance="10"/>
+	</asteroid>
+	<asteroid name="Stony Asteroid" distance="50" mass="2000" massVariability="0.2" probability="0.5495" richness="0.6" richnessVariability="0.2" timeMultiplier="48">
+		<ore itemStack="minecraft:iron_ore" chance="45"/>
+		<ore itemStack="libVulpes:libVulpesore0 8" chance="20"/>
+		<ore itemStack="ElectriCraft:electricraft_block_ore 4" chance="25"/>
+		<ore itemStack="ElectriCraft:electricraft_block_ore 3" chance="10"/>
+	</asteroid>
+	<asteroid name="Icy Asteroid" distance="40" mass="2400" massVariability="0.5" probability="0.2485" richness="0.5" richnessVariability="0.2" timeMultiplier="16">
+		<ore itemStack="minecraft:ice" chance="20"/>
+		<ore itemStack="minecraft:packed_ice" chance="10"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_powders 11" chance="5"/>
+	</asteroid>
+	<asteroid name="Derelict" distance="200" mass="700" massVariability="0.2" probability="0.01" richness="0.9" richnessVariability="0.1" timeMultiplier="64">
+		<ore itemStack="advancedRocketry:advancedRocketryproductsheet" chance="5"/>
+		<ore itemStack="advancedRocketry:advancedRocketryproductsheet 1" chance="7.5"/> 
+		<ore itemStack="advancedRocketry:advancedRocketryproductplate" chance="2"/> 
+		<ore itemStack="advancedRocketry:advancedRocketryproductplate 1" chance="3"/> 
+		<ore itemStack="advancedRocketry:advancedRocketryproductingot" chance="2.5"/> 
+		<ore itemStack="advancedRocketry:advancedRocketryproductingot 1" chance="2.5"/>
+		<ore itemStack="advancedRocketry:advancedRocketryproductrod" chance="7.5"/> 
+		<ore itemStack="advancedRocketry:advancedRocketryproductrod 1" chance="7.5"/>
+		<ore itemStack="libVulpes:libVulpesproductsheet 7" chance="5"/>
+		<ore itemStack="libVulpes:libVulpesproductplate 7" chance="2"/>
+		<ore itemStack="libVulpes:libVulpesproductrod 7" chance="1.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_compacts 12" chance="5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_compacts 9" chance="2.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_block_blastglass" chance="2"/>
+		<ore itemStack="RotaryCraft:rotarycraft_block_blastpane" chance="2.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_enginecraft 19" chance="2.5"/>
+        <ore itemStack="ReactorCraft:reactorcraft_item_crafting 17" chance="5"/>
+        <ore itemStack="ReactorCraft:reactorcraft_item_crafting 17" chance="3"/>
+		<ore itemStack="advancedRocketry:tile.advRocket" chance="2.5"/>
+		<ore itemStack="advancedRocketry:tile.pressurizedTank" chance="1"/>
+		<ore itemStack="advancedRocketry:tile.planetHoloSelector" chance="1"/>
+		<ore itemStack="advancedRocketry:tile.pipeSeal" chance="1"/>
+		<ore itemStack="advancedRocketry:fuelTank" chance="2.5"/>
+		<ore itemStack="Eln:Eln.SixNode 2064" chance="5"/>
+		<ore itemStack="Eln:Eln.SixNode 2068" chance="7.5"/> 
+		<ore itemStack="Eln:Eln.sharedItem 517" chance="5"/>
+		<ore itemStack="Eln:Eln.sharedItem 519" chance="5"/>
+		<ore itemStack="Eln:Eln.sharedItem 1024" chance="0.5"/>
+		<ore itemStack="Eln:Eln.TransparentNode 128" chance="2"/>
+		<ore itemStack="Eln:Eln.TransparentNode 3076" chance="5"/>
+	</asteroid>
+	<asteroid name="Defunct Satellite" distance="30" mass="50" massVariability="0.2" probability="0.015" richness="1.0" richnessVariability="0.0" timeMultiplier="8">
+		<ore itemStack="libVulpes:libVulpesproductsheet 7" chance="7.5"/>
+		<ore itemStack="libVulpes:libVulpesproductplate 7" chance="2.5"/>
+		<ore itemStack="libVulpes:libVulpesproductrod 7" chance="2.5"/>
+		<ore itemStack="libVulpes:libVulpesproductsheet 9" chance="15"/>
+		<ore itemStack="advancedRocketry:satellitePowerSource" chance="7"/>
+		<ore itemStack="advancedRocketry:dataUnit" chance="7.5"/>
+		<ore itemStack="advancedRocketry:circuitIC" chance="5"/>
+		<ore itemStack="advancedRocketry:item.satelliteIdChip" chance="5"/>
+		<ore itemStack="advancedRocketry:satellitePrimaryFunction" chance="3.5"/>
+		<ore itemStack="advancedRocketry:satellitePrimaryFunction 4" chance="3"/>
+		<ore itemStack="advancedRocketry:tile.pipeSeal" chance="2"/>
+		<ore itemStack="advancedRocketry:fuelTank" chance="5"/>
+		<ore itemStack="Eln:Eln.SixNode 2064" chance="7.5"/>
+		<ore itemStack="Eln:Eln.SixNode 2068" chance="7.5"/>
+		<ore itemStack="Eln:Eln.sharedItem 1024" chance="1"/>
+		<ore itemStack="Eln:Eln.sharedItemStackOne 7808" chance="1"/>
+		<ore itemStack="Eln:Eln.TransparentNode 453" chance="2"/>
+		<ore itemStack="Eln:Eln.TransparentNode 128" chance="2.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_misccraft 2" chance="2.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_borecraft 2" chance="2.5"/>
+	</asteroid>
+	<asteroid name="Jettisoned Rocket Stage" distance="30" mass="50" massVariability="0.2" probability="0.005" richness="1.0" richnessVariability="0.0" timeMultiplier="8">
+		<ore itemStack="libVulpes:libVulpesproductsheet 7" chance="30"/>
+		<ore itemStack="libVulpes:libVulpesproductplate 7" chance="5"/>
+		<ore itemStack="libVulpes:libVulpesproductrod 7" chance="5"/>
+		<ore itemStack="libVulpes:libVulpesproductsheet 9" chance="45"/>
+		<ore itemStack="advancedRocketry:tile.pipeSeal" chance="5"/>
+		<ore itemStack="Eln:Eln.SixNode 2068" chance="5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_enginecraft 17" chance="2.5"/>
+		<ore itemStack="RotaryCraft:rotarycraft_item_enginecraft 19" chance="2.5"/>
+	</asteroid>
+</Asteroids>

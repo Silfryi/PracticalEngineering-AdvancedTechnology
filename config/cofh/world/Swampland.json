@@ -1,0 +1,27 @@
+{
+    "Swampland-Aquifer-Underground": {
+        "template": "uniform",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 1,
+            "height": 1
+        },
+        "block": "minecraft:water",
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel"
+        ],
+        "clusterSize": 28,
+        "chunkChance": 48,
+        "numClusters": 1,
+        "minHeight": 48,
+        "maxHeight": 56,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"}
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "changeBlocks":[
+        {
+            "name": "Eln:Eln.Ore:5",
+            "harvestLevel": 2
+        },
+        {
+            "name": "libVulpes:libVulpesore0",
+            "harvestLevel": 4
+        }
+    ]
+}

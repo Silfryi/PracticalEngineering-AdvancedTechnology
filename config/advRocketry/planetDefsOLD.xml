@@ -1,0 +1,216 @@
+<galaxy>
+    <star name="Sol" temp="110" x="0" y="0" numPlanets="0" numGasGiants="0">
+	    <planet name="Sol-1" customIcon="moon">
+            <atmosphereDensity>0</atmosphereDensity>
+            <gravitationalMultiplier>40</gravitationalMultiplier>
+            <orbitalDistance>0</orbitalDistance>
+            <orbitalTheta>100</orbitalTheta>
+            <rotationalPeriod>96000</rotationalPeriod>
+			<biomeIds>110</biomeIds>
+        </planet>
+        <planet name="Sol-2" customIcon="gasgiantred">
+            <orbitalDistance>50</orbitalDistance>
+            <orbitalTheta>150</orbitalTheta>
+			<orbitalPhi>120</orbitalPhi>
+			<GasGiant>true</GasGiant>
+			<gas>hydrogen</gas>
+			<gas>helium3</gas>
+			<gravitationalMultiplier>200</gravitationalMultiplier>
+			<hasRings>true</hasRings>
+			<planet name="Sol-2: 1" customIcon="lava">
+                <fogColor>0x992205</fogColor>
+                <skyColor>0x992205</skyColor>
+                <atmosphereDensity>50</atmosphereDensity>
+                <gravitationalMultiplier>75</gravitationalMultiplier>
+                <orbitalDistance>25</orbitalDistance>
+                <orbitalTheta>40</orbitalTheta>
+                <rotationalPeriod>12000</rotationalPeriod>
+                <biomeIds>106</biomeIds>
+				<fillerBlock>GeoStrata:geostrata_rock_basalt_smooth</fillerBlock>
+				<seaLevel>80</seaLevel>
+				<oceanBlock>GeoStrata:geostrata_rock_basalt_smooth</oceanBlock>
+            </planet>
+			<planet name="Sol-2: 2" customIcon="moon">
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>25</gravitationalMultiplier>
+                <orbitalDistance>100</orbitalDistance>
+                <orbitalTheta>250</orbitalTheta>
+                <rotationalPeriod>48000</rotationalPeriod>
+                <biomeIds>110,119</biomeIds>
+            </planet>
+        </planet>
+		<planet name="Sol-3" DIMID="0" dimMapping="" customIcon="earthlike">
+		    <planet name="Sol-3: 1" customIcon="moon">
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>15</gravitationalMultiplier>
+                <orbitalDistance>105</orbitalDistance>
+                <orbitalTheta>100</orbitalTheta>
+                <rotationalPeriod>96000</rotationalPeriod>
+			    <biomeIds>110,119</biomeIds>
+            </planet>
+		</planet>
+		<planet name="Sol-4" customIcon="earthlike">
+		    <orbitalDistance>125</orbitalDistance>
+			<orbitalTheta>300</orbitalTheta>
+			<atmosphereDensity>80</atmosphereDensity>
+			<gravitationalMultiplier>110</gravitationalMultiplier>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<biomeIds>157,160</biomeIds>
+		</planet>
+		<planet name="Sol-5" customIcon="marslike">
+            <atmosphereDensity>0</atmosphereDensity>
+            <gravitationalMultiplier>75</gravitationalMultiplier>
+            <orbitalDistance>150</orbitalDistance>
+            <orbitalTheta>220</orbitalTheta>
+            <rotationalPeriod>48000</rotationalPeriod>
+            <biomeIds>112</biomeIds>
+        </planet>
+    </star>
+	<star name="Gauss" temp="30" x="70" y="30" numPlanets="0" numGasGiants="0" size="0.5">
+	    <planet name="Gauss-1" customIcon="earthlike">
+		    <atmosphereDensity>76</atmosphereDensity>
+            <gravitationalMultiplier>125</gravitationalMultiplier>
+            <orbitalDistance>0</orbitalDistance>
+            <orbitalTheta>10</orbitalTheta>
+			<orbitalPhi>135</orbitalPhi>
+            <rotationalPeriod>768000</rotationalPeriod>
+            <biomeIds>103</biomeIds>
+			<seaLevel>60</seaLevel>
+		</planet>
+		<planet name="Gauss-2" customIcon="gasgiantblue">
+            <orbitalDistance>50</orbitalDistance>
+            <orbitalTheta>150</orbitalTheta>
+			<GasGiant>true</GasGiant>
+			<gas>rc co2</gas>
+			<gas>rc oxygen</gas>
+			<gas>rc hydrofluoric acid</gas>
+			<gravitationalMultiplier>170</gravitationalMultiplier>
+			<hasRings>true</hasRings>
+		</planet>
+		<planet name="Gauss-3" customIcon="waterworld">
+		    <atmosphereDensity>0</atmosphereDensity>
+			<gravitationalMultiplier>150</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalTheta>270</orbitalTheta>
+			<orbitalPhi>270</orbitalPhi>
+			<rotationalPeriod>144000</rotationalPeriod>
+			<biomeIds>11</biomeIds>
+			<oceanBlock>ChromatiCraft:chromaticraft_block_luma</oceanBlock>
+			<seaLevel>59</seaLevel>
+		</planet>
+		<planet name="Gauss-4" customIcon="iceworld">
+		    <atmosphereDensity>0</atmosphereDensity>
+			<gravitationalMultiplier>105</gravitationalMultiplier>
+			<orbitalDistance>150</orbitalDistance>
+			<orbitalTheta>190</orbitalTheta>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<biomeIds>115</biomeIds>
+		</planet>
+	</star>
+	<star name="Kepler" temp="175" x="-10" y="50" numPlanets="0" numGasGiants="0" size="2">
+	    <planet name="Kepler-1" customIcon="gasgiantred">
+		    <orbitalDistance>10</orbitalDistance>
+            <orbitalTheta>20</orbitalTheta>
+			<GasGiant>true</GasGiant>
+			<gas>hydrogen</gas>
+			<gas>helium3</gas>
+			<gravitationalMultiplier>200</gravitationalMultiplier>
+		</planet>
+		<planet name="Kepler-2" customIcon="gasgiantblue">
+		    <orbitalDistance>50</orbitalDistance>
+            <orbitalTheta>235</orbitalTheta>
+			<GasGiant>true</GasGiant>
+			<gas>rc ammonia</gas>
+			<gas>rc oxygen</gas>
+			<gas>nitrogen</gas>
+			<gravitationalMultiplier>170</gravitationalMultiplier>
+			<planet name="Kepler-2: 1" customIcon="earthlike">
+			    <atmosphereDensity>95</atmosphereDensity>
+				<gravitationalMultiplier>80</gravitationalMultiplier>
+				<orbitalDistance>50</orbitalDistance>
+				<orbitalTheta>30</orbitalTheta>
+				<rotationalPeriod>48000</rotationalPeriod>
+				<biomeIds>47,48,111</biomeIds>
+			</planet>
+			<planet name="Kepler-2: 2" customIcon="earthlike">
+			    <atmosphereDensity>105</atmosphereDensity>
+				<gravitationalMultiplier>110</gravitationalMultiplier>
+				<orbitalDistance>80</orbitalDistance>
+				<orbitalTheta>160</orbitalTheta>
+				<rotationalPeriod>24000</rotationalPeriod>
+				<biomeIds>49</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Kepler-3" customIcon="earthlike">
+		    <atmosphereDensity>130</atmosphereDensity>
+            <gravitationalMultiplier>120</gravitationalMultiplier>
+            <orbitalDistance>140</orbitalDistance>
+            <orbitalTheta>330</orbitalTheta>
+            <rotationalPeriod>72000</rotationalPeriod>
+            <biomeIds>114,116,117,118</biomeIds>
+		</planet>
+		<planet name="Kepler-4" customIcon="moon">
+            <atmosphereDensity>0</atmosphereDensity>
+            <gravitationalMultiplier>60</gravitationalMultiplier>
+            <orbitalDistance>170</orbitalDistance>
+            <orbitalTheta>100</orbitalTheta>
+			<orbitalPhi>35</orbitalPhi>
+            <rotationalPeriod>9000</rotationalPeriod>
+			<biomeIds>110,119</biomeIds>
+			<hasRings>true</hasRings>
+        </planet>
+	</star>
+	<star name="Heisenberg A" temp="125" x="30" y="100" numPlanets="0" numGasGiants="0" size="0.75">
+	    <star name="Heisenberg B" temp="50" separation="200.0" size="0.25"/>
+		<planet name="Heisenberg-1" customIcon="gasgiantblue">
+            <orbitalDistance>35</orbitalDistance>
+            <orbitalTheta>150</orbitalTheta>
+			<orbitalPhi>120</orbitalPhi>
+			<GasGiant>true</GasGiant>
+			<gas>rc ammonia</gas>
+			<gas>rc co2</gas>
+			<gas>nitrogen</gas>
+			<gravitationalMultiplier>170</gravitationalMultiplier>
+			<planet name="Heisenberg-1: 1" customIcon="iceworld">
+			    <fogColor>0x38aceb</fogColor>
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>50</gravitationalMultiplier>
+                <orbitalDistance>40</orbitalDistance>
+                <orbitalTheta>190</orbitalTheta>
+				<orbitalPhi>90</orbitalPhi>
+                <rotationalPeriod>72000</rotationalPeriod>
+                <biomeIds>10</biomeIds>
+				<oceanBlock>minecraft:packed_ice</oceanBlock>
+			    <fillerBlock>minecraft:water</fillerBlock>
+				<seaLevel>72</seaLevel>
+            </planet>
+		    <planet name="Heisenberg-1: 2" customIcon="marslike">
+                <atmosphereDensity>0</atmosphereDensity>
+                <gravitationalMultiplier>40</gravitationalMultiplier>
+                <orbitalDistance>65</orbitalDistance>
+                <orbitalTheta>50</orbitalTheta>
+                <rotationalPeriod>48000</rotationalPeriod>
+                <biomeIds>112</biomeIds>
+            </planet>
+		</planet>
+		<planet name="Heisenberg-2" customIcon="iceworld">
+		    <atmosphereDensity>200</atmosphereDensity>
+            <gravitationalMultiplier>140</gravitationalMultiplier>
+            <orbitalDistance>60</orbitalDistance>
+            <orbitalTheta>290</orbitalTheta>
+            <rotationalPeriod>96000</rotationalPeriod>
+            <biomeIds>23</biomeIds>
+			<oceanBlock>PneumaticCraft:oil</oceanBlock>
+			<fillerBlock>contenttweaker:impure_graphite</fillerBlock>
+			<seaLevel>68</seaLevel>
+		</planet>
+		<planet name="Heisenberg-3" customIcon="marslike">
+            <atmosphereDensity>190</atmosphereDensity>
+            <gravitationalMultiplier>125</gravitationalMultiplier>
+            <orbitalDistance>110</orbitalDistance>
+            <orbitalTheta>70</orbitalTheta>
+            <rotationalPeriod>12000</rotationalPeriod>
+            <biomeIds>112</biomeIds>
+        </planet>
+	</star>
+</galaxy>

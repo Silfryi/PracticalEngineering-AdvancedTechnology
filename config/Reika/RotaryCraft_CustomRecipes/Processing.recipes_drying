@@ -1,0 +1,6 @@
+{
+    type = "rubber_sheet"
+	input_fluid = "rubber"
+	input_amount = 144
+	output = "customitems:rubber_sheet"
+}

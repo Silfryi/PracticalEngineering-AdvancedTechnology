@@ -1,0 +1,32 @@
+{
+    "items":[
+		{
+            "name": "dmlsbed",
+            "textureName": "dmls_bed"
+		},
+		{
+            "name": "dmlsbedengine",
+            "textureName": "dmls_bed_engine"
+		},
+		{
+            "name": "dmlsbedblade",
+            "textureName": "dmls_bed_blade"
+		},
+		{
+            "name": "dmlsbeddrum",
+            "textureName": "dmls_bed_drum"
+		},
+		{
+            "name": "dmlsbedbay",
+            "textureName": "dmls_bed_bay"
+		},
+		{
+            "name": "unfinishedengine",
+            "textureName": "unfinished_engine"
+		},
+		{
+            "name": "unfinishedblade",
+            "textureName": "unfinished_blade"
+		}
+    ]
+}
