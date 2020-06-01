@@ -22,7 +22,7 @@
         type = "plastic"
         amount = 1000
     }
-    temp_curve = 1
+    temp_curve = 0
     base_time = 100
     min_temperature = 400
 }
