@@ -81,15 +81,15 @@
     }
     output_items = {
         {
-            item = "customitems:alumina_flakes"
+            item = "ImmersiveEngineering:metal:11"
             chance = 75
         }
         {
-            item = "RotaryCraft:rotarycraft_item_extracts:25"
+            item = "ImmersiveEngineering:metal:8"
             chance = 19
         }
         {
-            item = "RotaryCraft:rotarycraft_item_modextracts:255"
+            item = "libVulpes:libVulpesproductdust:7"
             chance = 6
         }
     }
