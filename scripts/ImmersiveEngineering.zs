@@ -63,6 +63,11 @@ recipes.addShaped(<ImmersiveEngineering:metalDevice:14>,
  [[<ImmersiveEngineering:metalDecoration:1>, <ore:fenceSteel>, <ImmersiveEngineering:metalDecoration:1>],
  [<ImmersiveEngineering:metalDecoration:1>, <ore:fenceSteel>, <ImmersiveEngineering:metalDecoration:1>],
  [<ImmersiveEngineering:metalDecoration:7>, <RotaryCraft:rotarycraft_item_borecraft>, <ImmersiveEngineering:metalDecoration:7>]]);
+
+//Add rubber conveyor belt recipe
+recipes.addShaped(<ImmersiveEngineering:metalDevice:11> * 8,
+ [[<ore:sheetRubber>, <ore:sheetRubber>, <ore:sheetRubber>],
+ [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]]);
  
 //Make Squeezer and Fermenter Require PneumaticCraft Plastic
 Squeezer.removeFluidRecipe(<liquid:plantoil>);
