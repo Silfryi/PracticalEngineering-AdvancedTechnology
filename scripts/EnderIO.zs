@@ -20,6 +20,7 @@ var toHide = [//Machines
   
 var toRemove = [<EnderIO:blockAlloySmelter>,
                 <EnderIO:blockSagMill>,
+                <EnderIO:blockPainter>,
                 <EnderIO:blockStirlingGenerator>,
                 <EnderIO:blockSolarPanel:*>,
                 <EnderIO:blockVacuumChest>,
@@ -54,6 +55,10 @@ for item in toRemove{
 
 
 //EnderIO Shaped Recipes, About Half Machines and Half Parts
+recipes.addShaped(<EnderIO:blockPainter>,
+ [[<ore:gemQuartz>, <Eln:Eln.sharedItem:7631>, <ore:gemQuartz>],
+ [<ore:ingotElectricalSteel>, <EnderIO:itemMachinePart>, <ore:ingotElectricalSteel>],
+ [<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]]);
 recipes.addShaped(<EnderIO:blockPoweredSpawner>,
  [[<ore:ingotPlatinum>, <ore:itemSkull>, <ore:ingotPlatinum>],
  [<ore:ingotPlatinum>, <EnderIO:itemMachinePart>, <ore:ingotPlatinum>],

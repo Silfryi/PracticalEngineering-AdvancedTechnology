@@ -125,8 +125,10 @@ var toRemove = [<libVulpes:libVulpesproductingot:9>,
                 <ExtraUtilities:drum>,
                 <appliedenergistics2:tile.BlockController>,
                 <extracells:pattern.fluid>,
+                <ExtraUtilities:decorativeBlock1:12>,
                 <appliedenergistics2:tile.BlockQuantumLinkChamber>,
-                <appliedenergistics2:tile.BlockQuantumRing>
+                <appliedenergistics2:tile.BlockQuantumRing>,
+                <minecraft:jukebox>
                 ] as IItemStack[];
 
 //Remove and hide what all needs it
@@ -140,6 +142,11 @@ for item in toHide{
 
 
 //Shaped recipes, mostly Extra Utilities and AE2
+//Jukebox requires HSLA shaft to make it come earlier and remove diamond uses
+recipes.addShaped(<minecraft:jukebox>,
+ [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+ [<ore:plankWood>, <RotaryCraft:rotarycraft_item_gearcraft>, <ore:plankWood>],
+ [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 //Random CustomItems recipes
 recipes.addShaped(<customitems:red_sandstone_stairs> * 4,
  [[<customitems:red_sandstone>, null, null],
