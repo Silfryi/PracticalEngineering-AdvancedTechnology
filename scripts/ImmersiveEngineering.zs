@@ -64,6 +64,12 @@ recipes.addShaped(<ImmersiveEngineering:metalDevice:14>,
  [<ImmersiveEngineering:metalDecoration:1>, <ore:fenceSteel>, <ImmersiveEngineering:metalDecoration:1>],
  [<ImmersiveEngineering:metalDecoration:7>, <RotaryCraft:rotarycraft_item_borecraft>, <ImmersiveEngineering:metalDecoration:7>]]);
 
+//Add in aluminium for fluid pipes
+recipes.addShaped(<ImmersiveEngineering:metalDevice2:5> * 8,
+ [[<ore:ingotAluminum>, <ore:plateAluminum>, <ore:ingotAluminum>],
+ [<ore:plateAluminum>, null, <ore:plateAluminum>],
+ [<ore:ingotAluminum>, <ore:plateAluminum>, <ore:ingotAluminum>]]);
+ 
 //Add rubber conveyor belt recipe
 recipes.addShaped(<ImmersiveEngineering:metalDevice:11> * 8,
  [[<ore:sheetRubber>, <ore:sheetRubber>, <ore:sheetRubber>],

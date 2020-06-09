@@ -175,6 +175,15 @@ recipes.addShaped(<customitems:dark_quartz> * 8,
  [[<ore:burntQuartz>, <ore:burntQuartz>, <ore:burntQuartz>],
  [<ore:burntQuartz>, <ore:dyeBlue>, <ore:burntQuartz>],
  [<ore:burntQuartz>, <ore:burntQuartz>, <ore:burntQuartz>]]);
+//Aluminium for previously iron-only recipes
+recipes.addShaped(<minecraft:piston>,
+ [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+ [<ore:cobblestone>, <ore:ingotAluminum>, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+recipes.addShaped(<minecraft:hopper>,
+ [[<ore:ingotAluminum>, null, <ore:ingotAluminum>],
+ [<ore:ingotAluminum>, <ore:chest>, <ore:ingotAluminum>],
+ [null, <ore:ingotAluminum>, null]]);
 //ExU drums
 recipes.addShaped(<ExtraUtilities:drum>, 
  [[<RotaryCraft:rotarycraft_item_shaftcraft:1>, <RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_item_shaftcraft:1>],
