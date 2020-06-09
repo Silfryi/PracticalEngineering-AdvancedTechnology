@@ -211,6 +211,12 @@ recipes.addShaped(<ImmersiveEngineering:drillhead>.withTag({headDamage: -24000})
  [[null, <ore:ingotTungsten>, <ore:ingotTungsten>],
  [<ore:ingotTungsten>, <ore:blockSteel>, <ore:ingotTungsten>],
  [<ore:blockSteel>, <ore:ingotTungsten>, null]]);
+recipes.addShaped(<ImmersiveEngineering:drillhead>.withTag({headDamage: -248000}),
+ [[null, <ore:RotaryCraft:ingotBedrock>, <ore:RotaryCraft:ingotBedrock>],
+ [<ore:RotaryCraft:ingotBedrock>, <ore:blockSteel>, <ore:RotaryCraft:ingotBedrock>],
+ [<ore:blockSteel>, <ore:RotaryCraft:ingotBedrock>, null]]);
+<ImmersiveEngineering:drillhead:*>.addTooltip("Tool durability depends on cutting surface material");
+<ImmersiveEngineering:drillhead:*>.addTooltip("Mining level and supported cutting surfaces depends on core material");
 
 //Advanced windmill sails recipe closer to 1.12
 recipes.remove(<ImmersiveEngineering:material:5>);

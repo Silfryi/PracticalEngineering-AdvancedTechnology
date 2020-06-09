@@ -136,6 +136,8 @@ ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <immersiveintegration:steelDeco
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <immersiveintegration:steelDecoration:2>, <ImmersiveEngineering:metal:7>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 3, <ImmersiveEngineering:material:7>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 4, <ImmersiveEngineering:material:8>, <minecraft:iron_ingot> * 2, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 12, <ImmersiveEngineering:drillhead>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 12, <ImmersiveEngineering:drillhead:1>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <ImmersiveEngineering:material:11>, <ImmersiveEngineering:metal:0>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 2, <ImmersiveEngineering:material:12>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 4, <ImmersiveEngineering:metalMultiblock:2>, <ImmersiveEngineering:metal:0>, 100, 512, [], "Recycling");
