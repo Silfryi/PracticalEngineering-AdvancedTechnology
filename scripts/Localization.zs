@@ -54,7 +54,7 @@ game.setLocalization("item.machine.wire.19.name", "Insulated Aluminium Wire");
 
 
 //Rename "alloy" items to tungsten-alloy steel
-game.setLocalization("Alloy_Dust.name", "TCPH Steel Dust");
+game.setLocalization("Alloy_Dust.name", "TCPH Steel Grit");
 game.setLocalization("Alloy_Ingot.name", "TCPH Steel Ingot");
 game.setLocalization("Alloy_Plate.name", "TCPH Steel Plate");
 

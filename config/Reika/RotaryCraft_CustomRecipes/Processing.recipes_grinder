@@ -89,6 +89,11 @@
 	output = "ImmersiveEngineering:metal:11"
 }
 {
+	type = "energetic_alloy"
+	input = "EnderIO:itemAlloy:1"
+	output = "customitems:energetic_alloy_dust"
+}
+{
 	type = "titanium"
 	ore_input = "ingotTitanium"
 	output = "libVulpes:libVulpesproductdust:7"
