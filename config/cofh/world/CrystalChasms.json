@@ -9,10 +9,10 @@
 		},
 		"material": "minecraft:stone",
 		"block": "GeoStrata:geostrata_block_rfcrystalseed",
-		"chunkChance": 16,
+		"chunkChance": 4,
 		"numClusters": 1,
-		"minHeight": 32,
-		"maxHeight": 64,
+		"minHeight": 16,
+		"maxHeight": 48,
 		"biomeRestriction": "whitelist",
         "biomes": [
 		    {"type": "name", "entry": "CrystalChasms"}

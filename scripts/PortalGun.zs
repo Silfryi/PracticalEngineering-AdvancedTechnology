@@ -37,6 +37,6 @@ recipes.addShaped(<PortalGun:PortalGunSpawner>,
  [<ore:coilAluminum>, <PortalGun:MiniBlackHole>, <ore:coilAluminum>],
  [<RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_block_blastglass>, <RotaryCraft:rotarycraft_item_shaftcraft>]]);
 recipes.addShaped(<PortalGun:MiniBlackHole>, 
- [[<PortalGun:EnderPearlDust>, <ChromatiCraft:chromaticraft_item_crafting:30>, <PortalGun:EnderPearlDust>], 
- [<ChromatiCraft:chromaticraft_item_crafting:30>, <appliedenergistics2:item.ItemMultiMaterial:47>, <ChromatiCraft:chromaticraft_item_crafting:30>],
- [<PortalGun:EnderPearlDust>, <ChromatiCraft:chromaticraft_item_crafting:30>, <PortalGun:EnderPearlDust>]]);
+ [[<PortalGun:EnderPearlDust>, <ore:dustObsidian>, <PortalGun:EnderPearlDust>], 
+ [<ore:dustObsidian>, <appliedenergistics2:item.ItemMultiMaterial:47>, <ore:dustObsidian>],
+ [<PortalGun:EnderPearlDust>, <ore:dustObsidian>, <PortalGun:EnderPearlDust>]]);

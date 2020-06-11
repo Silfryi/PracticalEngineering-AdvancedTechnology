@@ -115,9 +115,9 @@ recipes.addShaped(<minecraft:dirt> * 2,
  [<RotaryCraft:rotarycraft_item_powders:13>, <RotaryCraft:rotarycraft_item_powders:13>]]);
 //Add in voidmetal Railgun ammo
 recipes.addShaped(<RotaryCraft:rotarycraft_item_voidrail> * 16, 
- [[<ore:blockIridium>, <ChromatiCraft:chromaticraft_item_crafting:30>, null], 
- [<ChromatiCraft:chromaticraft_item_crafting:30>, <ChromatiCraft:chromaticraft_item_crafting>, <ChromatiCraft:chromaticraft_item_crafting:30>],
- [null, <ChromatiCraft:chromaticraft_item_crafting:30>, <ore:blockIridium>]]);
+ [[<ore:ingotIridium>, <ore:dustObsidian>, null], 
+ [<ore:dustObsidian>, <ore:pearlEnder>, <ore:dustObsidian>],
+ [null, <ore:dustObsidian>, <ore:blockIridium>]]);
 
 //ElectriCraft
 //Wireless RF Pads

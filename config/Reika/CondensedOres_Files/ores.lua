@@ -1,4 +1,4 @@
-F{
+{
     type = "Tungsten"
     inherit = "base"
     name = "Tungsten Ore"
@@ -259,10 +259,6 @@ F{
         {
             type = "dictionary-require"
             name = "Ocean"
-        }
-        {
-            type = "include"
-            biomeName = "Rainbow Forest"
         }
     }
 }

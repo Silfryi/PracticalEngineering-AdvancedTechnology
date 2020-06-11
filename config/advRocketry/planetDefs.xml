@@ -91,6 +91,7 @@
             <rotationalPeriod>672000</rotationalPeriod>
             <atmosphereDensity>0</atmosphereDensity>
             <biomeIds>115,140</biomeIds>
+            <seaLevel>68</seaLevel>
             <oceanBlock>advancedRocketry:tile.nitrogenFluidBlock</oceanBlock>
         </planet>
         <planet name="Gauss-2" DIMID="9" customIcon="gasgiantblue">
@@ -118,15 +119,15 @@
         </planet>
         <planet name="Gauss-3" DIMID="11" customIcon="waterworld">
             <isKnown>true</isKnown>
-            <gravitationalMultiplier>40</gravitationalMultiplier>
+            <gravitationalMultiplier>10</gravitationalMultiplier>
             <orbitalDistance>50</orbitalDistance>
             <orbitalTheta>255</orbitalTheta>
             <orbitalPhi>135</orbitalPhi>
             <rotationalPeriod>1344000</rotationalPeriod>
             <atmosphereDensity>0</atmosphereDensity>
             <biomeIds>11</biomeIds>
-            <seaLevel>59</seaLevel>
-            <oceanBlock>ChromatiCraft:chromaticraft_block_luma</oceanBlock>
+            <seaLevel>57</seaLevel>
+            <oceanBlock>minecraft:ice</oceanBlock>
         </planet>
     </star>
     <star name="Heisenberg" temp="75" x="-120" y="200" size="0.5" numPlanets="0" numGasGiants="0">
@@ -240,7 +241,7 @@
             <orbitalPhi>0</orbitalPhi>
             <rotationalPeriod>1344000</rotationalPeriod>
             <atmosphereDensity>1200</atmosphereDensity>
-            <biomeIds>106</biomeIds>
+            <biomeIds>106,114</biomeIds>
             <fillerBlock>GeoStrata:geostrata_rock_basalt_cobble</fillerBlock>
         </planet>
     </star>
@@ -408,15 +409,15 @@
                 <atmosphereDensity>0</atmosphereDensity>
                 <biomeIds>7,116,117</biomeIds>
             </planet>
-            <planet name="Hawking-2: 2" DIMID="36" customIcon="waterworld">
+            <planet name="Hawking-2: 2" DIMID="36" customIcon="carbonworld">
                 <isKnown>true</isKnown>
                 <gravitationalMultiplier>70</gravitationalMultiplier>
                 <orbitalDistance>40</orbitalDistance>
                 <orbitalTheta>315</orbitalTheta>
                 <orbitalPhi>0</orbitalPhi>
                 <rotationalPeriod>16000</rotationalPeriod>
-                <atmosphereDensity>0</atmosphereDensity>
-                <biomeIds>50</biomeIds>
+                <atmosphereDensity>600</atmosphereDensity>
+                <biomeIds>114</biomeIds>
             </planet>
         </planet>
         <planet name="Hawking-3" DIMID="37" customIcon="gasgiantblue">
