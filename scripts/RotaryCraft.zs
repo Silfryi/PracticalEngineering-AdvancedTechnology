@@ -54,11 +54,15 @@ var toHide = [//Modingots that are unified to their respective mods
               <RotaryCraft:rotarycraft_item_enginecraft:14>,
               <RotaryCraft:rotarycraft_item_enginecraft:16>,
               //Useless 'Rutile' ingot
-              <RotaryCraft:rotarycraft_item_modingots:79>
+              <RotaryCraft:rotarycraft_item_modingots:79>,
+              //Useless ElC EU items
+              <ElectriCraft:electricraft_item_placer:10>,
+              <ElectriCraft:electricraft_item_placer:11>
               ] as IItemStack[];
               
 //Hide said item
 for item in toHide{
+    recipes.remove(item);
     hide(item);
 }
 

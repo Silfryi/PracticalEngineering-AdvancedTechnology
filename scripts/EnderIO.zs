@@ -11,6 +11,7 @@ var toHide = [//Machines
               <EnderIO:blockStirlingGenerator>,
               <EnderIO:blockSolarPanel:*>,
               <EnderIO:blockInhibitorObelisk>,
+              <EnderIO:blockFarmStation>,
               //Technical blocks
               <EnderIO:blockConduitBundle>,
               <EnderIO:blockLightNode>,
@@ -44,6 +45,7 @@ var toRemove = [<EnderIO:blockAlloySmelter>,
 
 //Hide what we don't need from NEI
 for item in toHide{
+    recipes.remove(item);
     hide(item);
 }
 

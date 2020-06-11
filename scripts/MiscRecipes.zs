@@ -7,6 +7,18 @@ import mods.appeng.Inscriber;
 
 //Arrays for removal and hiding
 var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
+              //Minecraft diamond gear removals
+              <minecraft:diamond_helmet>,
+              <minecraft:diamond_chestplate>,
+              <minecraft:diamond_leggings>,
+              <minecraft:diamond_boots>,
+              <minecraft:diamond_pickaxe>,
+              <minecraft:diamond_axe>,
+              <minecraft:diamond_sword>,
+              <minecraft:diamond_shovel>,
+              <minecraft:diamond_hoe>,
+              //Other diamond gear removals
+              <hammerz:DiamondHammer>,
               //NEI Clutter
               //Extra Cells
               <extracells:pattern.fluid>,
@@ -21,6 +33,15 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
               <mobdropcrops:Creeper Vine>,
               <mobdropcrops:Creeper Pod>,
               <mobdropcrops:Slime Pad>,
+              //ArchitectureCraft
+              <ArchitectureCraft:sawblade>,
+              <ArchitectureCraft:largePulley>,
+              //Aroma
+              <Aroma1997Core:wrench>,
+              //Remove high-tier makes no sense backpacks
+              <ironbackpacks:ironBackpack>,
+              <ironbackpacks:goldBackpack>,
+              <ironbackpacks:diamondBackpack>,
               //Streams water and lava blocks
               <streams:river/tile.lava/-2/-2>,
               <streams:river/tile.lava/-2/-1>,
@@ -123,12 +144,21 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
 
 var toRemove = [<libVulpes:libVulpesproductingot:9>,
                 <ExtraUtilities:drum>,
+                <ArchitectureCraft:sawbench>,
                 <appliedenergistics2:tile.BlockController>,
                 <extracells:pattern.fluid>,
                 <ExtraUtilities:decorativeBlock1:12>,
+                //Quantum needs platinum
                 <appliedenergistics2:tile.BlockQuantumLinkChamber>,
                 <appliedenergistics2:tile.BlockQuantumRing>,
-                <minecraft:jukebox>
+                //Re-do machines that need diamond tools
+                <minecraft:nether_star>,
+                <ExpandedRedstone:expanded redstone_item_placer:1>,
+                <Railcraft:cart.track.relayer>,
+                <Railcraft:cart.undercutter>,
+                //Remove diamonds from machines that don't need them and replace with more fitting alternatives
+                <minecraft:jukebox>,
+                <StorageDrawers:controller>
                 ] as IItemStack[];
 
 //Remove and hide what all needs it
@@ -136,17 +166,54 @@ for item in toRemove{
     recipes.remove(item);
 }
 for item in toHide{
+    recipes.remove(item);
     hide(item);
 }
 
 
 
 //Shaped recipes, mostly Extra Utilities and AE2
+//StorageDrawers Controller
+recipes.addShaped(<StorageDrawers:controller>,
+ [[<ore:stone>, <ore:stone>, <ore:stone>],
+ [<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>],
+ [<ore:stone>, <RotaryCraft:rotarycraft_item_machine:85>, <ore:stone>]]);
+//RailCraft carts
+recipes.addShaped(<Railcraft:cart.track.relayer>,
+ [[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>],
+ [<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>],
+ [<RotaryCraft:rotarycraft_item_borecraft>, <minecraft:minecart>, <RotaryCraft:rotarycraft_item_shaftcraft:15>]]);
+recipes.addShaped(<Railcraft:cart.undercutter>,
+ [[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>],
+ [<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>],
+ [<RotaryCraft:rotarycraft_item_borecraft>, <minecraft:minecart>, <minecraft:hopper>]]);
+//ExR Block Breakers
+recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 0, dmg: 128}),
+ [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+ [<ore:cobblestone>, <minecraft:wooden_pickaxe>, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 1, dmg: 128}),
+ [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+ [<ore:cobblestone>, <minecraft:stone_pickaxe>, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 2, dmg: 128}),
+ [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+ [<ore:cobblestone>, <minecraft:iron_pickaxe>, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 3, dmg: 128}),
+ [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+ [<ore:cobblestone>, <RotaryCraft:rotarycraft_item_steelpick>, <ore:cobblestone>],
+ [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 //Jukebox requires HSLA shaft to make it come earlier and remove diamond uses
 recipes.addShaped(<minecraft:jukebox>,
  [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
  [<ore:plankWood>, <RotaryCraft:rotarycraft_item_gearcraft>, <ore:plankWood>],
  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+//Deduplicate saws & similar, ArchitectureCraft
+recipes.addShaped(<ArchitectureCraft:sawbench>,
+ [[<ore:ingotIron>, <RotaryCraft:rotarycraft_item_borecraft:7>, <ore:ingotIron>],
+ [<ore:stickWood>, <RotaryCraft:rotarycraft_item_gearcraft:1>, <ore:stickWood>],
+ [<ore:stickWood>, <minecraft:wooden_pressure_plate>, <ore:stickWood>]]);
 //Random CustomItems recipes
 recipes.addShaped(<customitems:red_sandstone_stairs> * 4,
  [[<customitems:red_sandstone>, null, null],
