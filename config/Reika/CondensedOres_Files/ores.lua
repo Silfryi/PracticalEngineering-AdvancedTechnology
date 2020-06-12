@@ -182,7 +182,7 @@
     }
     veinSize = 48
     biomeRules = {
-        combination = "or"
+        combination = "and"
         {
             type = "exclude"
             biomeID = 110
@@ -366,7 +366,7 @@
     }
     veinSize = 60
     biomeRules = {
-        combination = "or"
+        combination = "and"
         {
             type = "exclude"
             biomeID = 110
@@ -402,7 +402,7 @@
     }
     veinSize = 72
     biomeRules = {
-        combination = "or"
+        combination = "and"
         {
             type = "exclude"
             biomeID = 110

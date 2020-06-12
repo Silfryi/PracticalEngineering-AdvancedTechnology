@@ -116,7 +116,6 @@ ArcFurnace.addRecipe(<ImmersiveEngineering:metal:3> * 3, <ore:oreSilver>, <Immer
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:4> * 3, <ore:oreNickel>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_ingots:1> * 3, <ore:oreCadmium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_ingots:2> * 3, <ore:oreIndium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
-ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_ingots> * 3, <ore:orePitchblende>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<RotaryCraft:rotarycraft_item_modingots:84> * 3, <ore:oreThorium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 
 

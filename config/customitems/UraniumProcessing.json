@@ -1,0 +1,47 @@
+{
+     "items":[
+        {
+            "name": "ammonium_diuranate",
+            "textureName": "ammonium_diuranate"
+		},
+		{
+            "name": "uranium_tailings",
+            "textureName": "uranium_tailings"
+		},
+		{
+            "name": "impure_yellowcake",
+            "textureName": "impure_yellowcake"
+		},
+		{
+            "name": "yellowcake",
+            "textureName": "yellowcake"
+		},
+		{
+            "name": "yellowcake_agglomerate",
+            "textureName": "yellowcake_agglomerate"
+		},
+		{
+            "name": "fine_yellowcake",
+            "textureName": "yellowcake"
+		}
+    ],
+    "fluids":[
+        //Uranium Processing Fluids
+        {
+            "name":"uranyltrisulfatesolution",
+            "textureName": "uranyltrisulfatesolution",
+            "temperature": 300,
+            "density": 1830,
+            "viscosity": 1500,            
+            "isGas": false
+        },
+        {
+            "name":"uraniumtailingssolution",
+            "textureName": "uranyltrisulfatesolution",
+            "temperature": 300,
+            "density": 1630,
+            "viscosity": 1500,            
+            "isGas": false
+        }
+    ]
+}

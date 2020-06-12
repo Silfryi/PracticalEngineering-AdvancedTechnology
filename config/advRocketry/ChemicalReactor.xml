@@ -209,6 +209,53 @@
             <fluidStack>aquaregia;400</fluidStack>
         </output>
     </Recipe>
+<!-->Uranium Processing<!-->
+    <Recipe timeRequired="4096" power="1008">
+        <input>
+            <itemStack>RotaryCraft:rotarycraft_item_modextracts;2;199</itemStack>
+            <fluidStack>sulfuricacid;300</fluidStack>
+        </input>
+        <output>
+            <fluidStack>uranyltrisulfatesolution;300</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power="2016">
+        <input>
+            <fluidStack>uranyltrisulfatesolution;600</fluidStack>
+            <fluidStack>rc ammonia;200</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:ammonium_diuranate</itemStack>
+            <fluidStack>uraniumtailingssolution;600</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="128" power="504">
+        <input>
+            <fluidStack>uraniumtailingssolution;150</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:uranium_tailings</itemStack>
+            <fluidStack>sulfuricacid;100</fluidStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="512" power="504">
+        <input>
+            <itemStack>customitems:yellowcake;3</itemStack>
+            <fluidStack>water;300</fluidStack>
+        </input>
+        <output>
+            <itemStack>customitems:yellowcake_agglomerate;2</itemStack>
+        </output>
+    </Recipe>
+    <Recipe timeRequired="256" power="1008">
+        <input>
+            <itemStack>customitems:fine_yellowcake</itemStack>
+            <fluidStack>hydrogen;400</fluidStack>
+        </input>
+        <output>
+            <itemStack>ReactorCraft:reactorcraft_item_crafting;3;14</itemStack>
+        </output>
+    </Recipe>
 
 <!-->Rocket Fuel (RP-1 and Hydrazine)<!-->
     <Recipe timeRequired="512" power ="252">

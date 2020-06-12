@@ -24,6 +24,11 @@
 	output = "Eln:Eln.sharedItem:6"
 }
 {
+	type = "yellowcake_agglomerate"
+	input = "customitems:yellowcake_agglomerate"
+	output = "customitems:fine_yellowcake"
+}
+{
 	type = "iron"
 	ore_input = "ingotIron"
 	output = "ImmersiveEngineering:metal:8"

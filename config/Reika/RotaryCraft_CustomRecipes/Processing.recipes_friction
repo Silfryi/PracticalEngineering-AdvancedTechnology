@@ -19,6 +19,22 @@
 	temperature = 400
 	duration = 100
 }
+//This should be a 3:2 ratio, but that's not allowed by this furnace and not by the blast furnace either
+//It's made up for much later in the yellowcake agglomerate step
+{
+	type = "ammonium_diuranate"
+	input = "customitems:ammonium_diuranate"
+	output = "customitems:impure_yellowcake"
+	temperature = 700
+	duration = 300
+}
+{
+	type = "yellowcake"
+	input = "customitems:impure_yellowcake"
+	output = "customitems:yellowcake"
+	temperature = 1800
+	duration = 1200
+}
 {
 	type = "alumina"
 	input = "RotaryCraft:rotarycraft_item_modextracts:27"

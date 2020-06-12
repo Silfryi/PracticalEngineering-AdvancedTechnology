@@ -38,7 +38,6 @@ game.setLocalization("item.compressedIronGear.name", "Pressure-Hardened Iron Gea
 game.setLocalization("tile.compressedIronBlock.name", "Pressure-Hardened Iron Block");
 game.setLocalization("Tungsten_Dust.name", "Tungstite Dust");
 
-
 //Rename Advanced Rocketry & LibVulpes dusts to Grit
 game.setLocalization("type.dust.name", "Grit");
 
@@ -80,6 +79,9 @@ game.setLocalization("fluid.nitricacid", "Nitric Acid");
 game.setLocalization("fluid.hydrochloricacid", "Hydrochloric Acid");
 game.setLocalization("fluid.aquaregiaplatinum", "Aqua Regia - Pt");
 game.setLocalization("fluid.impureaquaregia", "Aqua Regia - Other");
+game.setLocalization("fluid.uranyltrisulfatesolution", "Uranyl Trisulfate Solution");
+game.setLocalization("fluid.uraniumtailingssolution", "Uranium Tailings Solution");
+game.setLocalization("fluid.impureaquaregia", "Aqua Regia - Other");
 game.setLocalization("tile.customitems:cryolite.name", "Molten Cryolite");
 game.setLocalization("tile.customitems:aluminium.name", "Molten Aluminium");
 game.setLocalization("tile.customitems:impuresodiumaluminate.name", "Impure Sodium Aluminate");
@@ -101,6 +103,8 @@ game.setLocalization("tile.customitems:nitricacid.name", "Nitric Acid");
 game.setLocalization("tile.customitems:hydrochloricacid.name", "Hydrochloric Acid");
 game.setLocalization("tile.customitems:aquaregiaplatinum.name", "Aqua Regia - Pt");
 game.setLocalization("tile.customitems:impureaquaregia.name", "Aqua Regia - Other");
+game.setLocalization("tile.customitems:uranyltrisulfatesolution.name",  "Uranyl Trisulfate Solution");
+game.setLocalization("tile.customitems:uraniumtailingssolution.name", "Uranium Tailings Solution");
 game.setLocalization("item.customitems:cryolite Bucket.name", "Molten Cryolite Bucket");
 game.setLocalization("item.customitems:aluminium Bucket.name", "Molten Aluminium Bucket");
 game.setLocalization("item.customitems:impuresodiumaluminate Bucket.name", "Impure Sodium Aluminate Bucket");
@@ -122,6 +126,9 @@ game.setLocalization("item.customitems:nitricacid Bucket.name", "Nitric Acid Buc
 game.setLocalization("item.customitems:hydrochloricacid Bucket.name", "Hydrochloric Acid Bucket");
 game.setLocalization("item.customitems:aquaregiaplatinum Bucket.name", "Aqua Regia Bucket - Pt");
 game.setLocalization("item.customitems:impureaquaregia Bucket.name", "Aqua Regia Bucket - Other");
+game.setLocalization("item.customitems:uranyltrisulfatesolution Bucket.name", "Uranyl Trisulfate Solution Bucket");
+game.setLocalization("item.customitems:uraniumtailingssolution Bucket.name", "Uranium Tailings Solution Bucket");
+
 
 //Items and blocks
 //Aluminium processing
@@ -149,6 +156,13 @@ game.setLocalization("item.customitems:diamond_grinding_head.name", "Diamond Gri
 game.setLocalization("item.customitems:platinumgroupsludgeplatinum.name", "Platinum Group Sludge");
 game.setLocalization("item.customitems:platinumgroupsludgeiridium.name", "Platinum Group Sludge");
 game.setLocalization("item.customitems:ammoniumchloroplatinate.name", "Ammonium Chloroplatinate");
+//Uranium Processing
+game.setLocalization("item.customitems:ammonium_diuranate.name", "Ammonium Diuranate");
+game.setLocalization("item.customitems:impure_yellowcake.name", "Impure Yellowcake");
+game.setLocalization("item.customitems:yellowcake.name", "Yellowcake");
+game.setLocalization("item.customitems:yellowcake_agglomerate.name", "Yellowcake Agglomerate");
+game.setLocalization("item.customitems:fine_yellowcake.name", "Fine Yellowcake Powder");
+game.setLocalization("item.customitems:uranium_tailings.name", "Uranium Tailings");
 //DMLS items
 game.setLocalization("item.customitems:dmlsbed.name", "DMLS Bed");
 game.setLocalization("item.customitems:dmlsbedengine.name", "DMLS Bed");
@@ -192,13 +206,11 @@ game.setLocalization("tile.customitems:dark_quartz_pillar.name", "Dark Quartz Pi
 //Tooltips for Regolith Dust
 <customitems:regolith_dust>.addTooltip("Must be heated before He3 can be extracted");
 
-
 //Tooltips For aqua regia and platinum group sludge
 <customitems:platinumgroupsludgeplatinum>.addTooltip("Platinum-Rich Sludge");
 <customitems:platinumgroupsludgeiridium>.addTooltip("Iridium-Rich Sludge");
 <customitems:aquaregiaplatinum>.addTooltip("Contains Dissolved Platinum");
 <customitems:impureaquaregia>.addTooltip("Contains Other Impurities");
-
 
 //Tooltips for DMLS items
 <customitems:dmlsbed>.addTooltip("No Recipe");
@@ -207,6 +219,9 @@ game.setLocalization("tile.customitems:dark_quartz_pillar.name", "Dark Quartz Pi
 <customitems:dmlsbeddrum>.addTooltip("Bedrock Drum Bed");
 <customitems:dmlsbedbay>.addTooltip("Satellite Bay Bed");
 
+//Tooltips for general information
+<ImmersiveEngineering:drillhead:*>.addTooltip("Tool durability depends on cutting surface material");
+<ImmersiveEngineering:drillhead:*>.addTooltip("Mining level and supported cutting surfaces depends on core material");
 
 
 //Remove deprecated in pipe name
