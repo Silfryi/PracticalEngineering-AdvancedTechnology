@@ -22,17 +22,6 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
               //NEI Clutter
               //Extra Cells
               <extracells:pattern.fluid>,
-              //Mob Drop Crops
-              <mobdropcrops:Mob Drop Bush:*>,
-              <mobdropcrops:Blaze Crop>,
-              <mobdropcrops:Bone Crop>,
-              <mobdropcrops:Ender Crop>,
-              <mobdropcrops:Eye Crop>,
-              <mobdropcrops:Rotten Crop>,
-              <mobdropcrops:Tear Crop>,
-              <mobdropcrops:Creeper Vine>,
-              <mobdropcrops:Creeper Pod>,
-              <mobdropcrops:Slime Pad>,
               //ArchitectureCraft
               <ArchitectureCraft:sawblade>,
               <ArchitectureCraft:largePulley>,
