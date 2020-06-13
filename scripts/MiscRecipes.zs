@@ -278,8 +278,6 @@ recipes.addShaped(<catwalks:blowtorch>,
 
  
 //Shapeless recipes, conversion recipes
-//Vacuum hopper recipe
-recipes.addShapeless(<OpenBlocks:vacuumhopper>, [<PneumaticCraft:omnidirectionalHopper>, <minecraft:obsidian>, <minecraft:ender_eye>]);
 //Conversion to More Manageable Variants
 recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
 recipes.addShapeless(<minecraft:netherbrick> * 4, [<minecraft:nether_brick>]);
