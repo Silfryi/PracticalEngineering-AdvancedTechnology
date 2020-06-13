@@ -41,6 +41,14 @@
             <fluidStack>hydrogen;100</fluidStack>
         </output>
     </Recipe>
+    <Recipe timeRequired="128" power ="252">
+        <input>
+            <fluidStack>rc liquid nitrogen;100</fluidStack>
+        </input>
+        <output>
+            <fluidStack>nitrogen;300</fluidStack>
+        </output>
+    </Recipe>
     <Recipe timeRequired="256" power ="252">
         <input>
             <fluidStack>nitrogen;100</fluidStack>
