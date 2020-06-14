@@ -19,6 +19,25 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
               <minecraft:diamond_hoe>,
               //Other diamond gear removals
               <hammerz:DiamondHammer>,
+              //Stone & wooden tools not removed from NEI by Flint
+              <minecraft:wooden_pickaxe>,
+              <minecraft:wooden_axe>,
+              <minecraft:wooden_sword>,
+              <minecraft:wooden_shovel>,
+              <minecraft:wooden_hoe>,
+              <hammerz:WoodHammer>,
+              <minecraft:stone_pickaxe>,
+              <minecraft:stone_axe>,
+              <minecraft:stone_sword>,
+              <minecraft:stone_shovel>,
+              <minecraft:stone_hoe>,
+              //OpenComputers diamond removal
+              <OpenComputers:item:40>,
+              <OpenComputers:item:7>,
+              <OpenComputers:rack>,
+              <OpenComputers:hologram2>,
+              <OpenComputers:case3>,
+              <extracells:oc.upgrade>,
               //NEI Clutter
               //Extra Cells
               <extracells:pattern.fluid>,
@@ -177,13 +196,9 @@ recipes.addShaped(<Railcraft:cart.undercutter>,
  [<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>],
  [<RotaryCraft:rotarycraft_item_borecraft>, <minecraft:minecart>, <minecraft:hopper>]]);
 //ExR Block Breakers
-recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 0, dmg: 128}),
- [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
- [<ore:cobblestone>, <minecraft:wooden_pickaxe>, <ore:cobblestone>],
- [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 1, dmg: 128}),
  [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
- [<ore:cobblestone>, <minecraft:stone_pickaxe>, <ore:cobblestone>],
+ [<ore:cobblestone>, <flintmod:item.pickaxeFlint>, <ore:cobblestone>],
  [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
 recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 2, dmg: 128}),
  [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
@@ -274,7 +289,31 @@ recipes.addShaped(<catwalks:blowtorch>,
  [[null, <ImmersiveEngineering:toolupgrade>, <ImmersiveEngineering:material:9>],
  [<ore:stickAluminum>, <ImmersiveEngineering:metalDevice2:7>.withTag({tank: {FluidName: "kerosene", Amount: 12000}}), <ImmersiveEngineering:material:9>],
  [<ImmersiveEngineering:toolupgrade:7>, <minecraft:flint_and_steel>, null]]);
- 
+//OpenComputers diamond replacement
+recipes.addShaped(<OpenComputers:item:40>,
+ [[<ore:ingotAluminum>, <OpenComputers:item:39>, <ore:ingotAluminum>],
+ [<OpenComputers:item:26>, <OpenComputers:item:72>, <OpenComputers:item:26>],
+ [<ore:ingotAluminum>, <OpenComputers:item:32>, <ore:ingotAluminum>]]);
+recipes.addShaped(<OpenComputers:item:7>,
+ [[<OpenComputers:item:26>, <OpenComputers:item:19>, <ore:ingotAluminum>],
+ [<OpenComputers:item:32>, <OpenComputers:item:19>, <ore:piston>],
+ [<OpenComputers:item:26>, <OpenComputers:item:19>, <ore:ingotAluminum>]]);
+recipes.addShaped(<OpenComputers:rack>,
+ [[<ore:ingotAluminum>, <OpenComputers:item:13>, <ore:ingotAluminum>],
+ [<ore:barsIron>, <ore:chest>, <ore:barsIron>],
+ [<ore:ingotAluminum>, <OpenComputers:item:32>, <ore:ingotAluminum>]]);
+recipes.addShaped(<OpenComputers:hologram2>,
+ [[<OpenComputers:item:26>, <OpenComputers:item:39>, <OpenComputers:item:26>],
+ [<OpenComputers:item:32>, <ore:ingotAluminum>, <OpenComputers:item:32>],
+ [<ore:ingotAluminum>, <ore:itemBlazePowder>, <ore:ingotAluminum>]]);
+ recipes.addShaped(<OpenComputers:case3>,
+ [[<ore:ingotAluminum>, <OpenComputers:item:26>, <ore:ingotAluminum>],
+ [<ore:barsIron>, <ore:chest>, <ore:barsIron>],
+ [<ore:ingotAluminum>, <OpenComputers:item:32>, <ore:ingotAluminum>]]);
+recipes.addShaped(<extracells:oc.upgrade>,
+ [[<ore:ingotAluminum>, <appliedenergistics2:item.ItemMultiMaterial:41>, <ore:ingotAluminum>],
+ [<OpenComputers:item:26>, <OpenComputers:item:13>, <OpenComputers:item:26>],
+ [<ore:ingotAluminum>, <OpenComputers:item:32>, <ore:ingotAluminum>]]);
 
  
 //Shapeless recipes, conversion recipes

@@ -135,7 +135,7 @@ recipes.addShaped(<PneumaticCraft:gpsTool>,
  [<PneumaticCraft:plastic:1>, <RotaryCraft:rotarycraft_item_borecraft:4>, <PneumaticCraft:plastic:1>]]);
 recipes.addShaped(<PneumaticCraft:assemblyDrill>,
  [[<RotaryCraft:rotarycraft_item_borecraft>, <PneumaticCraft:pneumaticCilinder>, <PneumaticCraft:pneumaticCilinder>],
- [null, null, <PneumaticCraft:pneumaticCilinder>],
+ [<ore:dustDiamond>, null, <PneumaticCraft:pneumaticCilinder>],
  [<ore:ingotIronCompressed>, <PneumaticCraft:printedCircuitBoard> ,<ore:ingotIronCompressed>]]);
 recipes.addShaped(<PneumaticCraft:assemblyLaser>,
  [[<BuildCraft|Silicon:laserBlock>, <PneumaticCraft:pneumaticCilinder>, <PneumaticCraft:pneumaticCilinder>],

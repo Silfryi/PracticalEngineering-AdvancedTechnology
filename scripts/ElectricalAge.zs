@@ -13,6 +13,7 @@ var toRemove = [//Machine parts & crafting components
                 <ore:dustAlloy>,
                 //Drills
                 <Eln:Eln.sharedItem:960>,
+                <Eln:Eln.sharedItem:961>,
                 <Eln:Eln.sharedItem:962>,
                 //Cables & power transmission
                 <Eln:Eln.SixNode:2064>,
@@ -79,12 +80,8 @@ recipes.addShaped(<Eln:Eln.TransparentNode:265>,
  [<ore:ingotTungsten>, <ore:blockSteel>, <ore:ingotTungsten>],
  [null, <Eln:Eln.sharedItem:7703>, null]]);
 recipes.addShaped(<Eln:Eln.TransparentNode:2116>, 
- [[<ore:ingotAlloy>, <ImmersiveEngineering:drillhead>.withTag({headDamage: -24000}), <ore:ingotAlloy>],
- [<ore:circuitAdvanced>, <Eln:Eln.sharedItem:7703>, <ore:circuitAdvanced>],
- [<ore:ingotAlloy>, <Eln:Eln.sharedItem:641>, <ore:ingotAlloy>]]);
-recipes.addShaped(<Eln:Eln.TransparentNode:2116>, 
- [[<ore:ingotAlloy>, <ImmersiveEngineering:drillhead>.withTag({headDamage: -16000}), <ore:ingotAlloy>],
- [<ore:circuitAdvanced>, <Eln:Eln.sharedItem:7703>, <ore:circuitAdvanced>],
+ [[<ore:ingotAlloy>, <ore:circuitAdvanced>, <ore:ingotAlloy>],
+ [<ore:dustDiamond>, <Eln:Eln.sharedItem:7703>, <ore:dustDiamond>],
  [<ore:ingotAlloy>, <Eln:Eln.sharedItem:641>, <ore:ingotAlloy>]]);
 recipes.addShaped(<Eln:Eln.TransparentNode:4224>,
  [[<Eln:Eln.sharedItem:4162>, <minecraft:redstone_block>, <Eln:Eln.sharedItem:4162>],
@@ -102,13 +99,18 @@ recipes.addShaped(<Eln:eln.EnergyConverterElnToOtherHVUBlock>,
  [[<Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>],
  [<Eln:Eln.SixNode:2060>, <ore:circuitAdvanced>, <ore:ingotTungsten>], 
  [<Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>]]);
+//Drills
 recipes.addShaped(<Eln:Eln.sharedItem:960>,
  [[<Eln:Eln.sharedItem:7680>, <Eln:Eln.sharedItem:640>, <Eln:Eln.sharedItem:7680>],
  [null, <Eln:Eln.sharedItem:1088>, null], 
  [null, <RotaryCraft:rotarycraft_item_borecraft>, null]]);
+recipes.addShaped(<Eln:Eln.sharedItem:961>,
+ [[<ore:dustRedstone>, <Eln:Eln.sharedItem:7680>, <ore:dustRedstone>],
+ [<ore:dustDiamond>, <Eln:Eln.sharedItem:960>, <ore:dustDiamond>], 
+ [null, <ore:dustDiamond>, null]]);
 recipes.addShaped(<Eln:Eln.sharedItem:962>,
  [[<Eln:Eln.sharedItem:641>, <Eln:Eln.sharedItem:7681>, <Eln:Eln.sharedItem:641>],
- [null, <Eln:Eln.sharedItem:1088>, null], 
+ [<ore:dustDiamond>, <Eln:Eln.sharedItem:1088>, <ore:dustDiamond>], 
  [null, <RotaryCraft:rotarycraft_item_borecraft>, null]]);
 //Silicon replacement in LEDs
 recipes.addShaped(<Eln:Eln.sharedItem:293> * 2,
