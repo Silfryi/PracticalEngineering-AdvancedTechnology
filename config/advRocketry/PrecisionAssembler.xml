@@ -22,7 +22,7 @@
 <!-->
 <Recipes useDefault="false">
 <!-->Circuits<!-->
-	<Recipe timeRequired="900" power ="1008">
+	<Recipe timeRequired="450" power ="1008">
 		<input>
 			<itemStack>customitems:integrated_circuit;2</itemStack>
 			<itemStack>customitems:plastic_circuit_board</itemStack>
@@ -99,7 +99,7 @@
 	</Recipe>
 
 <!-->Components<!-->
-	<Recipe timeRequired="256" power ="504">
+	<Recipe timeRequired="300" power ="504">
 		<input>
 			<itemStack>minecraft:redstone</itemStack>
 			<itemStack>customitems:annealedcopperwire;2</itemStack>
@@ -109,7 +109,7 @@
 			<itemStack>EnderIO:itemBasicCapacitor</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="256" power ="1008">
+    <Recipe timeRequired="300" power ="1008">
 		<input>
 			<itemStack>EnderIO:itemBasicCapacitor;2;1</itemStack>
 			<itemStack>EnderIO:itemAlloy;2;2</itemStack>
@@ -119,7 +119,7 @@
 			<itemStack>EnderIO:itemBasicCapacitor;1;2</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="512" power ="504">
+    <Recipe timeRequired="600" power ="504">
 		<input>
 			<itemStack>customitems:electrum_wire;4</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_powders;1;10</itemStack>
@@ -129,7 +129,7 @@
 			<itemStack>customitems:smd_resistor;16</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="512" power ="504">
+    <Recipe timeRequired="600" power ="504">
 		<input>
 			<itemStack>customitems:electrum_wire;4</itemStack>
 			<itemStack>customitems:charcoal_dust</itemStack>
@@ -139,7 +139,7 @@
 			<itemStack>customitems:smd_resistor;16</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="1024" power ="504">
+    <Recipe timeRequired="1200" power ="504">
 		<input>
 			<itemStack>PneumaticCraft:plastic;3;15</itemStack>
 			<itemStack>libVulpes:libVulpesproductsheet;1;9</itemStack>
@@ -149,7 +149,7 @@
 			<itemStack>customitems:smd_capacitor;8</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="1024" power ="504">
+    <Recipe timeRequired="1200" power ="504">
 		<input>
 			<itemStack>PneumaticCraft:plastic;1;15</itemStack>
 			<itemStack>libVulpes:libVulpesproductsheet;1;4</itemStack>
@@ -159,7 +159,7 @@
 			<itemStack>customitems:plastic_circuit_board</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="256" power ="504">
+	<Recipe timeRequired="300" power ="504">
 		<input>
 			<itemStack>customitems:annealedcopperwire;3</itemStack>
 			<fluidStack>rubber;864</fluidStack>
@@ -180,7 +180,7 @@
 			<itemStack>PneumaticCraft:machineUpgrade;4;5</itemStack>
 		</output>
 	</Recipe>
-		<Recipe timeRequired="512" power ="4032">
+		<Recipe timeRequired="600" power ="4032">
 		<input>
 			<itemStack>customitems:unfinishedblade;16</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_misccraft;1;12</itemStack>
@@ -191,7 +191,7 @@
 	</Recipe>
 
 <!-->DMLS Recipes<!-->
-    <Recipe timeRequired="1024" power ="252">
+    <Recipe timeRequired="1200" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbed;1</itemStack>
 			<itemStack>advancedRocketry:advancedRocketryproductdust;12;1</itemStack>
@@ -200,7 +200,7 @@
 			<itemStack>customitems:dmlsbedengine</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1024" power ="252">
+	<Recipe timeRequired="1200" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbed;1</itemStack>
 			<itemStack>ReactorCraft:reactorcraft_item_crafting;12;16</itemStack>
@@ -209,7 +209,7 @@
 			<itemStack>customitems:dmlsbedblade</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1024" power ="252">
+	<Recipe timeRequired="1200" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbed;1</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_powders;48;4</itemStack>
@@ -218,7 +218,7 @@
 			<itemStack>customitems:dmlsbeddrum</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1024" power ="252">
+	<Recipe timeRequired="1200" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbed;1</itemStack>
 			<itemStack>ImmersiveEngineering:metal;12;11</itemStack>
@@ -227,7 +227,7 @@
 			<itemStack>customitems:dmlsbedbay</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="256" power ="252">
+	<Recipe timeRequired="300" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbedengine;1;1</itemStack>
 		</input>
@@ -237,7 +237,7 @@
 			<itemStack>advancedRocketry:advancedRocketryproductdust;4;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="256" power ="252">
+	<Recipe timeRequired="300" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbedblade;1;1</itemStack>
 		</input>
@@ -247,7 +247,7 @@
 			<itemStack>ReactorCraft:reactorcraft_item_crafting;4;16</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="256" power ="252">
+	<Recipe timeRequired="300" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbeddrum;1;1</itemStack>
 		</input>
@@ -257,7 +257,7 @@
 			<itemStack>RotaryCraft:rotarycraft_item_powders;16;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="256" power ="252">
+	<Recipe timeRequired="300" power ="252">
 		<input>
 			<itemStack>customitems:dmlsbedbay;1;1</itemStack>
 		</input>
@@ -269,7 +269,7 @@
 	</Recipe>
 
 <!-->Machine Structures<!-->
-	<Recipe timeRequired="512" power ="2016">
+	<Recipe timeRequired="600" power ="2016">
 		<input>
 			<itemStack>ImmersiveEngineering:metal;4;1</itemStack>
             <itemStack>Eln:Eln.sharedItem;3;7691</itemStack>
@@ -281,7 +281,7 @@
 			<itemStack>libVulpes:blockStructureBlock;16</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="512" power ="8064">
+	<Recipe timeRequired="600" power ="8064">
 		<input>
 			<itemStack>libVulpes:libVulpesproductingot;4;7</itemStack>
             <itemStack>Eln:Eln.sharedItem;3;7691</itemStack>
@@ -293,7 +293,7 @@
 			<itemStack>libVulpes:tile.advStructureMachine;8</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="2048" power ="16131">
+	<Recipe timeRequired="2400" power ="16131">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_compacts;32;5</itemStack>
 			<itemStack>libVulpes:libVulpesproductingot;16;10</itemStack>
@@ -309,7 +309,7 @@
 	</Recipe>
 
 <!-->Machinery<!-->
-	<Recipe timeRequired="1024" power ="1008">
+	<Recipe timeRequired="1200" power ="1008">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_shaftcraft;3</itemStack>
 			<itemStack>ElectriCraft:electricraft_item_crafting;12;0</itemStack>
@@ -321,7 +321,7 @@
 			<itemStack>Eln:Eln.TransparentNode;1;3075</itemStack>
 		</output>
 	</Recipe>
-    <Recipe timeRequired="4096" power ="32263">
+    <Recipe timeRequired="4800" power ="32263">
 		<input>
 			<itemStack>advancedRocketry:advancedRocketryproductplate;6;1</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_gearcraft;12;64</itemStack>
@@ -333,7 +333,7 @@
 			<itemStack>EnderIO:blockTransceiver</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="2048" power ="8064">
+	<Recipe timeRequired="2400" power ="8064">
 		<input>
 			<itemStack>customitems:anchored_machine_structure;2</itemStack>
 			<oreDict>coilIridium;4</oreDict>
@@ -348,7 +348,7 @@
 	</Recipe>
 
 <!-->Superconducting Wire<!-->
-	<Recipe timeRequired="512" power ="4032">
+	<Recipe timeRequired="600" power ="4032">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_compacts;4;5</itemStack>
 			<itemStack>ImmersiveEngineering:metal;2;3</itemStack>
@@ -360,7 +360,7 @@
 			<itemStack>ElectriCraft:electricraft_item_wire;32;24</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="512" power ="4032">
+	<Recipe timeRequired="600" power ="4032">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_compacts;4;5</itemStack>
 			<itemStack>ImmersiveEngineering:metal;2;3</itemStack>
@@ -373,7 +373,7 @@
 	</Recipe>
 
 <!-->Warp Machinery<!-->
-	<Recipe timeRequired="2048" power ="8064">
+	<Recipe timeRequired="2400" power ="8064">
 		<input>
 			<itemStack>customitems:anchored_machine_structure</itemStack>
 			<itemStack>advancedRocketry:advancedRocketryproductplate;4;1</itemStack>
@@ -387,7 +387,7 @@
 			<itemStack>advancedRocketry:tile.stationmonitor</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="2048" power ="8064">
+	<Recipe timeRequired="2400" power ="8064">
 		<input>
 			<itemStack>customitems:anchored_machine_structure;4</itemStack>
 			<itemStack>advancedRocketry:advancedRocketryproductplate;4;1</itemStack>
@@ -404,7 +404,7 @@
 	</Recipe>
 
 <!-->Satellite Functions<!-->
-	<Recipe timeRequired="1000" power ="126">
+	<Recipe timeRequired="1200" power ="126">
 		<input>
 			<itemStack>advancedRocketry:circuitIC;1;2</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_misccraft;1;2</itemStack>
@@ -415,7 +415,7 @@
 			<itemStack>advancedRocketry:item.biomeChanger</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1000" power ="126">
+	<Recipe timeRequired="1200" power ="126">
 		<input>
 			<itemStack>libVulpes:libVulpesproductrod;2;4</itemStack>
 			<itemStack>libVulpes:libVulpesproductrod;1;7</itemStack>
@@ -450,7 +450,7 @@
 			<itemStack>advancedRocketry:itemUpgrade;1;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1000" power ="126">
+	<Recipe timeRequired="1200" power ="126">
 		<input>
 			<itemStack>advancedRocketry:circuitIC;1;2</itemStack>
 			<itemStack>RotaryCraft:rotarycraft_item_misccraft;1;2</itemStack>
@@ -470,7 +470,7 @@
 			<itemStack>advancedRocketry:item.beaconFinder</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="512" power ="126">
+	<Recipe timeRequired="600" power ="126">
 		<input>
 			<oreDict>blockMotor</oreDict>
 			<itemStack>libVulpes:libVulpesproductrod;4;7</itemStack>
@@ -482,7 +482,7 @@
 	</Recipe>
 
 <!-->OMS<!-->
-	<Recipe timeRequired="1024" power ="126">
+	<Recipe timeRequired="1200" power ="126">
 		<input>
 			<itemStack>ImmersiveEngineering:metal;4;32</itemStack>
 			<itemStack>advancedRocketry:pressureTank;1;2</itemStack>
@@ -497,7 +497,7 @@
 			<itemStack>advancedRocketry:item.jetPack</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="512" power ="126">
+	<Recipe timeRequired="600" power ="126">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_enginecraft</itemStack>
 			<itemStack>advancedRocketry:circuitIC;2</itemStack>
@@ -507,7 +507,7 @@
 			<itemStack>advancedRocketry:itemUpgrade</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="512" power ="126">
+	<Recipe timeRequired="600" power ="126">
 		<input>
 			<itemStack>RotaryCraft:rotarycraft_item_enginecraft;2;3</itemStack>
 			<itemStack>ImmersiveEngineering:metal;4;32</itemStack>
