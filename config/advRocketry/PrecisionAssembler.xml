@@ -354,6 +354,7 @@
 			<itemStack>ReactorCraft:reactorcraft_item_placer;2;25</itemStack>
 			<itemStack>ReactorCraft:reactorcraft_item_placer;1;23</itemStack>
 			<itemStack>ReactorCraft:reactorcraft_item_ingots;8;2</itemStack>
+            <itemStack>ChromatiCraft:chromaticraft_item_crafting;1;23</itemStack>
 			<fluidStack>aluminium;576</fluidStack>
 		</input>
 		<output>

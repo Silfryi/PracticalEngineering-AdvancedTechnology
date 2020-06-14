@@ -129,7 +129,7 @@ recipes.addShaped(<PneumaticCraft:universalSensor>,
  [<PneumaticCraft:ingotIronCompressed>, <PneumaticCraft:pressureTube>, <PneumaticCraft:ingotIronCompressed>]]);
 recipes.addShaped(<PneumaticCraft:aerialInterface>, 
  [[<PneumaticCraft:pressureChamberWall>, <PneumaticCraft:pressureChamberInterface>, <PneumaticCraft:pressureChamberWall>],
- [<minecraft:ender_pearl>, <PneumaticCraft:assemblyIOUnit>, <minecraft:ender_pearl>],
+ [<PneumaticCraft:assemblyIOUnit>, <ChromatiCraft:chromaticraft_item_crafting:30>, <PneumaticCraft:assemblyIOUnit>],
  [<PneumaticCraft:pressureChamberWall>, <PneumaticCraft:advancedPressureTube>, <PneumaticCraft:pressureChamberWall>]]);
 recipes.addShaped(<PneumaticCraft:gpsTool>, 
  [[null, <RotaryCraft:rotarycraft_item_borecraft:2>, null],

@@ -226,12 +226,12 @@ recipes.addShaped(<advancedRocketry:tile.satelliteMonitor>,
  [<advancedRocketry:item.satelliteIdChip>, <Eln:Eln.sharedItemStackOne:7825>, <advancedRocketry:circuitIC:1>]]);
 recipes.addShaped(<advancedRocketry:rocketmotor>, 
  [[<ore:ingotTitaniumAluminide>, <RotaryCraft:rotarycraft_item_enginecraft:17>, <ore:ingotTitaniumAluminide>],
- [<ore:plateTitanium>, <RotaryCraft:rotarycraft_item_enginecraft:19>, <ore:plateTitanium>],
+ [<ChromatiCraft:chromaticraft_item_crafting:16>, <RotaryCraft:rotarycraft_item_enginecraft:19>, <ChromatiCraft:chromaticraft_item_crafting:16>],
  [<ore:plateTitanium>, null, <ore:plateTitanium>]]);
 recipes.addShaped(<advancedRocketry:tile.advRocket>, 
  [[<ReactorCraft:reactorcraft_item_crafting:17>, <RotaryCraft:rotarycraft_item_enginecraft:17>, <ReactorCraft:reactorcraft_item_crafting:17>],
- [<ore:plateTitaniumAluminide>, <RotaryCraft:rotarycraft_item_enginecraft:19>, <ore:plateTitaniumAluminide>],
- [null, <customitems:unfinishedengine>, null]]);
+ [<ChromatiCraft:chromaticraft_item_crafting:16>, <RotaryCraft:rotarycraft_item_enginecraft:19>, <ChromatiCraft:chromaticraft_item_crafting:16>],
+ [<ore:plateTitaniumAluminide>, <customitems:unfinishedengine>, <ore:plateTitaniumAluminide>]]);
 recipes.addShaped(<advancedRocketry:fuelTank>, 
  [[<ore:plateTitanium>, <advancedRocketry:tile.pipeSeal>,<ore:plateTitanium>],
  [<RotaryCraft:rotarycraft_block_blastglass>, null, <RotaryCraft:rotarycraft_block_blastglass>],
