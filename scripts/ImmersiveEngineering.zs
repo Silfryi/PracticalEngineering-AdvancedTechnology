@@ -7,6 +7,7 @@ import mods.immersiveengineering.Refinery;
 import mods.immersiveengineering.Excavator;
 import minetweaker.item.IItemStack;
 import mods.nei.NEI.addEntry;
+import mods.nei.NEI.hide;
 
 
 //Fix Blast and Coke Brick Recipes
@@ -228,6 +229,10 @@ recipes.addShaped(<ImmersiveEngineering:material:5>,
  [[<ore:fabricHemp>, <ore:fabricHemp>, null],
  [<ore:fabricHemp>, <ore:fabricHemp>, <ore:fabricHemp>],
  [null, <ore:fabricHemp>, <ImmersiveEngineering:material:2>]]);
+
+//Remove Thermoelectric generator, use steam for medium power operation
+recipes.remove(<ImmersiveEngineering:metalDevice:10>);
+hide(<ImmersiveEngineering:metalDevice:10>);
 
  
 //Blast Furnace
