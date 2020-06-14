@@ -27,6 +27,9 @@ game.setLocalization("entity.advancedRocketry.ARPlanetUIButton.name", "Select Pl
 game.setLocalization("entity.advancedRocketry.ARStarUIItem.name", "Holographic Star Representation");
 game.setLocalization("entity.advancedRocketry.ARStarUIButton.name", "Select Star");
 game.setLocalization("entity.advancedRocketry.deployedRocket.name", "Gas Collection Rocket");
+//Circuit Materials
+game.setLocalization("item.circuitplate.0.name", "Integrated Circuit Wafer");
+game.setLocalization("item.circuitplate.1.name", "CPU Wafer");
 //EFA from EIO rocket fuel
 game.setLocalization("fluid.rocket_fuel", "Enhanced Fuel Alcohol");
 game.setLocalization("item.bucketRocket_fuel.name", "Enhanced Fuel Alcohol Bucket");
@@ -163,6 +166,14 @@ game.setLocalization("item.customitems:yellowcake.name", "Yellowcake");
 game.setLocalization("item.customitems:yellowcake_agglomerate.name", "Yellowcake Agglomerate");
 game.setLocalization("item.customitems:fine_yellowcake.name", "Fine Yellowcake Powder");
 game.setLocalization("item.customitems:uranium_tailings.name", "Uranium Tailings");
+//Circuits
+game.setLocalization("item.customitems:dilithium_doped_silicon_boule.name", "Silicon Boule");
+game.setLocalization("item.customitems:dilithium_doped_silicon_wafer.name", "Silicon Wafer");
+game.setLocalization("item.customitems:smd_resistor.name", "SMD Resistor");
+game.setLocalization("item.customitems:smd_capacitor.name", "SMD Capacitor");
+game.setLocalization("item.customitems:plastic_circuit_board.name", "Plastic Circuit Board");
+game.setLocalization("item.customitems:integrated_circuit.name", "Integrated Circuit");
+game.setLocalization("item.customitems:cpu.name", "CPU");
 //DMLS items
 game.setLocalization("item.customitems:dmlsbed.name", "DMLS Bed");
 game.setLocalization("item.customitems:dmlsbedengine.name", "DMLS Bed");
@@ -211,6 +222,10 @@ game.setLocalization("tile.customitems:dark_quartz_pillar.name", "Dark Quartz Pi
 <customitems:platinumgroupsludgeiridium>.addTooltip("Iridium-Rich Sludge");
 <customitems:aquaregiaplatinum>.addTooltip("Contains Dissolved Platinum");
 <customitems:impureaquaregia>.addTooltip("Contains Other Impurities");
+
+//Tooltips for circuit items
+<customitems:dilithium_doped_silicon_boule>.addTooltip("Dilithium Doped");
+<customitems:dilithium_doped_silicon_wafer>.addTooltip("Dilithium Doped");
 
 //Tooltips for DMLS items
 <customitems:dmlsbed>.addTooltip("No Recipe");

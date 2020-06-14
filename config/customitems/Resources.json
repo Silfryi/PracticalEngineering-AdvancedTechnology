@@ -27,14 +27,6 @@
 		{
             "name": "rubber_sheet",
             "textureName": "rubber_sheet"
-		},
-		{
-            "name": "emptyAdvancedPCB",
-            "textureName": "empty_advanced_PCB"
-		},
-		{
-            "name": "unassembledAdvancedPCB",
-            "textureName": "unassembled_advanced_PCB"
 		}
     ],
     "fluids":[

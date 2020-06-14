@@ -34,6 +34,7 @@ var toHide = [//Machine controllers & machine blocks
 var toRemove = [//Machine parts
                 <libVulpes:blockStructureBlock>,
                 <libVulpes:tile.advStructureMachine>,
+                <advancedRocketry:tile.loader>,
                 <libVulpes:tile.motor>,
                 <libVulpes:tile.advancedMotor>,
                 <libVulpes:tile.enhancedMotor>,
@@ -52,6 +53,7 @@ var toRemove = [//Machine parts
                 <advancedRocketry:tile.atmosphereTerraformer>,
                 <advancedRocketry:tile.biomeScanner>,
                 <advancedRocketry:tile.planetanalyser>,
+                <advancedRocketry:observatory>,
                 //Rocket parts
                 <advancedRocketry:rocketmotor>,
                 <advancedRocketry:tile.advRocket>,
@@ -96,7 +98,11 @@ var toRemove = [//Machine parts
                 <advancedRocketry:item.spaceBoots>,
                 <advancedRocketry:item.jetPack>,
                 //Satellite bits
+                <advancedRocketry:satellitePrimaryFunction:0>,
+                <advancedRocketry:satellitePrimaryFunction:1>,
                 <advancedRocketry:satellitePrimaryFunction:2>,
+                <advancedRocketry:satellitePrimaryFunction:3>,
+                <advancedRocketry:item.satellite>,
                 <libVulpes:rfBattery>,
                 //Misc blocks
                 <advancedRocketry:structureTower>,
@@ -165,6 +171,7 @@ recipes.addShaped(<advancedRocketry:pressureTank>,
 recipes.addShaped(<advancedRocketry:oreScanner>,
  [[<minecraft:lever>, <advancedRocketry:circuitIC:2>, <minecraft:lever>],
  [<Eln:Eln.sharedItemStackOne:7824>, <advancedRocketry:miscpart>, <Eln:Eln.sharedItemStackOne:7824>]]);
+//Handcraft circuits
 recipes.addShaped(<advancedRocketry:circuitIC:3>,
   [[<ore:plateSilicon>, <minecraft:quartz>, <ore:plateSilicon>],
   [<ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>],
@@ -173,15 +180,35 @@ recipes.addShaped(<advancedRocketry:circuitIC:4>,
   [[<ore:plateSilicon>, <minecraft:quartz>, <ore:plateSilicon>],
   [<ore:plateGold>, <ore:plateSteel>, <ore:plateGold>],
   [<ore:plateGold>, <minecraft:redstone>, <ore:plateGold>]]);
+//Readd rods
 recipes.addShaped(<ImmersiveEngineering:material:14> * 4,
  [[<ore:ingotIron>],
  [<ore:ingotIron>]]);
 recipes.addShaped(<ImmersiveEngineering:material:15> * 4,
  [[<ore:ingotSteel>],
  [<ore:ingotSteel>]]);
+//Satellites
+recipes.addShaped(<advancedRocketry:item.satellite>,
+ [[<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>],
+ [<ore:stickTitanium>, <advancedRocketry:circuitIC>, <ore:stickTitanium>],
+ [<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>]]);
+recipes.addShaped(<advancedRocketry:satellitePrimaryFunction:0>,
+ [[<ore:stickIron>, <ore:sheetIron>, <advancedRocketry:lens>],
+ [<ore:sheetIron>, <advancedRocketry:circuitIC>, <ore:sheetIron>],
+ [<advancedRocketry:lens>, <ore:sheetIron>, <ore:stickIron>]]);
+recipes.addShaped(<advancedRocketry:satellitePrimaryFunction:1>,
+ [[<ore:stickAluminum>, <ore:sheetAluminum>, <advancedRocketry:satellitePrimaryFunction>],
+ [<ore:sheetAluminum>, <advancedRocketry:circuitIC>, <ore:sheetAluminum>],
+ [<advancedRocketry:satellitePrimaryFunction>, <ore:sheetAluminum>, <ore:stickAluminum>]]);
 recipes.addShaped(<advancedRocketry:satellitePrimaryFunction:2>, 
- [[<advancedRocketry:satellitePrimaryFunction>, <ore:plateTitanium>, <advancedRocketry:satellitePrimaryFunction>],
- [<advancedRocketry:wafer>, <advancedRocketry:circuitIC>, <advancedRocketry:wafer>],]);
+ [[<ore:stickTitanium>, <ore:sheetAluminum>, <advancedRocketry:satellitePrimaryFunction>],
+ [<ore:sheetAluminum>, <advancedRocketry:circuitIC>, <ore:sheetAluminum>],
+ [<advancedRocketry:satellitePrimaryFunction>, <ore:sheetAluminum>, <ore:stickTitanium>]]);
+recipes.addShaped(<advancedRocketry:satellitePrimaryFunction:3>, 
+ [[null, <ore:stickTitanium>, <advancedRocketry:lens>],
+ [<ore:stickTitanium>, <Eln:Eln.TransparentNode:452>, <ore:stickTitanium>],
+ [<advancedRocketry:circuitIC:1>, <ore:stickTitanium>, null]]);
+ //Jackhammer
 recipes.remove(<advancedRocketry:item.jackhammer>);
 recipes.addShaped(<advancedRocketry:item.jackhammer>,
  [[null, <ore:plateAluminum>, <ore:stickAlloy>],
@@ -210,16 +237,20 @@ recipes.addShaped(<advancedRocketry:crystallizer>,
  [[<advancedRocketry:wafer>, <advancedRocketry:miscpart>, <advancedRocketry:wafer>],
  [<advancedRocketry:circuitIC:4>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:3>],
  [<ore:plateAlloy>, <ore:gearSteel>, <ore:plateAlloy>]]);
+recipes.addShaped(<advancedRocketry:observatory>,
+ [[<ore:paneGlass>, <advancedRocketry:miscpart>, <ore:paneGlass>],
+ [<advancedRocketry:circuitIC>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC>],
+ [<ore:stickAluminum>, <ore:stickAluminum>, <ore:stickAluminum>]]);
 
 //Blocks (Shaped, Rockets)
 recipes.addShaped(<advancedRocketry:tile.guidanceComputer>, 
- [[<Eln:Eln.sharedItem:7681>, <advancedRocketry:circuitIC:2>, <Eln:Eln.sharedItem:7681>],
+ [[<advancedRocketry:circuitIC>, <advancedRocketry:circuitIC:2>, <advancedRocketry:circuitIC>],
  [<advancedRocketry:circuitIC:1>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:1>],
  [<RotaryCraft:rotarycraft_item_shaftcraft>, <advancedRocketry:circuitIC:2>, <RotaryCraft:rotarycraft_item_shaftcraft>]]);
 recipes.addShaped(<advancedRocketry:blockMonitoringStation>, 
- [[<RotaryCraft:rotarycraft_item_borecraft:2>, <advancedRocketry:satellitePrimaryFunction>, <RotaryCraft:rotarycraft_item_borecraft:2>],
- [<RotaryCraft:rotarycraft_item_shaftcraft>, <libVulpes:blockStructureBlock>, <RotaryCraft:rotarycraft_item_shaftcraft>],
- [<Eln:Eln.sharedItemStackOne:7825>, <RotaryCraft:rotarycraft_item_shaftcraft>, <advancedRocketry:circuitIC:1>]]);
+ [[<RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_item_borecraft:2>, <RotaryCraft:rotarycraft_item_shaftcraft>],
+ [<advancedRocketry:circuitIC:1>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC>],
+ [<RotaryCraft:rotarycraft_item_shaftcraft>, <Eln:Eln.sharedItemStackOne:7825>, <RotaryCraft:rotarycraft_item_shaftcraft>]]);
 recipes.addShaped(<advancedRocketry:tile.satelliteMonitor>, 
  [[<advancedRocketry:satellitePrimaryFunction>, <advancedRocketry:miscpart>, <RotaryCraft:rotarycraft_item_borecraft:2>],
  [<RotaryCraft:rotarycraft_item_shaftcraft>, <libVulpes:blockStructureBlock>, <RotaryCraft:rotarycraft_item_shaftcraft>],
@@ -238,7 +269,7 @@ recipes.addShaped(<advancedRocketry:fuelTank>,
  [<ore:plateTitanium>, <RotaryCraft:rotarycraft_item_enginecraft>, <ore:plateTitanium>]]);
 recipes.addShaped(<advancedRocketry:rocketBuilder>,
  [[<ore:stickTitanium>, <advancedRocketry:miscpart>, <ore:stickTitanium>],
- [<advancedRocketry:circuitIC:3>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:3>],
+ [<advancedRocketry:circuitIC>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC>],
  [<ore:gearTitanium>, <ore:concrete>, <ore:gearTitanium>]]);
 recipes.addShaped(<advancedRocketry:fuelingStation>,
  [[<libVulpes:blockStructureBlock>, <advancedRocketry:miscpart>, <libVulpes:blockStructureBlock>],
@@ -290,6 +321,9 @@ recipes.addShaped(<libVulpes:blockStructureBlock> * 8,
  [[<ore:ingotHSLA>, <ore:plateAlloy>,<ore:ingotHSLA>],
  [<ore:plateAlloy>, <RotaryCraft:rotarycraft_item_borecraft:4>, <ore:plateAlloy>],
  [<ore:ingotHSLA>, <Eln:Eln.SixNode:2060>, <ore:ingotHSLA>]]);
+recipes.addShaped(<advancedRocketry:tile.loader>,
+ [[<libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC:2>],
+ [<advancedRocketry:dataUnit>]]);
 recipes.addShaped(<advancedRocketry:tile.planetHoloSelector>,
  [[<RotaryCraft:rotarycraft_item_machine:79>, <advancedRocketry:tile.lens>, <RotaryCraft:rotarycraft_item_machine:79>],
  [null, <advancedRocketry:tile.forceFieldProjector>, null],
@@ -302,7 +336,7 @@ recipes.addShaped(<advancedRocketry:tile.pressurizedTank>,
 //Blocks, Shaped, Station)
 recipes.addShaped(<advancedRocketry:tile.planetanalyser>,
  [[<advancedRocketry:circuitIC:1>, <advancedRocketry:miscpart>, <advancedRocketry:circuitIC:1>],
- [<RotaryCraft:rotarycraft_item_shaftcraft>, <libVulpes:blockStructureBlock>, <RotaryCraft:rotarycraft_item_shaftcraft>],
+ [<advancedRocketry:circuitIC>, <libVulpes:blockStructureBlock>, <advancedRocketry:circuitIC>],
  [<advancedRocketry:item.planetIdChip>, <RotaryCraft:rotarycraft_item_shaftcraft>, <advancedRocketry:item.planetIdChip>]]);
 recipes.addShaped(<advancedRocketry:tile.biomeScanner>,
  [[<RotaryCraft:rotarycraft_item_shaftcraft>, <advancedRocketry:satellitePrimaryFunction:5>, <RotaryCraft:rotarycraft_item_shaftcraft>],
@@ -321,9 +355,9 @@ recipes.addShaped(<advancedRocketry:tile.scrubber>,
  [<minecraft:iron_bars>, <libVulpes:tile.motor>, <minecraft:iron_bars>],
  [<minecraft:iron_bars>, <advancedRocketry:miscpart:1>, <minecraft:iron_bars>]]);
 recipes.addShaped(<advancedRocketry:tile.oxygenVent>,
- [[<minecraft:iron_bars>, <RotaryCraft:rotarycraft_item_enginecraft>, <minecraft:iron_bars>],
+ [[<ore:plateAluminum>, <RotaryCraft:rotarycraft_item_enginecraft>, <ore:plateAluminum>],
  [<minecraft:iron_bars>, <libVulpes:tile.motor>, <minecraft:iron_bars>],
- [<minecraft:iron_bars>, <advancedRocketry:fuelTank>, <minecraft:iron_bars>]]);
+ [<ore:plateAluminum>, <advancedRocketry:circuitIC>, <ore:plateAluminum>]]);
 
 
 //Blocks (Shapeless)

@@ -24,25 +24,27 @@
 <!-->Circuits<!-->
 	<Recipe timeRequired="900" power ="1008">
 		<input>
-			<itemStack>Eln:Eln.SixNode;2;7552</itemStack>
-			<itemStack>Eln:Eln.SixNode;2;7553</itemStack>
-			<itemStack>Eln:Eln.SixNode;4;7555</itemStack>
-			<itemStack>PneumaticCraft:unassembledPCB</itemStack>
+			<itemStack>customitems:integrated_circuit;2</itemStack>
+			<itemStack>customitems:plastic_circuit_board</itemStack>
+			<itemStack>customitems:annealedcopperwire;4</itemStack>
+			<itemStack>customitems:smd_resistor;2</itemStack>
+            <fluidStack>aluminium;72</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedRocketry:circuitplate</itemStack>
+			<itemStack>advancedRocketry:circuitIC</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="900" power ="1008">
 		<input>
-			<itemStack>Eln:Eln.SixNode;2;7552</itemStack>
-			<itemStack>Eln:Eln.SixNode;2;7553</itemStack>
-			<itemStack>Eln:Eln.SixNode;4;7555</itemStack>
-			<itemStack>Eln:Eln.SixNode;2;7557</itemStack>
-			<itemStack>customitems:unassembledadvancedpcb</itemStack>
+			<itemStack>customitems:cpu;2</itemStack>
+			<itemStack>customitems:plastic_circuit_board</itemStack>
+			<itemStack>customitems:electrum_wire;4</itemStack>
+			<itemStack>customitems:smd_resistor;2</itemStack>
+            <itemStack>customitems:smd_capacitor;2</itemStack>
+            <fluidStack>aluminium;72</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedRocketry:circuitplate;1;1</itemStack>
+			<itemStack>advancedRocketry:circuitIC;1;2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="200" power ="504">
@@ -115,6 +117,46 @@
 		</input>
 		<output>
 			<itemStack>EnderIO:itemBasicCapacitor;1;2</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="512" power ="504">
+		<input>
+			<itemStack>customitems:electrum_wire;4</itemStack>
+			<itemStack>RotaryCraft:rotarycraft_item_powders;1;10</itemStack>
+			<fluidStack>aluminium;72</fluidStack>
+		</input>
+		<output>
+			<itemStack>customitems:smd_resistor;16</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="512" power ="504">
+		<input>
+			<itemStack>customitems:electrum_wire;4</itemStack>
+			<itemStack>customitems:charcoal_dust</itemStack>
+			<fluidStack>aluminium;72</fluidStack>
+		</input>
+		<output>
+			<itemStack>customitems:smd_resistor;16</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1024" power ="504">
+		<input>
+			<itemStack>PneumaticCraft:plastic;3;15</itemStack>
+			<itemStack>libVulpes:libVulpesproductsheet;1;9</itemStack>
+			<fluidStack>aluminium;72</fluidStack>
+		</input>
+		<output>
+			<itemStack>customitems:smd_capacitor;8</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1024" power ="504">
+		<input>
+			<itemStack>PneumaticCraft:plastic;1;15</itemStack>
+			<itemStack>libVulpes:libVulpesproductsheet;1;4</itemStack>
+			<fluidStack>sulfuricacid;125</fluidStack>
+		</input>
+		<output>
+			<itemStack>customitems:plastic_circuit_board</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="256" power ="504">

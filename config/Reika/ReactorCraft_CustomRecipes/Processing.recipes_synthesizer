@@ -25,7 +25,7 @@
         type = "rc ethanol"
         amount = 200
     }
-    item_i2 = {
+    item_in = {
         items = {
             "customitems:alumina_flakes"
         }

@@ -256,7 +256,7 @@ recipes.addShaped(<appliedenergistics2:tile.BlockQuantumLinkChamber>,
  [<ore:ingotPlatinum>, <ore:pearlFluix>, <ore:ingotPlatinum>]]);
 //AE2 printed silicon recipes
 Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
-Inscriber.addRecipe([<advancedRocketry:wafer>], <appliedenergistics2:item.ItemMultiMaterial:19>, null, <appliedenergistics2:item.ItemMultiMaterial:20>, "Inscribe");
+Inscriber.addRecipe([<advancedRocketry:wafer>], <appliedenergistics2:item.ItemMultiMaterial:19>, null, <appliedenergistics2:item.ItemMultiMaterial:20> * 4, "Inscribe");
 Inscriber.addRecipe([<RotaryCraft:rotarycraft_item_compacts:10>], <appliedenergistics2:item.ItemMultiMaterial:19>, null, <appliedenergistics2:item.ItemMultiMaterial:20>, "Inscribe");
 //AE2 controller
 recipes.addShaped(<appliedenergistics2:tile.BlockController>, 

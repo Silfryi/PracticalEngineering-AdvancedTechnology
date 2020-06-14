@@ -25,18 +25,19 @@ var toHide = [//Plastic plants and other items
               <PneumaticCraft:plasticPlant:15>,
               <PneumaticCraft:seismicSensor>,
               //Technical blocks
-              <PneumaticCraft:keroseneLampLight>
+              <PneumaticCraft:keroseneLampLight>,
+              //Unrealistc Machines
+              <PneumaticCraft:aerialInterface>,
+              <PneumaticCraft:electrostaticCompressor>
 			  ] as IItemStack[];
 			  
-var toRemove = [<PneumaticCraft:seismicSensor>,
-                <PneumaticCraft:assemblyLaser>,
+var toRemove = [<PneumaticCraft:assemblyLaser>,
                 <PneumaticCraft:assemblyDrill>,
                 <PneumaticCraft:refinery>,
                 <PneumaticCraft:heatFrame>,
 				<PneumaticCraft:advancedPCB>,
 				<PneumaticCraft:pneumaticCilinder>,
 				<PneumaticCraft:gpsTool>,
-				<PneumaticCraft:aerialInterface>,
 				<PneumaticCraft:universalSensor>
 			    ] as IItemStack[];
 				
@@ -57,6 +58,7 @@ for item in toRemove{
     recipes.remove(item);
 }
 for item in toHide{
+    recipes.remove(item);
     hide(item);
 }
 for item in upgrades{
@@ -127,10 +129,6 @@ recipes.addShaped(<PneumaticCraft:universalSensor>,
  [[<PneumaticCraft:ingotIronCompressed>, <PneumaticCraft:plastic:12>, <PneumaticCraft:ingotIronCompressed>],
  [<PneumaticCraft:plastic:5>, <minecraft:redstone>, <PneumaticCraft:plastic:5>],
  [<PneumaticCraft:ingotIronCompressed>, <PneumaticCraft:pressureTube>, <PneumaticCraft:ingotIronCompressed>]]);
-recipes.addShaped(<PneumaticCraft:aerialInterface>, 
- [[<PneumaticCraft:pressureChamberWall>, <PneumaticCraft:pressureChamberInterface>, <PneumaticCraft:pressureChamberWall>],
- [<minecraft:ender_pearl>, <PneumaticCraft:assemblyIOUnit>, <minecraft:ender_pearl>],
- [<PneumaticCraft:pressureChamberWall>, <PneumaticCraft:advancedPressureTube>, <PneumaticCraft:pressureChamberWall>]]);
 recipes.addShaped(<PneumaticCraft:gpsTool>, 
  [[null, <RotaryCraft:rotarycraft_item_borecraft:2>, null],
  [<PneumaticCraft:plastic:1>, <advancedRocketry:miscpart>, <PneumaticCraft:plastic:1>],
@@ -161,6 +159,8 @@ recipes.addShapeless(<PneumaticCraft:advancedPCB>, [<customitems:unassembledadva
 
   
 //Pressure chamber recipes
+//Remove plastic plant seeds to plastic
+Pressure.removeRecipe([<PneumaticCraft:plastic:*>]);
 //Advanced PCB
 Pressure.addRecipe([<PneumaticCraft:plastic:2> * 2, <RotaryCraft:rotarycraft_item_shaftcraft:1>, <customitems:annealedcopperwire> * 4], 2, [<customitems:emptyadvancedpcb>], true);
 //Etching acid from sulfuric acid
@@ -177,10 +177,9 @@ Pressure.addRecipe([<ImmersiveEngineering:metal:31>, <PneumaticCraft:plastic:2>]
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:emptyadvancedpcb>, <customitems:unassembledadvancedpcb>);
 mods.pneumaticcraft.Assembly.addLaserRecipe(<PneumaticCraft:machineUpgrade:5>, <LogisticsPipes:item.itemUpgrade:20>);
 mods.pneumaticcraft.Assembly.addDrillRecipe(<RotaryCraft:rotarycraft_block_blastglass>, <advancedRocketry:tile.lens>);
-mods.pneumaticcraft.Assembly.addLaserRecipe(<libVulpes:libVulpesproductboule:3>, <advancedRocketry:wafer> * 16);
 mods.pneumaticcraft.Assembly.addLaserRecipe(<libVulpes:libVulpesproductplate:3>, <advancedRocketry:wafer>);
-mods.pneumaticcraft.Assembly.addLaserRecipe(<advancedRocketry:circuitplate>, <advancedRocketry:circuitIC> * 4);
-mods.pneumaticcraft.Assembly.addLaserRecipe(<advancedRocketry:circuitplate:1>, <advancedRocketry:circuitIC:2> * 4);
+mods.pneumaticcraft.Assembly.addLaserRecipe(<advancedRocketry:wafer>, <advancedRocketry:circuitplate>);
+mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dilithium_doped_silicon_wafer>, <advancedRocketry:circuitplate:1>);
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbedengine>, <customitems:dmlsbedengine:1>.withTag({display: {Lore: ["100% Complete"]}}));
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbedblade>, <customitems:dmlsbedblade:1>.withTag({display: {Lore: ["100% Complete"]}}));
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbeddrum>, <customitems:dmlsbeddrum:1>.withTag({display: {Lore: ["100% Complete"]}}));

@@ -1,0 +1,42 @@
+{
+     "items":[
+		//PNC Style circuits for Advanced PCB
+		{
+            "name": "emptyAdvancedPCB",
+            "textureName": "empty_advanced_PCB"
+		},
+		{
+            "name": "unassembledAdvancedPCB",
+            "textureName": "unassembled_advanced_PCB"
+		},
+		//Circuit parts for AR circuits
+		{
+            "name": "dilithium_doped_silicon_boule",
+            "textureName": "dilithium_doped_silicon_boule"
+		},
+		{
+            "name": "dilithium_doped_silicon_wafer",
+            "textureName": "dilithium_doped_silicon_wafer"
+		},
+		{
+            "name": "smd_capacitor",
+            "textureName": "smd_capacitor"
+		},
+		{
+            "name": "smd_resistor",
+            "textureName": "smd_resistor"
+		},
+		{
+            "name": "plastic_circuit_board",
+            "textureName": "plastic_circuit_board"
+		},
+		{
+            "name": "integrated_circuit",
+            "textureName": "integrated_circuit_item"
+		},
+		{
+            "name": "cpu",
+            "textureName": "cpu_item"
+		}
+    ]
+}
