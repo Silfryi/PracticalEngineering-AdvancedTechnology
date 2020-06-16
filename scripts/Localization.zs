@@ -49,7 +49,7 @@ game.setLocalization("type.dust.name", "Grit");
 game.setLocalization("material.Aluminum.name", "Aluminium"); 
 game.setLocalization("crafting.alucylinder", "Aluminium Alloy Cylinder");
 game.setLocalization("misc.alum", "Aluminium Grit");
-game.setLocalization("misc.alualloy", "Aluminium Alloy Ingot");
+game.setLocalization("misc.alualloy", "Aluminium Alloy Ingot");game.setLocalization("fluid.aluminium", "Molten Aluminium");
 game.setLocalization("misc.alingot", "Aluminium Ingot");
 game.setLocalization("item.machine.wire.3.name", "Aluminium Wire");
 game.setLocalization("item.machine.wire.19.name", "Insulated Aluminium Wire");
@@ -84,6 +84,7 @@ game.setLocalization("fluid.aquaregiaplatinum", "Aqua Regia - Pt");
 game.setLocalization("fluid.impureaquaregia", "Aqua Regia - Other");
 game.setLocalization("fluid.uranyltrisulfatesolution", "Uranyl Trisulfate Solution");
 game.setLocalization("fluid.uraniumtailingssolution", "Uranium Tailings Solution");
+game.setLocalization("fluid.tin", "Molten Tin");
 game.setLocalization("fluid.impureaquaregia", "Aqua Regia - Other");
 game.setLocalization("tile.customitems:cryolite.name", "Molten Cryolite");
 game.setLocalization("tile.customitems:aluminium.name", "Molten Aluminium");
@@ -108,6 +109,7 @@ game.setLocalization("tile.customitems:aquaregiaplatinum.name", "Aqua Regia - Pt
 game.setLocalization("tile.customitems:impureaquaregia.name", "Aqua Regia - Other");
 game.setLocalization("tile.customitems:uranyltrisulfatesolution.name",  "Uranyl Trisulfate Solution");
 game.setLocalization("tile.customitems:uraniumtailingssolution.name", "Uranium Tailings Solution");
+game.setLocalization("tile.customitems:tin.name", "Molten Tin");
 game.setLocalization("item.customitems:cryolite Bucket.name", "Molten Cryolite Bucket");
 game.setLocalization("item.customitems:aluminium Bucket.name", "Molten Aluminium Bucket");
 game.setLocalization("item.customitems:impuresodiumaluminate Bucket.name", "Impure Sodium Aluminate Bucket");
@@ -131,6 +133,7 @@ game.setLocalization("item.customitems:aquaregiaplatinum Bucket.name", "Aqua Reg
 game.setLocalization("item.customitems:impureaquaregia Bucket.name", "Aqua Regia Bucket - Other");
 game.setLocalization("item.customitems:uranyltrisulfatesolution Bucket.name", "Uranyl Trisulfate Solution Bucket");
 game.setLocalization("item.customitems:uraniumtailingssolution Bucket.name", "Uranium Tailings Solution Bucket");
+game.setLocalization("item.customitems:tin Bucket.name", "Molten Tin Bucket");
 
 
 //Items and blocks

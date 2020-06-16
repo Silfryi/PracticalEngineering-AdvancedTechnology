@@ -38,5 +38,16 @@
             "name": "cpu",
             "textureName": "cpu_item"
 		}
+    ],
+    "fluids":[
+        //Molten Tin
+        {
+            "name":"tin",
+            "textureName": "tin",
+            "temperature": 505,
+            "density": 7000,
+            "viscosity": 10000,            
+            "isGas": false
+        }
     ]
 }

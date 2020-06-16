@@ -9,6 +9,16 @@
 	energy = 615000000
 }
 {
+    type = "tin"
+	input = "libVulpes:libVulpesproductingot:5"
+	output_fluid = {
+	    type = "tin"
+		amount = 144
+	}
+	temperature = 230
+	energy = 37500000
+}
+{
     type = "cryolite"
 	input = "customitems:cryolite_crystal"
 	output_fluid = {
