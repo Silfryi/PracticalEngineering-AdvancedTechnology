@@ -31,13 +31,6 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
               <minecraft:stone_sword>,
               <minecraft:stone_shovel>,
               <minecraft:stone_hoe>,
-              //OpenComputers diamond removal
-              <OpenComputers:item:40>,
-              <OpenComputers:item:7>,
-              <OpenComputers:rack>,
-              <OpenComputers:hologram2>,
-              <OpenComputers:case3>,
-              <extracells:oc.upgrade>,
               //NEI Clutter
               //Extra Cells
               <extracells:pattern.fluid>,
@@ -164,6 +157,13 @@ var toRemove = [<libVulpes:libVulpesproductingot:9>,
                 <ExpandedRedstone:expanded redstone_item_placer:1>,
                 <Railcraft:cart.track.relayer>,
                 <Railcraft:cart.undercutter>,
+                 //OpenComputers diamond removal
+                <OpenComputers:item:40>,
+                <OpenComputers:item:7>,
+                <OpenComputers:rack>,
+                <OpenComputers:hologram2>,
+                <OpenComputers:case3>,
+                <extracells:oc.upgrade>,
                 //Remove diamonds from machines that don't need them and replace with more fitting alternatives
                 <minecraft:jukebox>,
                 <StorageDrawers:controller>

@@ -21,7 +21,10 @@ var toRemove = [<ElectriCraft:electricraft_item_crystal:6>,
                 //Remove Last traces of RoC modingots
                 <ReactorCraft:reactorcraft_item_raw:5>,
                 <ReactorCraft:reactorcraft_item_raw:6>,
-                <ReactorCraft:reactorcraft_item_fluorite:6>
+                <ReactorCraft:reactorcraft_item_fluorite:6>,
+                //Uranium to blast furnace
+                <ReactorCraft:reactorcraft_item_fuel:0>,
+                <ReactorCraft:reactorcraft_item_depleted:0>
                 ] as IItemStack[];
 //Remove all that needs removing
 for item in toRemove{
@@ -54,10 +57,7 @@ var toHide = [//Modingots that are unified to their respective mods
               <RotaryCraft:rotarycraft_item_enginecraft:14>,
               <RotaryCraft:rotarycraft_item_enginecraft:16>,
               //Useless 'Rutile' ingot
-              <RotaryCraft:rotarycraft_item_modingots:79>,
-              //Useless ElC EU items
-              <ElectriCraft:electricraft_item_placer:10>,
-              <ElectriCraft:electricraft_item_placer:11>
+              <RotaryCraft:rotarycraft_item_modingots:79>
               ] as IItemStack[];
               
 //Hide said item

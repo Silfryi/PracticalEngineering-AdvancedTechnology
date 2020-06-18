@@ -238,7 +238,7 @@
             <fluidStack>sulfuricacid;100</fluidStack>
         </output>
     </Recipe>
-    <Recipe timeRequired="600" power="504">
+    <Recipe timeRequired="1200" power="504">
         <input>
             <itemStack>customitems:yellowcake;3</itemStack>
             <fluidStack>water;300</fluidStack>

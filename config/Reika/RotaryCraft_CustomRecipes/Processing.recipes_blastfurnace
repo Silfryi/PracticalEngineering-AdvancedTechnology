@@ -104,3 +104,49 @@
 
 	}
 }
+{
+	type = "depleted_uranium"
+	primary_input = {
+		items = {
+			"RotaryCraft:rotarycraft_item_shaftcraft"
+		}
+		consumption_chance = 0
+		number_to_use = 1
+	}
+	main_item = {
+		"ReactorCraft:reactorcraft_item_raw:2"
+	}	
+	required_main_item = 4
+	match_number_exactly = true
+	has_bonus = false
+	xp = 3
+	temperature = 1900
+	alloying = false
+	output = "ReactorCraft:reactorcraft_item_depleted"
+	output_nbt = {
+
+	}
+}
+{
+	type = "enriched_uranium"
+	primary_input = {
+		items = {
+			"RotaryCraft:rotarycraft_item_shaftcraft"
+		}
+		consumption_chance = 0
+		number_to_use = 1
+	}
+	main_item = {
+		"ReactorCraft:reactorcraft_item_raw:1"
+	}	
+	required_main_item = 4
+	match_number_exactly = true
+	has_bonus = false
+	xp = 3
+	temperature = 1900
+	alloying = false
+	output = "ReactorCraft:reactorcraft_item_fuel"
+	output_nbt = {
+
+	}
+}

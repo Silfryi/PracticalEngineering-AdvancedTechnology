@@ -16,7 +16,7 @@ var toHide = [//Machines
               <EnderIO:blockConduitBundle>,
               <EnderIO:blockLightNode>,
               //Useless silicon analouge
-              <EnderIO:itemMaterial:0>
+              //<EnderIO:itemMaterial:0>
               ] as IItemStack[];
   
 var toRemove = [<EnderIO:blockAlloySmelter>,
