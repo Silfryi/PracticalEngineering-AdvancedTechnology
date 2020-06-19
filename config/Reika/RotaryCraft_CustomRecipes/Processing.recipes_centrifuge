@@ -3,7 +3,7 @@
     input = "minecraft:gunpowder"
     output_items = {
         {
-            item = "RotaryCraft:rotarycraft_item_modingots:20*4"
+            item = "RotaryCraft:rotarycraft_item_modingots:20"
             chance = 100
         },
         {
@@ -35,8 +35,8 @@
     }
     output_fluid = {
         type = "oil"
-        amount = 125
-        chance = 50
+        amount = 50
+        chance = 100
     }
 }
 {

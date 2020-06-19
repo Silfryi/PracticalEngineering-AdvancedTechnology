@@ -69,4 +69,6 @@ recipes.addShaped(<Tubes:tube>.withTag({tube: "injection"}),
  [[null, <ore:plankWood>, null],
  [<ore:plankWood>, <Tubes:tube>.withTag({tube: "basic"}), <ore:plankWood>],
  [null, <ore:plankWood>, null]]);
+recipes.addShaped(<Tubes:tube>.withTag({tube: "valve"}),
+ [[<Tubes:tube>.withTag({tube: "roundrobin"}), <ore:barsIron>]]);
  

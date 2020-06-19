@@ -312,7 +312,7 @@ Crusher.addRecipe(<RotaryCraft:rotarycraft_item_powders>, <ore:netherrack>, 4800
 Crusher.addRecipe(<customitems:graphite_dust>, <ReactorCraft:reactorcraft_item_crafting:13>, 1600);
 Crusher.addRecipe(<Eln:Eln.sharedItem:6>, <RotaryCraft:rotarycraft_item_modextracts:87>, 1600);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:8>, <ore:gemEmerald>, 1600);
-Crusher.addRecipe(<minecraft:sand> * 4, <minecraft:sandstone>, 2400, <RotaryCraft:rotarycraft_item_modingots:20>, 0.125);
+Crusher.addRecipe(<minecraft:sand> * 3, <minecraft:sandstone>, 2400, <RotaryCraft:rotarycraft_item_modingots:20>, 0.125);
 Crusher.addRecipe(<customitems:charcoal_dust>, <ore:charcoal>, 4800);
 
 

@@ -416,7 +416,7 @@
                 <orbitalPhi>0</orbitalPhi>
                 <rotationalPeriod>16000</rotationalPeriod>
                 <atmosphereDensity>0</atmosphereDensity>
-                <biomeIds>50</biomeIds>
+                <biomeIds>50,111</biomeIds>
             </planet>
         </planet>
         <planet name="Hawking-3" DIMID="37" customIcon="gasgiantblue">
