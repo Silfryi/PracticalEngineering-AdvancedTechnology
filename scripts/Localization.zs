@@ -20,6 +20,7 @@ game.setLocalization("item.spaceBoots.name", "Space Suit Boots");
 game.setLocalization("tile.rocketFuelBlock.name", "Titanium Tetrachloride");
 game.setLocalization("item.bucketRocketFuel.name", "Titanium Tetrachloride Bucket");
 game.setLocalization("fluid.rocketFuel", "Titanium Tetrachloride");
+//ReactorCraft unlocalized things
 game.setLocalization("fluid.rc liquid oxygen", "Liquid Oxygen");
 //Holographic projector
 game.setLocalization("entity.advancedRocketry.ARPlanetUIItem.name", "Holographic Planet Representation");
@@ -40,6 +41,16 @@ game.setLocalization("item.ingotIronCompressed.name", "Pressure-Hardened Iron In
 game.setLocalization("item.compressedIronGear.name", "Pressure-Hardened Iron Gear");
 game.setLocalization("tile.compressedIronBlock.name", "Pressure-Hardened Iron Block");
 game.setLocalization("Tungsten_Dust.name", "Tungstite Dust");
+//Magneticraft
+game.setLocalization("rf_alternator.name", "RF DC-DC Converter");
+game.setLocalization("distillery_control.name", "Oil Heating Unit Control");
+game.setLocalization("refinery_control.name", "Distillation Tower Control");
+game.setLocalization("crushing_table.name", "Stone Anvil");
+//PNC "gasoline" to naptha (makes more IRL sense)
+game.setLocalization("fluid.fuel", "Naphtha");
+game.setLocalization("tile.fuel.name", "Naphtha");
+game.setLocalization("item.fuelBucket.name", "Naphtha Bucket");
+
 
 //Rename Advanced Rocketry & LibVulpes dusts to Grit
 game.setLocalization("type.dust.name", "Grit");
@@ -49,7 +60,7 @@ game.setLocalization("type.dust.name", "Grit");
 game.setLocalization("material.Aluminum.name", "Aluminium"); 
 game.setLocalization("crafting.alucylinder", "Aluminium Alloy Cylinder");
 game.setLocalization("misc.alum", "Aluminium Grit");
-game.setLocalization("misc.alualloy", "Aluminium Alloy Ingot");game.setLocalization("fluid.aluminium", "Molten Aluminium");
+game.setLocalization("misc.alualloy", "Aluminium Alloy Ingot");
 game.setLocalization("misc.alingot", "Aluminium Ingot");
 game.setLocalization("item.machine.wire.3.name", "Aluminium Wire");
 game.setLocalization("item.machine.wire.19.name", "Insulated Aluminium Wire");
@@ -69,6 +80,10 @@ game.setLocalization("fluid.regolith", "Molten Regolith");
 game.setLocalization("fluid.regolithmetalalloy", "Molten Regolith Metal Alloy");
 game.setLocalization("fluid.highgradekerosene", "High-Grade Kerosene");
 game.setLocalization("fluid.RP-1", "RP-1");
+game.setLocalization("fluid.souloil", "Soulsand-Based Crude Oil");
+game.setLocalization("fluid.hotsoulcrude", "Hot Soulsand-Based Crude Oil");
+game.setLocalization("fluid.mixedrefinerygasses", "Mixed Refinery Gas");
+game.setLocalization("fluid.gasoline", "Gasoline");
 game.setLocalization("fluid.rubber", "Molten Rubber");
 game.setLocalization("fluid.steam", "Low-Pressure Steam");
 game.setLocalization("fluid.sulfurtrioxide", "Sulfur Trioxide");
@@ -94,6 +109,10 @@ game.setLocalization("tile.customitems:regolith.name", "Molten Regolith");
 game.setLocalization("tile.customitems:regolithmetalalloy.name", "Molten Regolith Metal Alloy");
 game.setLocalization("tile.customitems:highgradekerosene.name", "High-Grade Kerosene");
 game.setLocalization("tile.customitems:RP-1.name", "RP-1");
+game.setLocalization("tile.customitems:souloil.name", "Soulsand-Based Crude Oil");
+game.setLocalization("tile.customitems:hotsoulcrude.name", "Hot Soulsand-Based Crude Oil");
+game.setLocalization("tile.customitems:mixedrefinerygasses.name", "Mixed Refinery Gas");
+game.setLocalization("tile.customitems:gasoline.name", "Gasoline");
 game.setLocalization("tile.customitems:rubber.name", "Molten Rubber");
 game.setLocalization("tile.customitems:steam.name", "Low-Pressure Steam");
 game.setLocalization("tile.customitems:sulfurtrioxide.name", "Sulfur Trioxide");
@@ -118,6 +137,10 @@ game.setLocalization("item.customitems:regolith Bucket.name", "Molten Regolith B
 game.setLocalization("item.customitems:regolithmetalalloy Bucket.name", "Molten Regolith Metal Alloy Bucket");
 game.setLocalization("item.customitems:highgradekerosene Bucket.name", "High-Grade Kerosene Bucket");
 game.setLocalization("item.customitems:RP-1 Bucket.name", "RP-1 Bucket");
+game.setLocalization("item.customitems:souloil Bucket.name", "Soulsand-Based Crude Oil Bucket");
+game.setLocalization("item.customitems:hotsoulcrude Bucket.name", "Hot Soulsand-Based Crude Gas Bucket");
+game.setLocalization("item.customitems:mixedrefinerygasses Bucket.name", "Mixed Refinery Gas Bucket");
+game.setLocalization("item.customitems:gasoline Bucket.name", "Gasoline Bucket");
 game.setLocalization("item.customitems:rubber Bucket.name", "Molten Rubber Bucket");
 game.setLocalization("item.customitems:steam Bucket.name", "Low-Pressure Steam Bucket");
 game.setLocalization("item.customitems:sulfurtrioxide Bucket.name", "Sulfur Trioxide Bucket");

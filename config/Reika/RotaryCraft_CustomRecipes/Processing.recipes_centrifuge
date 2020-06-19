@@ -34,7 +34,7 @@
         }
     }
     output_fluid = {
-        type = "oil"
+        type = "souloil"
         amount = 125
         chance = 50
     }
@@ -137,41 +137,5 @@
         type = "liquid_sunshine"
         amount = 250
         chance = 100
-    }
-}
-{
-    type = "kimberlite_gravel"
-    input = "customitems:kimberlite_gravel"
-    output_items = {
-        {
-            item = "minecraft:gravel"
-            chance = 100
-        }
-        {
-            item = "minecraft:diamond
-            chance = 6.25
-        },
-        {
-            item = "ElectriCraft:electricraft_item_crafting:1"
-            chance = 1.5625
-        }
-    }
-}
-{
-    type = "kimberlite_sand"
-    input = "customitems:kimberlite_sand"
-    output_items = {
-        {
-            item = "minecraft:sand"
-            chance = 100
-        }
-        {
-            item = "ElectriCraft:electricraft_item_crafting:1"
-            chance = 9.375
-        },
-                {
-            item = "minecraft:diamond
-            chance = 0.78125
-        }
     }
 }

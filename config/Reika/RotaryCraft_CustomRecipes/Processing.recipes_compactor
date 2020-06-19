@@ -5,3 +5,38 @@
 	temperature = 600
 	pressure = 400000
 }
+{
+	type = "coal_dust"
+	input = "RotaryCraft:rotarycraft_item_powders:10"
+	output = "minecraft:coal*3"
+	temperature = 20
+	pressure = 10000
+}
+{
+	type = "lapis_dust"
+	input = "ElectriCraft:electricraft_item_crafting"
+	output = "minecraft:dye:4*3"
+	temperature = 20
+	pressure = 10000
+}
+{
+	type = "emerald_dust"
+	input = "ReactorCraft:reactorcraft_item_raw:8"
+	output = "minecraft:emerald*3"
+	temperature = 20
+	pressure = 10000
+}
+{
+	type = "quartz_dust"
+	input = "ElectriCraft:electricraft_item_crafting:2"
+	output = "minecraft:quartz*3"
+	temperature = 20
+	pressure = 10000
+}
+{
+	type = "certus_quartz_dust"
+	input = "appliedenergistics2:item.ItemMultiMaterial:2"
+	output = "appliedenergistics2:item.ItemMultiMaterial*3"
+	temperature = 20
+	pressure = 10000
+}

@@ -6,7 +6,6 @@ import mods.immersiveengineering.Squeezer;
 import mods.immersiveengineering.Refinery;
 import mods.immersiveengineering.Excavator;
 import minetweaker.item.IItemStack;
-import mods.nei.NEI.addEntry;
 
 
 //Fix Blast and Coke Brick Recipes
@@ -271,6 +270,7 @@ MetalPress.removeRecipe(<libVulpes:libVulpesproductplate:3>);
 //Crusher
 //Ores And Dusts to Remove
 var oresToRemove = [<ImmersiveEngineering:metal:11>,
+                    <ImmersiveEngineering:metal:14>,
                     <RotaryCraft:rotarycraft_item_modingots:21>,
                     <libVulpes:libVulpesproductdust:7>,
                     <libVulpes:libVulpesproductdust:10>,
@@ -278,9 +278,17 @@ var oresToRemove = [<ImmersiveEngineering:metal:11>,
                     <RotaryCraft:rotarycraft_item_modingots:52>,
                     <ReactorCraft:reactorcraft_item_raw:5>,
                     <ReactorCraft:reactorcraft_item_raw:6>,
+                    <RotaryCraft:rotarycraft_item_modingots:84>,
                     <RotaryCraft:rotarycraft_item_modingots:87>,
                     <libVulpes:libVulpesproductdust:3>,
-                    <Eln:Eln.sharedItem:9>
+                    <Eln:Eln.sharedItem:9>,
+                    <Magneticraft:item.dust:7>,
+                    <Magneticraft:item.dust:10>,
+                    <Magneticraft:item.dust:11>,
+                    <Magneticraft:item.dust:12>,
+                    <Magneticraft:item.dust:13>,
+                    <Magneticraft:item.dust:14>,
+                    <Magneticraft:item.dust:16>,
 			        ] as IItemStack[];
 
 //Remove Crusher Ore Special Processing and Wrong Gem Processing
@@ -290,6 +298,7 @@ for item in oresToRemove{
 
 //Re-Add Ingot Recipes
 Crusher.addRecipe(<ImmersiveEngineering:metal:11>, <ore:ingotAluminum>, 3600);
+Crusher.addRecipe(<ImmersiveEngineering:metal:14>, <ore:ingotNickel>, 3600);
 Crusher.addRecipe(<RotaryCraft:rotarycraft_item_modingots:21>, <ore:ingotTungsten>, 3600);
 Crusher.addRecipe(<libVulpes:libVulpesproductdust:7>, <ore:ingotTitanium>, 3600);
 Crusher.addRecipe(<libVulpes:libVulpesproductdust:10>, <ore:ingotIridium>, 3600);
@@ -299,11 +308,14 @@ Crusher.addRecipe(<libVulpes:libVulpesproductdust:3>, <ore:ingotSilicon>, 6000);
 //Re-Add Ore Recipes
 Crusher.addRecipe(<RotaryCraft:rotarycraft_item_modextracts:87> * 4, <ore:oreTungsten>, 6000);
 Crusher.addRecipe(<RotaryCraft:rotarycraft_item_modextracts:27> * 4, <ore:oreAluminum>, 6000);
+Crusher.addRecipe(<ImmersiveEngineering:metal:14> * 2, <ore:oreNickel>, 6000);
 Crusher.addRecipe(<ImmersiveEngineering:metal:12> * 2, <ore:oreLead>, 6000, <ImmersiveEngineering:metal:13>, 0.10);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:3> * 8, <ore:oreAmmonium>, 6000);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_fluorite:6> * 4, <ore:oreFluorite>, 6000);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:5> * 4, <ore:oreCalcite>, 6000);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:6> * 4, <ore:oreMagnetite>, 6000);
+Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 2, <ore:oreThorium>, 6000);
+Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 2, <ore:oreThorite>, 6000);
 
 //Add Miscelaneous Recipes
 Crusher.addRecipe(<customitems:kimberlite_gravel>, <customitems:kimberlite>, 12000);
@@ -337,12 +349,13 @@ Excavator.removeMineral("Galena");
 Excavator.removeMineral("Silver");
 Excavator.removeMineral("Lead");
 Excavator.removeMineral("Quartzite");
+Excavator.removeMineral("Uranium");
 
 //Add Ores to Specific Veins
 //New Veins
 //Nether Veins
 Excavator.addMineral("Ammonium Chloride", 25, 0.5, ["netherrack", "oreAmmonium"], [75, 25], [-1], false);
-Excavator.addMineral("Thorite", 10, 0.3, ["netherrack", "oreThorium", "orePitchblende"], [60, 30, 10], [-1], false);
+Excavator.addMineral("Thorite", 10, 0.3, ["netherrack", "oreThorite", "orePitchblende"], [60, 30, 10], [-1], false);
 
 //Non-Nether Veins
 Excavator.addMineral("Fluorite", 30, 0.2, ["stone", "cobblestone", "gravel", "oreFluorite"], [15, 10, 5, 70], [-1], true);

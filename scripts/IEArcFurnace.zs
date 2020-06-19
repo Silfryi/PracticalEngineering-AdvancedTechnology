@@ -1,7 +1,6 @@
 //Import
 import mods.immersiveengineering.ArcFurnace;
 import minetweaker.item.IItemStack;
-import mods.nei.NEI.addEntry;
 
 
 
@@ -63,6 +62,7 @@ var smeltingToRemove = [<minecraft:iron_ingot>,
                         <libVulpes:libVulpesproductingot:7>,
                         <RotaryCraft:rotarycraft_item_modingots:79>,
                         <RotaryCraft:rotarycraft_item_modingots:43>,
+                        <ReactorCraft:reactorcraft_item_ingots>,
                         <libVulpes:libVulpesproductingot:10>,
                         <ImmersiveEngineering:metal:20>,
                         <libVulpes:libVulpesproductingot:3>,
@@ -116,7 +116,8 @@ ArcFurnace.addRecipe(<ImmersiveEngineering:metal:3> * 3, <ore:oreSilver>, <Immer
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:4> * 3, <ore:oreNickel>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_ingots:1> * 3, <ore:oreCadmium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_ingots:2> * 3, <ore:oreIndium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
-ArcFurnace.addRecipe(<RotaryCraft:rotarycraft_item_modingots:84> * 3, <ore:oreThorium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
+ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 3, <ore:oreThorium>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
+ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 3, <ore:oreThorite>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 
 
 

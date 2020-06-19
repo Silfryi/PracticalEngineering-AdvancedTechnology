@@ -30,23 +30,6 @@
 		}
     ],
     "fluids":[
-        //RP-1 Fluids
-        {
-            "name":"highgradekerosene",
-            "textureName": "highgradekerosene",
-            "temperature": 300,
-            "density": 1000,
-            "viscosity": 1000,            
-            "isGas": false
-        },
-        {
-            "name":"RP-1",
-            "textureName": "RP-1",
-            "temperature": 300,
-            "density": 1000,
-            "viscosity": 1000,            
-            "isGas": false
-        },
         //Miscelaneous Fluids
         {
             "name":"rubber",

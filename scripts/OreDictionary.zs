@@ -27,10 +27,20 @@ import minetweaker.item.IItemStack;
 <ore:crystalRedstone>.remove(<BuildCraft|Silicon:redstoneCrystal>);
 <ore:dustTungsten>.remove(<Eln:Eln.sharedItem:6>);
 
-//Remove RotaryCraft modingots from OreDictionary for what UniDict can't handle well
+//Remove Brass and MagnetiCraft Carbide from existence
+<ore:dustBrass>.remove(<Magneticraft:item.dustBrass>);
+<ore:ingotBrass>.remove(<Magneticraft:item.ingotBrass>);
+<ore:ingotCarbide>.remove(<Magneticraft:item.ingotCarbide>);
+
+//Oredictionary switcharoo for Thorite and thorium in the Excavator
+<ore:oreThorium>.remove(<ReactorCraft:reactorcraft_block_ore:9>);
+<ore:oreThorite>.add(<ReactorCraft:reactorcraft_block_ore:9>);
+
+//Remove RotaryCraft and Magneticraft modingots from OreDictionary for what UniDict can't handle well
 <ore:gemFluorite>.remove(<RotaryCraft:rotarycraft_item_modingots:52>);
 <ore:itemQuicksilver>.remove(<RotaryCraft:rotarycraft_item_modingots:11>);
 <ore:dustSaltpeter>.remove(<RotaryCraft:rotarycraft_item_modingots:83>);
+<ore:dustTungsten>.remove(<Magneticraft:item.dust:4>);
 
 //ReactorCraft nuclear waste OreDictionary
 var shortLivedWaste = [<ReactorCraft:reactorcraft_item_waste:10>,
