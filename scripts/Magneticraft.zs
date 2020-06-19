@@ -1,6 +1,7 @@
 //Import
 import mods.nei.NEI.hide;
 import minetweaker.item.IItemStack;
+import minetweaker.item.IIngredient;
 import mods.magneticraft.Grinder;
 import mods.magneticraft.Crusher;
 import mods.magneticraft.Sifter;
@@ -267,8 +268,20 @@ var toRemove = [//Multiblock Parts
                 <Magneticraft:item.inserter_item_drop_upgrade>,
                 <Magneticraft:item.inserter_item_suck_upgrade>,
                 <Magneticraft:item.inserter_item_speed_upgrade>,
-                <Magneticraft:item.inserter_item_slow_upgrade>
-                ] as IItemStack[];
+                <Magneticraft:item.inserter_item_slow_upgrade>,
+                //Plates that shouldn't be craftable by hand
+                <ore:plateIron>,
+                <ore:plateGold>,
+                <ore:plateTin>,
+                <ore:plateCopper>,
+                <ore:plateSilver>,
+                <ore:plateLead>,
+                <ore:plateNickel>,
+                <ore:plateElectrum>,
+                <ore:plateConstantan>,
+                <ore:plateSteel>,
+                <ore:plateAluminum>
+                ] as IIngredient[];
 
 //Remove and hide what all needs it
 for item in toRemove {
