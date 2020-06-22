@@ -20,7 +20,7 @@
          {
             "name":"souloil",
             "textureName": "souloil",
-            "temperature": 273,
+            "temperature": 300,
             "density": 800,
             "viscosity": 12000,            
             "isGas": false
@@ -36,7 +36,23 @@
         {
             "name":"mixedrefinerygasses",
             "textureName": "mixedrefinerygasses",
-            "temperature": 273,
+            "temperature": 300,
+            "density": -1000,
+            "viscosity": 1000,            
+            "isGas": true
+        },
+        {
+            "name":"swampgas",
+            "textureName": "swampgas",
+            "temperature": 320,
+            "density": -1000,
+            "viscosity": 1000,            
+            "isGas": true
+        },
+        {
+            "name":"hotswampgas",
+            "textureName": "swampgas",
+            "temperature": 470,
             "density": -1000,
             "viscosity": 1000,            
             "isGas": true
@@ -44,7 +60,7 @@
         {
             "name":"gasoline",
             "textureName": "gasoline",
-            "temperature": 273,
+            "temperature": 300,
             "density": 1000,
             "viscosity": 1000,            
             "isGas": false

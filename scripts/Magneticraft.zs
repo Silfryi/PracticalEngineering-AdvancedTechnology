@@ -393,15 +393,22 @@ OilDistillery.removeRecipe(<liquid:oil>);
 OilDistillery.addRecipe(<liquid:oil> * 20, <liquid:hotcrude> * 20, 7200);
 //Special heavy soulsand oil, no gasses, you need to crack Naphtha into LPG for gasses
 OilDistillery.addRecipe(<liquid:souloil> * 20, <liquid:hotsoulcrude> * 20, 7200);
+//Special marsh gas
+OilDistillery.addRecipe(<liquid:swampgas> * 20, <liquid:hotswampgas> * 20, 3600);
 //Distillation Tower
 //Yes, I know the 0:6:42:28:5:15:4 ratio should be 35:3:20:15:20:5:2, but the IRL one is much worse for balance
 //It would also make it 35% less efficient than PNC
 //Which is something I'd like to see people move away from ($#@$ PNC "gasoline" useable in a _diesel_ generator)
 //Ratio numbers are Bitumen:Lubricant:Diesel:Kerosene:Naptha:Gasoline:Gasses (mixed)
 //Also, why "gasoline (fuel fluid, relocalized to naphtha)" is useable in the diesel generator I don't know
+//Normal Oil
 Refinery.removeRecipe(<liquid:hotcrude>);
-Refinery.addRecipe(<liquid:hotsoulcrude> * 100, <liquid:heavyoil> * 72, <liquid:lightoil> * 28, <liquid:water> * 0);
 Refinery.addRecipe(<liquid:hotcrude> * 100, <liquid:heavyoil> * 48, <liquid:lightoil> * 48, <liquid:mixedrefinerygasses> * 4);
+//Soulsand-derived oil, heavier with no gasses, they boiled off due to the heat
+Refinery.addRecipe(<liquid:hotsoulcrude> * 100, <liquid:heavyoil> * 72, <liquid:lightoil> * 28, <liquid:water> * 0);
+//Marsh Gas, produced by the decay in swamps
+Refinery.addRecipe(<liquid:hotswampgas> * 100, <liquid:lpg> * 15, <liquid:naturalgas> * 85, <liquid:water> * 0);
+//Additional processing
 Refinery.addRecipe(<liquid:heavyoil> * 48, <liquid:lubricant> * 6, <liquid:diesel> * 42, <liquid:water> * 0);
 Refinery.addRecipe(<liquid:lightoil> * 48, <liquid:kerosene> * 28, <liquid:fuel> * 5, <liquid:gasoline> * 15);
 Refinery.addRecipe(<liquid:mixedrefinerygasses> * 4, <liquid:lpg> * 3, <liquid:naturalgas> * 1, <liquid:water> * 0);

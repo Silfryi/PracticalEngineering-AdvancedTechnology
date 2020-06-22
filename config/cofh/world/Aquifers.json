@@ -1,0 +1,134 @@
+//Scrapped until I can find a way to make them but not everything else infinite
+//The only infinite sources of water should be aquifers, rivers, lakes, and swamps
+/*
+{
+    "Permeable-Aquifer-Underground": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 1,
+            "height": 1
+        },
+        "block": "minecraft:water",
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore"
+            ],
+        "numClusters": 12,
+        "chunkChance": 192,
+        "clusterSize": 28,
+        "minHeight": 52,
+        "veinHeight": 2,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+            {"type": "name", "entry": "Plains"},
+            {"type": "name", "entry": "Rocky Steppe"},
+            {"type": "dictionary", "entry": "DESERT"}
+        ]
+    },
+    "SemiPermeable-Aquifer-Underground": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 1,
+            "height": 0
+        },
+        "block": "minecraft:water",
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore"
+            ],
+        "numClusters": 12,
+        "chunkChance": 384,
+        "clusterSize": 28,
+        "minHeight": 52,
+        "veinHeight": 2,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+            {"type": "name", "entry": "Plains"},
+            {"type": "name", "entry": "Rocky Steppe"},
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "dictionary", "entry": "MOUNTAIN"},
+            {"type": "dictionary", "entry": "OCEAN"}
+        ]
+    },
+    "Impermeable-Aquifer-Underground": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 1,
+            "height": 0
+        },
+        "block": "minecraft:water",
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore"
+            ],
+        "numClusters": 12,
+        "chunkChance": 512,
+        "clusterSize": 28,
+        "minHeight": 52,
+        "veinHeight": 2,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "MOUNTAIN"}
+        ]
+    }
+}
+*/

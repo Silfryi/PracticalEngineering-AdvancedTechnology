@@ -1,0 +1,375 @@
+{
+    "Swampland-Swamp Gas-Belowsurface": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 1,
+            "height": 1
+        },
+        "block": "customitems:swampgas",
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore"
+            ],
+        "numClusters": 12,
+        "chunkChance": 192,
+        "clusterSize": 24,
+        "minHeight": 52,
+        "veinHeight": 2,
+        "veinDiameter": 32,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"}
+        ]
+    },
+    "Standard-Oil Deposit-Punctured Caprock": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 2,
+            "height": 1
+        },
+        "block": [
+            {"name": "Magneticraft:oil_source", "metadata": 15, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 14, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 13, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 12, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 11, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 10, "weight": 0.075},
+            {"name": "Magneticraft:oil_source", "metadata": 9, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 8, "weight": 0.125},
+            {"name": "Magneticraft:oil_source", "metadata": 7, "weight": 0.15},
+            {"name": "Magneticraft:oil_source", "metadata": 6, "weight": 0.175},
+            {"name": "Magneticraft:oil_source", "metadata": 5, "weight": 0.125},
+            {"name": "Magneticraft:oil_source", "metadata": 4, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 3, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 2, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 1, "weight": 0.01}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore",
+            "GeoStrata:geostrata_block_lavarock",
+            "minecraft:lava"
+            ],
+        "numClusters": 4,
+        "chunkChance": 1024,
+        "clusterSize": 12,
+        "minHeight": 2,
+        "veinHeight": 2,
+        "veinDiameter": 96,
+        "horizontalDensity": 0.5,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type": "name", "entry": "Rocky Steppe"},
+            {"type": "dictionary", "entry": "OCEAN"},
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "dictionary", "entry": "MOUNTAIN"},
+        ]
+    },
+    "Rocky Steppe-Oil Deposit-Punctured Caprock": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 2,
+            "height": 1
+        },
+        "block": [
+            {"name": "Magneticraft:oil_source", "metadata": 15, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 14, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 13, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 12, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 11, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 10, "weight": 0.075},
+            {"name": "Magneticraft:oil_source", "metadata": 9, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 8, "weight": 0.125},
+            {"name": "Magneticraft:oil_source", "metadata": 7, "weight": 0.15},
+            {"name": "Magneticraft:oil_source", "metadata": 6, "weight": 0.20},
+            {"name": "Magneticraft:oil_source", "metadata": 5, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 4, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 3, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 2, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 1, "weight": 0.01}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore",
+            "GeoStrata:geostrata_block_lavarock",
+            "minecraft:lava"
+            ],
+        "numClusters": 4,
+        "chunkChance": 768,
+        "clusterSize": 12,
+        "minHeight": 2,
+        "veinHeight": 2,
+        "veinDiameter": 96,
+        "horizontalDensity": 0.5,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Rocky Steppe"}
+        ]
+    },
+    "Ocean-Oil Deposit-Punctured Caprock": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 2,
+            "height": 1
+        },
+        "block": [
+            {"name": "Magneticraft:oil_source", "metadata": 15, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 14, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 13, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 12, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 11, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 10, "weight": 0.075},
+            {"name": "Magneticraft:oil_source", "metadata": 9, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 8, "weight": 0.175},
+            {"name": "Magneticraft:oil_source", "metadata": 7, "weight": 0.20},
+            {"name": "Magneticraft:oil_source", "metadata": 6, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 5, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 4, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 3, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 2, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 1, "weight": 0.01}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore",
+            "GeoStrata:geostrata_block_lavarock",
+            "minecraft:lava"
+            ],
+        "numClusters": 4,
+        "chunkChance": 768,
+        "clusterSize": 12,
+        "minHeight": 2,
+        "veinHeight": 2,
+        "veinDiameter": 96,
+        "horizontalDensity": 0.5,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "OCEAN"}
+        ]
+    },
+    "Desert-Oil Deposit-Punctured Caprock": {
+        "template": "fractal",
+        "generator": {
+            "type": "plate",
+            "sizeVariance": 2,
+            "height": 1
+        },
+        "block": [
+            {"name": "Magneticraft:oil_source", "metadata": 15, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 14, "weight": 0.02},
+            {"name": "Magneticraft:oil_source", "metadata": 13, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 12, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 11, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 10, "weight": 0.075},
+            {"name": "Magneticraft:oil_source", "metadata": 9, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 8, "weight": 0.15},
+            {"name": "Magneticraft:oil_source", "metadata": 7, "weight": 0.20},
+            {"name": "Magneticraft:oil_source", "metadata": 6, "weight": 0.125},
+            {"name": "Magneticraft:oil_source", "metadata": 5, "weight": 0.10},
+            {"name": "Magneticraft:oil_source", "metadata": 4, "weight": 0.05},
+            {"name": "Magneticraft:oil_source", "metadata": 3, "weight": 0.03},
+            {"name": "Magneticraft:oil_source", "metadata": 2, "weight": 0.025},
+            {"name": "Magneticraft:oil_source", "metadata": 1, "weight": 0.01}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "minecraft:air",
+            "minecraft:gravel",
+            "ReactorCraft:reactorcraft_block_ore",
+            "ReactorCraft:reactorcraft_block_fluoriteore",
+            "ElectriCraft:electricraft_block_ore",
+            "ImmersiveEngineering:ore",
+            "Eln:Eln.Ore",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore",
+            "GeoStrata:geostrata_block_lavarock",
+            "minecraft:lava"
+            ],
+        "numClusters": 4,
+        "chunkChance": 768,
+        "clusterSize": 12,
+        "minHeight": 2,
+        "veinHeight": 2,
+        "veinDiameter": 96,
+        "horizontalDensity": 0.5,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "DESERT"}
+        ]
+    },
+
+    "Standard-Oil-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 384,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+            {"type": "dictionary", "entry": "DESERT"},
+            {"type": "dictionary", "entry": "OCEAN"},
+            {"type": "dictionary", "entry": "MOUNTAIN"},
+            {"type": "name", "entry": "Rocky Steppe"}
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "Swampland-Tar-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "Magneticraft:tar",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 512,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    },
+    "Swampland-Oil-Pools-Surface": {
+        "template": "fractal",
+        "generator": {
+            "type": "lake",
+            "useMaterial": true
+        },
+        "block": "PneumaticCraft:oil",
+        "material": [
+            "minecraft:sand",
+            "minecraft:grass",
+            "minecraft:gravel",
+            "minecraft:dirt",
+            {"name":"minecraft:dirt", "metadata":1}
+        ],
+        "numClusters": 8,
+        "chunkChance": 384,
+        "minHeight": 60,
+        "veinHeight": 8,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 3.125,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SWAMP"},
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0
+        ]
+    }
+}

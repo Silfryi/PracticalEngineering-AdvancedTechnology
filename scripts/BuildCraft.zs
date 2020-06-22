@@ -14,55 +14,8 @@ var toRemove = [<BuildCraft|Silicon:laserBlock>,
                 <BuildCraft|Transport:filteredBufferBlock>
                 ] as IItemStack[];
                 
-var toHide = [//BuildCraft pipes we don't want
-              //Item Pipes
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemswood:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay:*>,
-              //Fluid Pipes
-              <BuildCraft|Transport:pipeWaterproof>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidswood:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsemerald:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsdiamond:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidssandstone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipefluidsclay:*>,
-              //Power
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowerwood:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowerstone:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepoweriron:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowergold:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond:*>,
-              <BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone>,
-              //Technical blocks
-              //LogisticsPipes
+var toHide = [//LogisticsPipes
               <LogisticsPipes:item.pipeComponents:*>,
-              //BuildCraft blocks & items
-              <BuildCraft|Core:buildToolBlock>,
-              <BuildCraft|Core:debugger>,
-              <BuildCraft|Transport:pipeBlock>,
-              <BuildCraft|Robotics:redstone_board>.withTag({id: "logisticspipes:boardRobotRouter"})
 			  ] as IItemStack[];
 
 //Remove all that needs removing
@@ -104,8 +57,3 @@ recipes.addShaped(<BuildCraft|Transport:filteredBufferBlock>,
  [<ore:plankWood>, <minecraft:chest>, <ore:plankWood>],
  [<ore:plankWood>, <minecraft:piston>, <ore:plankWood>]]);
 recipes.addShapeless(<LogisticsPipes:item.PipeFluidExtractor>, [<LogisticsPipes:item.PipeFluidBasic>, <RotaryCraft:rotarycraft_item_enginecraft>]);
- 
- 
- 
-// LogisticsPipes and BuildCraft Shapeless
-recipes.addShapeless(<BuildCraft|Transport:pipeWaterproof>, [<ore:itemRubber>]);
