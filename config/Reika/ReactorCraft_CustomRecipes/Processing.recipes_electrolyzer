@@ -21,10 +21,52 @@
     temperature = 1000
 }
 {
+    type = "sodium_hydroxide"
+    fluid_in = {
+        type = "water"
+        amount = 200
+    }
+    item_in = {
+        is_catalyst = false
+        items = {
+            "RotaryCraft:rotarycraft_item_powders:5"
+        }
+    }
+    fluid_out_up = {
+        type = "hydrochloricacid"
+        amount = 100
+    }
+    fluid_out_down = {
+        type = "sodiumhydroxidesolution"
+        amount = 100
+    }
+}
+{
+    type = "hydrochloric_acid"
+    fluid_in = {
+        type = "hydrochloricacid"
+        amount = 100
+    }
+    fluid_out_up = {
+        type = "hydrogen"
+        amount = 100
+    }
+    fluid_out_down = {
+        type = "rc chlorine"
+        amount = 100
+    }
+}
+{
     type = "water"
     fluid_in = {
         type = "water"
         amount = 100
+    }
+    item_in = {
+        is_catalyst = true
+        items = {
+            "RotaryCraft:rotarycraft_item_shaftcraft"
+        }
     }
     fluid_out_up = {
         type = "hydrogen"

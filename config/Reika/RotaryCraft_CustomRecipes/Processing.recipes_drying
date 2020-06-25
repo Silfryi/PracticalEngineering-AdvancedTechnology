@@ -4,3 +4,9 @@
 	input_amount = 144
 	output = "customitems:rubber_sheet"
 }
+{
+    type = "sodium_hydroxide"
+	input_fluid = "sodiumhydroxidesolution"
+	input_amount = 100
+	output = "customitems:sodium_hydroxide"
+}
