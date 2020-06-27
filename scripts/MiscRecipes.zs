@@ -255,6 +255,9 @@ recipes.addShaped(<minecraft:hopper>,
  [[<ore:ingotAluminum>, null, <ore:ingotAluminum>],
  [<ore:ingotAluminum>, <ore:chest>, <ore:ingotAluminum>],
  [null, <ore:ingotAluminum>, null]]);
+recipes.addShaped(<HopperDuctMod:hopperDuct> * 4,
+ [[<ore:ingotAluminum>, <ore:plankWood>, <ore:ingotAluminum>],
+ [null, <ore:ingotAluminum>, null]]);
 //ExU drums
 recipes.addShaped(<ExtraUtilities:drum>, 
  [[<RotaryCraft:rotarycraft_item_shaftcraft:1>, <RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_item_shaftcraft:1>],
