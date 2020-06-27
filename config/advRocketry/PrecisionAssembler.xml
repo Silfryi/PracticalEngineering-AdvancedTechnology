@@ -97,6 +97,24 @@
 	</Recipe>
 
 <!-->Components<!-->
+    <Recipe timeRequired="256" power ="504">
+		<input>
+			<itemStack>ImmersiveEngineering:metal;2;30</itemStack>
+			<itemStack>ImmersiveEngineering:metal</itemStack>
+		</input>
+		<output>
+			<itemStack>ImmersiveEngineering:material;1;11</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="256" power ="504">
+		<input>
+			<itemStack>ImmersiveEngineering:metal;2;38</itemStack>
+			<itemStack>ImmersiveEngineering:metal;1;4</itemStack>
+		</input>
+		<output>
+			<itemStack>ImmersiveEngineering:material;1;12</itemStack>
+		</output>
+	</Recipe>
 	<Recipe timeRequired="256" power ="504">
 		<input>
 			<itemStack>minecraft:redstone</itemStack>
