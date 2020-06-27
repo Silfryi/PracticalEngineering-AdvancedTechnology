@@ -74,7 +74,7 @@ recipes.addShaped(<ImmersiveEngineering:metalDevice2:5> * 8,
 recipes.addShaped(<ImmersiveEngineering:metalDevice:11> * 8,
  [[<ore:sheetRubber>, <ore:sheetRubber>, <ore:sheetRubber>],
  [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]]);
- 
+
 //Make Squeezer and Fermenter Require PneumaticCraft Plastic
 Squeezer.removeFluidRecipe(<liquid:plantoil>);
 Squeezer.addRecipe(null, <liquid:plantoil> * 40, <RotaryCraft:rotarycraft_item_canola>, 20);
@@ -111,6 +111,8 @@ recipes.remove(<ImmersiveEngineering:coil:1>);
 recipes.remove(<ImmersiveEngineering:coil:2>);
 recipes.remove(<ImmersiveEngineering:coil:4>);
 recipes.remove(<immersiveintegration:iiWireCoil:0>);
+recipes.remove(<immersiveintegration:wireCoil:0>);
+recipes.remove(<immersiveintegration:wireCoil:1>);
 recipes.addShaped(<ImmersiveEngineering:coil:0> * 4,
  [[null, <customitems:copper_wire>, null],
  [<customitems:copper_wire>, <ore:treatedStick>, <customitems:copper_wire>],
@@ -135,6 +137,22 @@ recipes.addShaped(<immersiveintegration:iiWireCoil:0> * 4,
  [[null, <customitems:aluminium_wire>, null],
  [<minecraft:redstone>, <ore:treatedStick>, <minecraft:redstone>],
  [null, <customitems:aluminium_wire>, null]]);
+recipes.addShaped(<immersiveintegration:wireCoil:0> * 4,
+ [[null, <customitems:aluminium_wire>, null],
+ [<ore:crystalFluix>, <ore:treatedStick>, <ore:crystalFluix>],
+ [null, <customitems:aluminium_wire>, null]]);
+recipes.addShaped(<immersiveintegration:wireCoil:1> * 4,
+ [[<ore:crystalFluix>, <customitems:aluminium_wire>, <ore:crystalFluix>],
+ [<customitems:aluminium_wire>, <ore:treatedStick>, <customitems:aluminium_wire>],
+ [<ore:crystalFluix>, <customitems:aluminium_wire>, <ore:crystalFluix>]]);
+recipes.addShaped(<immersiveintegration:wireCoil:0> * 4,
+ [[null, <customitems:aluminium_wire>, null],
+ [<ore:crystalPureFluix>, <ore:treatedStick>, <ore:crystalPureFluix>],
+ [null, <customitems:aluminium_wire>, null]]);
+recipes.addShaped(<immersiveintegration:wireCoil:1> * 4,
+ [[<ore:crystalPureFluix>, <customitems:aluminium_wire>, <ore:crystalPureFluix>],
+ [<customitems:aluminium_wire>, <ore:treatedStick>, <customitems:aluminium_wire>],
+ [<ore:crystalPureFluix>, <customitems:aluminium_wire>, <ore:crystalPureFluix>]]);
 recipes.addShapeless(<customitems:copper_wire>, [<ore:plateCopper>, <ImmersiveEngineering:tool:1>.reuse()]);
 recipes.addShapeless(<customitems:electrum_wire>, [<ore:plateElectrum>, <ImmersiveEngineering:tool:1>.reuse()]);
 recipes.addShapeless(<customitems:aluminium_wire>, [<ore:plateAluminum>, <ImmersiveEngineering:tool:1>.reuse()]);
