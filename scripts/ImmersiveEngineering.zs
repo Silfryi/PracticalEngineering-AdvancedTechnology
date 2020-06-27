@@ -370,14 +370,14 @@ Excavator.addMineral("Pyrite", 20, 0.1, ["netherrack", "oreIron", "dustSulfur"],
 Excavator.addMineral("Magnetite", 25, 0.1, ["stone", "cobblestone", "gravel", "oreMagnetite", "oreIron", "oreGold"], [20, 10, 5, 55.25, 6.5, 3.25], [-1], true);
 Excavator.addMineral("Bauxite", 20, 0.2, ["stone", "cobblestone", "gravel", "oreAluminum", "oreTitanium"], [20, 10, 5, 58.5, 3.25], [-1], true);
 Excavator.addMineral("Cassiterite", 15, 0.2, ["stone", "cobblestone", "gravel", "oreTin"], [20, 10, 5, 61.75], [-1], true);
-Excavator.addMineral("Copper", 30, 0.2, ["stone", "cobblestone", "gravel", "oreCopper", "oreGold", "oreNickel"], [20, 10, 5, 42.25, 16.25, 3.25], [-1], true);
+Excavator.addMineral("Copper", 30, 0.2, ["stone", "cobblestone", "gravel", "oreCopper", "oreNickel", "oreGold"], [20, 10, 5, 42.25, 16.25, 3.25], [-1], true);
 Excavator.addMineral("Iron", 25, 0.1, ["stone", "cobblestone", "gravel", "oreIron", "oreNickel", "oreTin"], [20, 10, 5, 32.25, 16.25, 13], [-1], true);
-Excavator.addMineral("Quartzite", 25, 0.1, ["stone", "cobblestone", "gravel", "oreQuartz", "oreCertusQuartz"], [20, 10, 5, 39, 26], [-1], true);
+Excavator.addMineral("Quartzite", 25, 0.1, ["netherrack", "oreQuartz", "oreCertusQuartz"], [35, 39, 26], [-1], false);
 Excavator.addMineral("Lapis", 10, 0.2, ["stone", "cobblestone", "gravel", "oreLapis", "oreIron", "dustSulfur"], [20, 10, 5, 42.25, 17.875, 1.625], [-1], true);
 Excavator.addMineral("Coal", 25, 0.1, ["stone", "cobblestone", "gravel", "oreCoal", "oreDiamond", "oreEmerald"], [15, 10, 5, 64.4, 1.05, 1.05], [-1], true);
 Excavator.addMineral("Gold", 20, 0.3, ["stone", "cobblestone", "gravel", "oreGold", "oreCopper", "oreNickel"], [40, 20, 10, 19.5, 7.5, 1.5], [-1], true);
 Excavator.addMineral("Nickel", 20, 0.3, ["stone", "cobblestone", "gravel", "oreNickel", "oreIron", "orePlatinum"], [40, 20, 10, 25.5, 1.5, 1.5], [-1], true);
-Excavator.addMineral("Galena", 25, 0.2, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver"], [20, 10, 5, 26, 26, 6.5], [-1], true);
+Excavator.addMineral("Galena", 25, 0.2, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver", "dustSulfur"], [20, 10, 5, 26, 26, 6.5], [-1], true);
 Excavator.addMineral("Lead", 5, 0.15, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver"], [30, 15, 5, 30, 17.5], [-1], true);
 Excavator.addMineral("Silver", 5, 0.2, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver"], [30, 15, 5, 30, 17.5], [-1], true);
 Excavator.addMineral("Platinum", 5, 0.35, ["stone", "cobblestone", "gravel", "orePlatinum", "oreNickel"], [45, 20, 15, 8, 6], [-1], true);

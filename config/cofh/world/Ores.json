@@ -1,0 +1,813 @@
+{
+	"All-Kimberlite Pipes-Underground": {
+	    "template": "uniform",
+		"generator": {
+		    "type": "stalactite",
+			"genBody": [
+			    "minecraft:stone",
+				"minecraft:gravel",
+				"minecraft:dirt",
+				"minecraft:sandstone",
+			    "customitems:permafrost"
+			],
+			"minHeight": 88,
+			"heightVariance": 8,
+		    "genSize": 4,
+			"sizeVariance": 1
+		},
+		"block": [
+		    {"name":"customitems:kimberlite", "weight":78.75},
+			{"name":"minecraft:diamond_ore", "weight":20},
+			{"name":"RotaryCraft:rotarycraft_block_deco", "metadata":2, "weight":0.25},
+			{"name":"customitems:impure_graphite", "weight":1}
+		],
+		"material": [
+		    "minecraft:dirt",
+			"customitems:permafrost",
+			"minecraft:stone"
+		],
+		"minHeight": 56,
+        "maxHeight": 72,
+		"numClusters": 1,
+		"chunkChance": 32,
+        "retrogen": false,
+		"biomeRestriction": "none",
+        "biomes": []
+	},
+//Overworld
+//Fluorite
+	"White Fluorite-y48": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":6}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 48,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+    "Blue Fluorite-y64": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":0},
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":1},
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":3},
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":4}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1536,
+        "clusterSize": 4,
+        "minHeight": 64,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+    "Red Fluorite-y80": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":2},
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":5},
+            {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":7}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1536,
+        "clusterSize": 4,
+        "minHeight": 80,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Cinnabar
+    "Cinnabar-y8": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:redstone_ore", "weight":33.75},
+            {"name":"Eln:Eln.Ore", "metadata":6, "weight":6},
+            {"name":"Magneticraft:sulfur_ore", "weight":3}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 8,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+    "Cinnabar-y12": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:redstone_ore", "weight":33.75},
+            {"name":"Eln:Eln.Ore", "metadata":6, "weight":6},
+            {"name":"Magneticraft:sulfur_ore", "weight":3}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 12,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Wolframite
+    "Wolframite-y20": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"Eln:Eln.Ore", "metadata":5, "weight":12},
+            {"name":"minecraft:iron_ore", "weight":3}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 20,
+        "veinHeight": 7,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Pitchblende
+    "Pitchblende-y12": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":1, "weight":19.5},
+            {"name":"Magneticraft:thorium_ore", "weight":1.7},
+            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":1.5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 512,
+        "clusterSize": 4,
+        "minHeight": 12,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"OCEAN"},
+            {"type":"dictionary", "entry":"RIVER"}
+        ]
+    },
+//Magnetite
+    "Magnetite-y56": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+           {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":85},
+            {"name":"minecraft:iron_ore", "weight":10},
+            {"name":"minecraft:gold_ore", "weight":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 56,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+    "Magnetite-y72": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":85},
+            {"name":"minecraft:iron_ore", "weight":10},
+            {"name":"minecraft:gold_ore", "weight":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 72,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Bauxite
+    "Bauxite-y52": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1536,
+        "clusterSize": 4,
+        "minHeight": 52,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+    "Bauxite-y68": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 68,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+    "Bauxite-y84": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 84,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Cassiterite
+   "Cassiterite-y64": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"libVulpes:libVulpesore0", "metadata":5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 512,
+        "clusterSize": 4,
+        "minHeight": 64,
+        "veinHeight": 7,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Copper
+    "Copper-y40": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":42.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
+            {"name":"minecraft:gold_ore", "weight":3.25}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 40,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+    "Copper-y56": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":42.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
+            {"name":"minecraft:gold_ore", "weight":3.25}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 56,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Galena
+    "Galena-y36": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":26},
+            {"name":"ImmersiveEngineering:ore", "metadata":3, "weight":26},
+            {"name":"Magneticraft:sulfur_ore", "weight":6.5}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 36,
+        "veinHeight": 9,
+        "veinDiameter": 56,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Coal
+	"Coal-y48": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:coal_ore"}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 8192,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 48,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+    "Coal-y64": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:coal_ore"}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 8192,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 64,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+    "Coal-y80": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:coal_ore"}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1536,
+        "clusterSize": 4,
+        "minHeight": 80,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "blacklist",
+        "biomes": [
+            {"type":"name", "entry":"Darkened Regolith Flats"},
+            {"type":"name", "entry":"Regolith Wasteland"},
+            {"type":"name", "entry":"Oxidized Ferric Sand Desert"},
+            {"type":"name", "entry":"Crystal Chasms"}
+        ]
+    },
+//Lapis
+   "Lapis-y24": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:lapis_ore", "weight":42.25},
+            {"name":"minecraft:iron_ore", "weight":17.875},
+            {"name":"Magneticraft:sulfur_ore", "weight":1.625}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 24,
+        "veinHeight": 7,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Iron
+    "Iron-y20": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:iron_ore", "weight":32.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
+            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3.25}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 20,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+    "Iron-y32": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:iron_ore", "weight":32.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
+            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3.25}
+            ],
+        "material": [
+            "minecraft:stone",
+            "minecraft:dirt",
+            "GeoStrata:geostrata_block_lavarock"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 32,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Nether
+//Thorite
+    "Thorite-y12": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":9}
+            ],
+        "material": [
+            "minecraft:netherrack"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 12,
+        "veinHeight": 9,
+        "veinDiameter": 56,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"NETHER"}
+        ]
+    },
+    "Thorite-y24": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":9}
+            ],
+        "material": [
+            "minecraft:netherrack"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 24,
+        "veinHeight": 9,
+        "veinDiameter": 48,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"NETHER"}
+        ]
+    },
+    //Quartzite
+    "Quartzite-y64": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:quartz_ore", "weight":39},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            ],
+        "material": [
+            "minecraft:netherrack"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 64,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"NETHER"}
+        ]
+    },
+    "Quartzite-y80": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:quartz_ore", "weight":39},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            ],
+        "material": [
+            "minecraft:netherrack"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 80,
+        "veinHeight": 9,
+        "veinDiameter": 56,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"NETHER"}
+        ]
+    },
+    "Quartzite-y96": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:quartz_ore", "weight":39},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            ],
+        "material": [
+            "minecraft:netherrack"
+            ],
+        "numClusters": 6144,
+        "chunkChance": 384,
+        "clusterSize": 4,
+        "minHeight": 96,
+        "veinHeight": 9,
+        "veinDiameter": 56,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type":"dictionary", "entry":"NETHER"}
+        ]
+    }
+}
