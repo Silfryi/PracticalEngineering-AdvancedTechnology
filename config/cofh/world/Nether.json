@@ -90,5 +90,90 @@
         "biomes": [
             {"type": "dictionary", "entry": "NETHER"}
         ]
+    },
+    "Nether-Dungeon-Underlava": {
+        "template": "uniform",
+        "generator": {
+            "type": "dungeon",
+            "spawnEntity": "witherSkeleton",
+            "spawnerFloor": [
+                {"name":"chisel:lavastone", "metadata":1},
+                {"name":"chisel:lavastone", "metadata":7},
+                {"name":"chisel:nether_brick", "metadata":8},
+                {"name":"chisel:factoryblock", "metadata":10},
+                {"name":"ExtraUtilities:color_obsidian", "metadata":14}
+                ],
+            "lootTable": "dungeonChest",
+            "maxChests": 4,
+            "chestAttempts": 4,
+            "minHeight": 4,
+            "maxHeight": 5,
+            "minWidthX": 3,
+            "maxWidthX": 5,
+            "minWidthZ": 3,
+            "maxWidthZ": 5
+        },
+        "block": [
+            {"name":"minecraft:nether_brick", "weight":20},
+            {"name":"Railcraft:brick.nether", "metadata":1, "weight":35},
+            {"name":"Railcraft:brick.nether", "metadata":2, "weight":30},
+            {"name":"Railcraft:brick.nether", "metadata":3, "weight":5},
+            {"name":"Railcraft:brick.nether", "metadata":4, "weight":5},
+            {"name":"Railcraft:brick.nether", "metadata":5, "weight":5}
+        ],
+        "material": [
+            "minecraft:netherrack"
+        ],
+        "minHeight": 8,
+        "maxHeight": 24,
+        "numClusters": 1,
+        "chunkChance": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "NETHER"}
+        ]
+    },
+    "Nether-Dungeon-Normal": {
+        "template": "uniform",
+        "generator": {
+            "type": "dungeon",
+            "spawnEntity": "LavaSlime",
+            "spawnerFloor": [
+                {"name":"chisel:lavastone", "metadata":1 },
+                {"name":"chisel:lavastone", "metadata":7 },
+                {"name":"chisel:nether_brick", "metadata":8 },
+                {"name":"chisel:factoryblock", "metadata":10 },
+                {"name":"ExtraUtilities:color_obsidian", "metadata":14 }
+                ],
+            "lootTable": "dungeonChest",
+            "maxChests": 2,
+            "chestAttempts": 4,
+            "minHeight": 3,
+            "maxHeight": 4,
+            "minWidthX": 2,
+            "maxWidthX": 3,
+            "minWidthZ": 2,
+            "maxWidthZ": 3
+        },
+        "block": [
+            {"name":"Railcraft:brick.bloodstained", "metadata":0, "weight":20},
+            {"name":"Railcraft:brick.bloodstained", "metadata":1, "weight":40},
+            {"name":"Railcraft:brick.bloodstained", "metadata":2, "weight":30},
+            {"name":"Railcraft:brick.bloodstained", "metadata":3, "weight":5},
+            {"name":"Railcraft:brick.bloodstained", "metadata":4, "weight":5}
+        ],
+        "material": [
+            "minecraft:netherrack"
+        ],
+        "minHeight": 32,
+        "maxHeight": 96,
+        "numClusters": 2,
+        "chunkChance": 1,
+        "retrogen": false,
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "NETHER"}
+        ]
     }
 }

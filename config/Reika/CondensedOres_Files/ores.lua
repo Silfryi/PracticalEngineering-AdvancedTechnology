@@ -178,6 +178,19 @@
     veinSize = 1
 }
 {
+    type = "Calcite"
+    inherit = "base"
+    name = "Calcite"
+    blocks = {
+        "ReactorCraft:reactorcraft_block_ore:7"
+    }
+    veinFrequency = {
+        veinsPerChunk = 1
+        chunkGenChance = 0.00001
+    }
+    veinSize = 1
+}
+{
     type = "Platinum"
     inherit = "base"
     name = "Platinum Ore"

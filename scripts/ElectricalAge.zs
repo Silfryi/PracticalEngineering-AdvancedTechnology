@@ -29,6 +29,7 @@ var toRemove = [//Machine parts & crafting components
                 //Steam turbine & solars
                 <Eln:Eln.TransparentNode:265>,
                 <Eln:Eln.TransparentNode:3075>,
+                <Eln:Eln.TransparentNode:266>,
                 //Experimental Battery
                 <Eln:Eln.TransparentNode:1030>,
                 //Change Converters to match tiers better
@@ -75,10 +76,15 @@ recipes.addShaped(<Eln:Eln.TransparentNode:1030>,
  [[<ore:plateLead>, <Eln:Eln.TransparentNode:1025>, <ore:plateLead>],
  [<Eln:Eln.TransparentNode:1026>, null, <Eln:Eln.TransparentNode:1027>],
  [<ore:plateLead>, <Eln:Eln.TransparentNode:1028>, <ore:plateLead>]]);
+//Turbine Bits
 recipes.addShaped(<Eln:Eln.TransparentNode:265>,
  [[null, <ore:ingotTungsten>, null],
  [<ore:ingotTungsten>, <ore:blockSteel>, <ore:ingotTungsten>],
  [null, <Eln:Eln.sharedItem:7703>, null]]);
+recipes.addShaped(<Eln:Eln.TransparentNode:266>,
+ [[<PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>],
+ [<Eln:Eln.sharedItem:641>, <ore:ingotAluminum>, <Eln:Eln.sharedItem:641>],
+ [null, <Eln:Eln.sharedItem:7703>, <Eln:Eln.SixNode:2060>]]);
 recipes.addShaped(<Eln:Eln.TransparentNode:2116>, 
  [[<ore:ingotAlloy>, <ore:circuitAdvanced>, <ore:ingotAlloy>],
  [<ore:dustDiamond>, <Eln:Eln.sharedItem:7703>, <ore:dustDiamond>],

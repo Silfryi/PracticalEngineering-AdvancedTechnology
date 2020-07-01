@@ -626,9 +626,9 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:iron_ore", "weight":32.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
-            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3.25}
+            {"name":"minecraft:iron_ore", "weight":46.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":12.25},
+            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3}
             ],
         "material": [
             "minecraft:stone",
@@ -654,9 +654,9 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:iron_ore", "weight":32.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
-            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3.25}
+            {"name":"minecraft:iron_ore", "weight":46.25},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":12.25},
+            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3}
             ],
         "material": [
             "minecraft:stone",

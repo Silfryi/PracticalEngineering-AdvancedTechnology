@@ -325,6 +325,7 @@ Crusher.addRecipe(<RotaryCraft:rotarycraft_item_powders>, <ore:netherrack>, 4800
 Crusher.addRecipe(<customitems:graphite_dust>, <ReactorCraft:reactorcraft_item_crafting:13>, 1600);
 Crusher.addRecipe(<Eln:Eln.sharedItem:6>, <RotaryCraft:rotarycraft_item_modextracts:87>, 1600);
 Crusher.addRecipe(<ReactorCraft:reactorcraft_item_raw:8>, <ore:gemEmerald>, 1600);
+Crusher.addRecipe(<minecraft:sand>, <ore:itemSlag>, 2400);
 Crusher.addRecipe(<minecraft:sand> * 4, <minecraft:sandstone>, 2400, <RotaryCraft:rotarycraft_item_modingots:20>, 0.125);
 Crusher.addRecipe(<customitems:charcoal_dust>, <ore:charcoal>, 4800);
 
@@ -371,7 +372,7 @@ Excavator.addMineral("Magnetite", 25, 0.1, ["stone", "cobblestone", "gravel", "o
 Excavator.addMineral("Bauxite", 20, 0.2, ["stone", "cobblestone", "gravel", "oreAluminum", "oreTitanium"], [20, 10, 5, 58.5, 3.25], [-1], true);
 Excavator.addMineral("Cassiterite", 15, 0.2, ["stone", "cobblestone", "gravel", "oreTin"], [20, 10, 5, 61.75], [-1], true);
 Excavator.addMineral("Copper", 30, 0.2, ["stone", "cobblestone", "gravel", "oreCopper", "oreNickel", "oreGold"], [20, 10, 5, 42.25, 16.25, 3.25], [-1], true);
-Excavator.addMineral("Iron", 25, 0.1, ["stone", "cobblestone", "gravel", "oreIron", "oreNickel", "oreTin"], [20, 10, 5, 32.25, 16.25, 13], [-1], true);
+Excavator.addMineral("Iron", 25, 0.1, ["stone", "cobblestone", "gravel", "oreIron", "oreNickel", "oreTin"], [20, 10, 5, 46.25, 12.25, 3], [-1], true);
 Excavator.addMineral("Quartzite", 25, 0.1, ["netherrack", "oreQuartz", "oreCertusQuartz"], [35, 39, 26], [-1], false);
 Excavator.addMineral("Lapis", 10, 0.2, ["stone", "cobblestone", "gravel", "oreLapis", "oreIron", "dustSulfur"], [20, 10, 5, 42.25, 17.875, 1.625], [-1], true);
 Excavator.addMineral("Coal", 25, 0.1, ["stone", "cobblestone", "gravel", "oreCoal", "oreDiamond", "oreEmerald"], [15, 10, 5, 64.4, 1.05, 1.05], [-1], true);

@@ -122,6 +122,29 @@ ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 3, <ore:oreThorite
 
 
 //Arc Furnace - Recycling
+//Iron Tools
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <minecraft:iron_sword>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 3, <minecraft:iron_pickaxe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 3, <minecraft:iron_axe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <minecraft:iron_hoe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 1, <minecraft:iron_shovel>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 5, <minecraft:iron_helmet>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 8, <minecraft:iron_chestplate>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 7, <minecraft:iron_leggings>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 4, <minecraft:iron_boots>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:iron_ingot> * 7, <minecraft:iron_horse_armor>, null, 100, 512, [], "Recycling");
+//Golden Tools
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 2, <minecraft:golden_sword>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 3, <minecraft:golden_pickaxe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 3, <minecraft:golden_axe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 2, <minecraft:golden_hoe>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 1, <minecraft:golden_shovel>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 5, <minecraft:golden_helmet>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 8, <minecraft:golden_chestplate>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 7, <minecraft:golden_leggings>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 4, <minecraft:golden_boots>, null, 100, 512, [], "Recycling");
+ArcFurnace.addRecipe(<minecraft:gold_ingot> * 7, <minecraft:golden_horse_armor>, null, 100, 512, [], "Recycling");
+//Other
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:0> * 4, <ImmersiveEngineering:storage:8>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:6> * 4, <ImmersiveEngineering:storage:9>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 2, <ImmersiveEngineering:storage:10>, <ImmersiveEngineering:metal:1> * 2, 100, 512, [], "Recycling");
