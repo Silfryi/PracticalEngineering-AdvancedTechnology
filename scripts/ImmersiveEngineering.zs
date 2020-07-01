@@ -355,13 +355,14 @@ Excavator.removeMineral("Uranium");
 //Add Ores to Specific Veins
 //New Veins
 //Nether Veins
+/*
 Excavator.addMineral("Ammonium Chloride", 25, 0.5, ["netherrack", "oreAmmonium"], [75, 25], [-1], false);
 Excavator.addMineral("Thorite", 10, 0.3, ["netherrack", "oreThorite", "orePitchblende"], [60, 30, 10], [-1], false);
 
 //Non-Nether Veins
 Excavator.addMineral("Fluorite", 30, 0.2, ["stone", "cobblestone", "gravel", "oreFluorite"], [15, 10, 5, 70], [-1], true);
 Excavator.addMineral("Cinnabar", 15, 0.1, ["stone", "cobblestone", "gravel", "oreRedstone", "oreCinnabar", "dustSulfur"], [25, 10, 5, 33.75, 6, 3], [-1], true);
-Excavator.addMineral("Silt", 25, 0.05, ["blockClay", "sand", "gravel"], [50, 30, 20], [-1], true);
+
 Excavator.addMineral("Wolframite", 10, 0.1, ["stone", "cobblestone", "gravel", "oreTungsten", "oreIron"], [40, 20, 10, 12, 3], [-1], true);
 Excavator.addMineral("Pitchblende", 10, 0.3, ["stone", "cobblestone", "gravel", "orePitchblende", "oreThorium", "oreLead"], [40, 20, 10, 19.5, 1.7, 1.5], [-1], true);
 //Remade Veins
@@ -373,12 +374,59 @@ Excavator.addMineral("Bauxite", 20, 0.2, ["stone", "cobblestone", "gravel", "ore
 Excavator.addMineral("Cassiterite", 15, 0.2, ["stone", "cobblestone", "gravel", "oreTin"], [20, 10, 5, 61.75], [-1], true);
 Excavator.addMineral("Copper", 30, 0.2, ["stone", "cobblestone", "gravel", "oreCopper", "oreNickel", "oreGold"], [20, 10, 5, 42.25, 16.25, 3.25], [-1], true);
 Excavator.addMineral("Iron", 25, 0.1, ["stone", "cobblestone", "gravel", "oreIron", "oreNickel", "oreTin"], [20, 10, 5, 46.25, 12.25, 3], [-1], true);
-Excavator.addMineral("Quartzite", 25, 0.1, ["netherrack", "oreQuartz", "oreCertusQuartz"], [35, 39, 26], [-1], false);
+
 Excavator.addMineral("Lapis", 10, 0.2, ["stone", "cobblestone", "gravel", "oreLapis", "oreIron", "dustSulfur"], [20, 10, 5, 42.25, 17.875, 1.625], [-1], true);
-Excavator.addMineral("Coal", 25, 0.1, ["stone", "cobblestone", "gravel", "oreCoal", "oreDiamond", "oreEmerald"], [15, 10, 5, 64.4, 1.05, 1.05], [-1], true);
+
 Excavator.addMineral("Gold", 20, 0.3, ["stone", "cobblestone", "gravel", "oreGold", "oreCopper", "oreNickel"], [40, 20, 10, 19.5, 7.5, 1.5], [-1], true);
 Excavator.addMineral("Nickel", 20, 0.3, ["stone", "cobblestone", "gravel", "oreNickel", "oreIron", "orePlatinum"], [40, 20, 10, 25.5, 1.5, 1.5], [-1], true);
 Excavator.addMineral("Galena", 25, 0.2, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver", "dustSulfur"], [20, 10, 5, 26, 26, 6.5], [-1], true);
 Excavator.addMineral("Lead", 5, 0.15, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver"], [30, 15, 5, 30, 17.5], [-1], true);
 Excavator.addMineral("Silver", 5, 0.2, ["stone", "cobblestone", "gravel", "oreLead", "oreSilver"], [30, 15, 5, 30, 17.5], [-1], true);
 Excavator.addMineral("Platinum", 5, 0.35, ["stone", "cobblestone", "gravel", "orePlatinum", "oreNickel"], [45, 20, 15, 8, 6], [-1], true);
+*/
+//1.15-Inspired Veins
+//Some veins are slightly adjusted to give a more favorable ore balance and add some 1.7.10 exclusive ores or stones
+//Nether Veins
+Excavator.addMineral("Ammonium Chloride", 25, 0.2, ["netherrack", "oreAmmonium"], [100, 100], [-1], false);
+Excavator.addMineral("Thorite", 10, 0.1, ["netherrack", "oreThorite", "orePitchblende"], [100, 75, 25], [-1], false);
+Excavator.addMineral("Mephitic Quartzite", 20, 0.15, ["netherrack", "oreQuartz", "oreCertusQuartz", "dustSulfur"], [100, 40, 40, 20], [-1], false);
+Excavator.addMineral("Pyrite", 25, 0.15, ["netherrack", "oreIron", "dustSulfur"], [100, 50, 50], [-1], false);
+
+//Overworld Veins
+Excavator.addMineral("Fluorite", 15, 0.1, ["cobblestone", "stone", "gravel", "oreWhiteFluorite"], [50, 30, 20, 100], [-1], true);
+Excavator.addMineral("Magnetite", 30, 0.05, ["cobblestone", "stone", "gravel", "oreMagnetite", "oreIron", "oreGold"], [50, 30, 20, 80, 15, 5], [-1], true);
+Excavator.addMineral("Lapis", 10, 0.05, ["cobblestone", "stone", "gravel", "oreLapis", "oreIron", "dustSulfur"], [50, 30, 20, 70, 25, 5], [-1], true);
+Excavator.addMineral("Kimberlite", 5, 0.2, ["cobblestone", "stone", "gravel", "oreKimberlite", "oreKimberliteGravel", "oreDiamond"], [50, 30, 20, 50, 30, 20], [-1], true);
+Excavator.addMineral("Banded Iron", 10, 0.05, ["cobblestone", "stone", "gravel", "oreIron", "oreMagnetite"], [50, 30, 20, 80, 20], [-1], false);
+Excavator.addMineral("Bituminous Coal", 25, 0.1, ["cobblestone", "stone", "gravel", "oreCoal", "dustSulfur"], [50, 30, 20, 80, 20], [-1], true);
+Excavator.addMineral("Pentlandite", 25, 0.05, ["cobblestone", "stone", "gravel", "oreIron", "oreNickel", "dustSulfur"], [50, 30, 20, 35, 35, 30], [-1], true);
+Excavator.addMineral("Chalcopyrite", 20, 0.05, ["cobblestone", "stone", "gravel", "oreIron", "oreCopper", "dustSulfur"], [50, 30, 20, 35, 35, 30], [-1], true);
+Excavator.addMineral("Laterite", 20, 0.05, ["cobblestone", "stone", "gravel", "oreAluminum", "oreIron", "oreTitanium"], [50, 30, 20, 75, 20, 5], [-1], true);
+Excavator.addMineral("Auricupride", 30, 0.1, ["cobblestone", "stone", "gravel", "oreCopper", "oreGold"], [50, 30, 20, 75, 25], [-1], true);
+Excavator.addMineral("Galena", 15, 0.05, ["cobblestone", "stone", "gravel", "oreLead", "dustSulfur", "oreSilver"], [50, 30, 20, 40, 30, 30], [-1], true);
+Excavator.addMineral("Cinnabar", 15, 0.1, ["cobblestone", "stone", "gravel", "oreRedstone", "dustSulfur", "oreCinnabar"], [50, 30, 20, 60, 25, 15], [-1], true);
+Excavator.addMineral("Pitchblende", 10, 0.15, ["cobblestone", "stone", "gravel", "orePitchblende", "oreThorium", "oreLead"], [50, 30, 20, 70, 20, 10], [-1], true);
+Excavator.addMineral("Beryl", 5, 0.2, ["cobblestone", "stone", "gravel", "oreEmerald"], [50, 30, 20, 100], [-1], true);
+Excavator.addMineral("Cassiterite", 20, 0.05, ["cobblestone", "stone", "gravel", "oreTin"], [50, 30, 20, 100], [-1], true);
+Excavator.addMineral("Wolframite", 10, 0.1, ["cobblestone", "stone", "gravel", "oreTungsten", "oreIron"], [50, 30, 20, 65, 35], [-1], true);
+Excavator.addMineral("Cooperite", 5, 0.1, ["cobblestone", "stone", "gravel", "oreNickel", "orePlatinum"], [50, 30, 20, 60, 40], [-1], true);
+
+//Rock and sediment veins
+Excavator.addMineral("Silt", 25, 0.05, ["blockClay", "sand", "gravel"], [50, 30, 20], [-1], true);
+Excavator.addMineral("Igneous Rock", 25, 0.05, ["stoneAndesite", "stoneGranite", "stoneBasalt", "stonePumice", "stonePeridotite", "blockObsidian"], [20, 20, 20, 20, 15, 5], [-1], true);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

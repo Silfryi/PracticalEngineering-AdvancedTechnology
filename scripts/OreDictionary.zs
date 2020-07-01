@@ -8,6 +8,7 @@ import minetweaker.item.IItemStack;
 <ore:dyeYellow>.add(<RotaryCraft:rotarycraft_item_modingots:48>);
 <ore:sheetRubber>.add(<customitems:rubber_sheet>);
 <ore:oreKimberlite>.add(<customitems:kimberlite>);
+<ore:oreKimberliteGravel>.add(<customitems:kimberlite_gravel>);
 <ore:dustCharcoal>.add(<customitems:charcoal_dust>);
 <ore:stickAlloy>.add(<customitems:tungsten_alloy_steel_rod>);
 <ore:slimeball>.add(<Eln:Eln.sharedItem:4096>);
@@ -32,9 +33,10 @@ import minetweaker.item.IItemStack;
 <ore:ingotBrass>.remove(<Magneticraft:item.ingotBrass>);
 <ore:ingotCarbide>.remove(<Magneticraft:item.ingotCarbide>);
 
-//Oredictionary switcharoo for Thorite and thorium in the Excavator
+//Oredictionary switcharoo for Thorite and thorium in the Excavator, add `oreWhiteFluorite` for fluorite vein
 <ore:oreThorium>.remove(<ReactorCraft:reactorcraft_block_ore:9>);
 <ore:oreThorite>.add(<ReactorCraft:reactorcraft_block_ore:9>);
+<ore:oreWhiteFluorite>.add(<ReactorCraft:reactorcraft_block_fluoriteore:6>);
 
 //Remove RotaryCraft and Magneticraft modingots from OreDictionary for what UniDict can't handle well
 <ore:gemFluorite>.remove(<RotaryCraft:rotarycraft_item_modingots:52>);

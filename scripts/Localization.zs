@@ -238,6 +238,7 @@ game.setLocalization("tile.customitems:permafrost.name", "Permafrost");
 game.setLocalization("tile.customitems:kimberlite.name", "Kimberlite");
 game.setLocalization("tile.customitems:kimberlite_gravel.name", "Kimberlite Gravel");
 game.setLocalization("tile.customitems:kimberlite_sand.name", "Kimberlite Sand");
+game.setLocalization("tile.customitems:sulfur_ore.name", "Sulfur Ore");
 game.setLocalization("tile.customitems:red_sandstone.name", "Red Sandstone");
 game.setLocalization("tile.customitems:red_sandstone_slab.name", "Red Sandstone Slab");
 game.setLocalization("tile.customitems:red_sandstone.name_stairs", "Red Sandstone Stairs");

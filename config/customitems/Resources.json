@@ -130,6 +130,21 @@
             "harvestLevel": 3,
             "type": "falling"
         },
+        //Sulfur Ore
+        {
+            "textureName": "sulfur_ore",
+            "name": "sulfur_ore",
+            "dropItemName": "RotaryCraft:rotarycraft_item_modingots:48",
+            "minItemDrop": 1,
+            "maxItemDrop": 3,
+            "eachExtraItemDropChance": 25,
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 3.0,            
+            "hardness": 3.0,
+            "harvestLevel": 1
+        },
         //Bedrock Replacements
         {
             "textureName": "hardened_stone",

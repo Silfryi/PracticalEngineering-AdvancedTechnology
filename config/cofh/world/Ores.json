@@ -22,14 +22,14 @@
 			{"name":"customitems:impure_graphite", "weight":1}
 		],
 		"material": [
-		    "minecraft:dirt",
+		    {"name": "minecraft:dirt", "metadata": 0},
 			"customitems:permafrost",
 			"minecraft:stone"
 		],
 		"minHeight": 56,
         "maxHeight": 72,
 		"numClusters": 1,
-		"chunkChance": 32,
+		"chunkChance": 48,
         "retrogen": false,
 		"biomeRestriction": "none",
         "biomes": []
@@ -45,12 +45,12 @@
             {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":6}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 1024,
+        "chunkChance": 1536,
         "clusterSize": 4,
         "minHeight": 48,
         "veinHeight": 9,
@@ -78,9 +78,9 @@
             {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":4}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1536,
@@ -110,9 +110,9 @@
             {"name":"ReactorCraft:reactorcraft_block_fluoriteore", "metadata":7}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1536,
@@ -134,14 +134,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:redstone_ore", "weight":33.75},
-            {"name":"Eln:Eln.Ore", "metadata":6, "weight":6},
-            {"name":"Magneticraft:sulfur_ore", "weight":3}
+            {"name":"minecraft:redstone_ore", "weight":60},
+            {"name":"customitems:sulfur_ore", "weight":25},
+            {"name":"Eln:Eln.Ore", "metadata":6, "weight":15}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -166,14 +166,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:redstone_ore", "weight":33.75},
-            {"name":"Eln:Eln.Ore", "metadata":6, "weight":6},
-            {"name":"Magneticraft:sulfur_ore", "weight":3}
+            {"name":"minecraft:redstone_ore", "weight":60},
+            {"name":"customitems:sulfur_ore", "weight":25},
+            {"name":"Eln:Eln.Ore", "metadata":6, "weight":15}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -195,13 +195,13 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"Eln:Eln.Ore", "metadata":5, "weight":12},
-            {"name":"minecraft:iron_ore", "weight":3}
+            {"name":"Eln:Eln.Ore", "metadata":5, "weight":65},
+            {"name":"minecraft:iron_ore", "weight":35}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1024,
@@ -223,14 +223,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":1, "weight":19.5},
-            {"name":"Magneticraft:thorium_ore", "weight":1.7},
-            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":1.5}
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":1, "weight":70},
+            {"name":"Magneticraft:thorium_ore", "weight":20},
+            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":10}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 512,
@@ -254,14 +254,14 @@
             "type": "cluster"
         },
         "block": [
-           {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":85},
-            {"name":"minecraft:iron_ore", "weight":10},
+           {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":80},
+            {"name":"minecraft:iron_ore", "weight":15},
             {"name":"minecraft:gold_ore", "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -282,14 +282,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":85},
-            {"name":"minecraft:iron_ore", "weight":10},
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":80},
+            {"name":"minecraft:iron_ore", "weight":15},
             {"name":"minecraft:gold_ore", "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -304,20 +304,21 @@
         "biomes": [
         ]
     },
-//Bauxite
+//Laterite
     "Bauxite-y52": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":75},
+            {"name":"minecraft:iron_ore", "weight":75},
             {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1536,
@@ -338,13 +339,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":75},
+            {"name":"minecraft:iron_ore", "weight":75},
             {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1024,
@@ -365,13 +367,14 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":95},
+            {"name":"ImmersiveEngineering:ore", "metadata":1, "weight":75},
+            {"name":"minecraft:iron_ore", "weight":75},
             {"name":"libVulpes:libVulpesore0", "metadata":8, "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1024,
@@ -396,12 +399,12 @@
             {"name":"libVulpes:libVulpesore0", "metadata":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 512,
+        "chunkChance": 768,
         "clusterSize": 4,
         "minHeight": 64,
         "veinHeight": 7,
@@ -413,26 +416,26 @@
         "biomes": [
         ]
     },
-//Copper
-    "Copper-y40": {
+//Chalcopyrite
+    "Chalcopyrite-y48": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":42.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
-            {"name":"minecraft:gold_ore", "weight":3.25}
+            {"name":"minecraft:iron_ore", "weight":35},
+            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":35},
+            {"name":"customitems:sulfur_ore", "weight":30}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 768,
+        "chunkChance": 1024,
         "clusterSize": 4,
-        "minHeight": 40,
+        "minHeight": 48,
         "veinHeight": 9,
         "veinDiameter": 64,
         "horizontalDensity": 1,
@@ -442,25 +445,82 @@
         "biomes": [
         ]
     },
-    "Copper-y56": {
+    "Chalcopyrite-y64": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":42.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":16.25},
-            {"name":"minecraft:gold_ore", "weight":3.25}
+            {"name":"minecraft:iron_ore", "weight":35},
+            {"name":"ImmersiveEngineering:ore", "metadata":0, "weight":35},
+            {"name":"customitems:sulfur_ore", "weight":30}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
         "clusterSize": 4,
-        "minHeight": 56,
+        "minHeight": 64,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Auricupride
+    "Auricupride-y24": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"ImmersiveEngineering:ore", "metadata": 0, "weight":75},
+            {"name":"minecraft:gold_ore", "weight":25}
+            ],
+        "material": [
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
+            ],
+        "numClusters": 6144,
+        "chunkChance": 1024,
+        "clusterSize": 4,
+        "minHeight": 24,
+        "veinHeight": 9,
+        "veinDiameter": 64,
+        "horizontalDensity": 1,
+        "verticalDensity": 1,
+        "retrogen": false,
+        "biomeRestriction": "none",
+        "biomes": [
+        ]
+    },
+//Pentlandite
+    "Pentlandite-y16": {
+        "template": "fractal",
+        "generator": {
+            "type": "cluster"
+        },
+        "block": [
+            {"name":"minecraft:iron_ore", "weight":35},
+            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":35},
+            {"name":"customitems:sulfur_ore", "weight":30}
+            ],
+        "material": [
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
+            ],
+        "numClusters": 6144,
+        "chunkChance": 768,
+        "clusterSize": 4,
+        "minHeight": 16,
         "veinHeight": 9,
         "veinDiameter": 64,
         "horizontalDensity": 1,
@@ -477,17 +537,17 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":26},
-            {"name":"ImmersiveEngineering:ore", "metadata":3, "weight":26},
-            {"name":"Magneticraft:sulfur_ore", "weight":6.5}
+            {"name":"ImmersiveEngineering:ore", "metadata":2, "weight":40},
+            {"name":"ImmersiveEngineering:ore", "metadata":3, "weight":30},
+            {"name":"customitems:sulfur_ore", "weight":30}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 384,
+        "chunkChance": 512,
         "clusterSize": 4,
         "minHeight": 36,
         "veinHeight": 9,
@@ -499,19 +559,20 @@
         "biomes": [
         ]
     },
-//Coal
-	"Coal-y48": {
+//Bituminous Coal
+	"Bituminous Coal-y48": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore"}
+            {"name":"minecraft:coal_ore", "weight": 80},
+            {"name":"customitems:sulfur_ore", "weight": 20}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 8192,
         "chunkChance": 1024,
@@ -530,18 +591,19 @@
             {"type":"name", "entry":"Crystal Chasms"}
         ]
     },
-    "Coal-y64": {
+    "Bituminous Coal-y64": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore"}
+            {"name":"minecraft:coal_ore", "weight": 80},
+            {"name":"customitems:sulfur_ore", "weight": 20}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 8192,
         "chunkChance": 1024,
@@ -560,18 +622,19 @@
             {"type":"name", "entry":"Crystal Chasms"}
         ]
     },
-    "Coal-y80": {
+    "Bituminous Coal-y80": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore"}
+            {"name":"minecraft:coal_ore", "weight": 80},
+            {"name":"customitems:sulfur_ore", "weight": 20}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 1536,
@@ -597,17 +660,17 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:lapis_ore", "weight":42.25},
-            {"name":"minecraft:iron_ore", "weight":17.875},
-            {"name":"Magneticraft:sulfur_ore", "weight":1.625}
+            {"name":"minecraft:lapis_ore", "weight":70},
+            {"name":"minecraft:iron_ore", "weight":25},
+            {"name":"customitems:sulfur_ore", "weight":5}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 384,
+        "chunkChance": 768,
         "clusterSize": 4,
         "minHeight": 24,
         "veinHeight": 7,
@@ -619,21 +682,20 @@
         "biomes": [
         ]
     },
-//Iron
-    "Iron-y20": {
+//Banded Iron
+    "Banded Iron-y20": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:iron_ore", "weight":46.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":12.25},
-            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3}
+            {"name":"minecraft:iron_ore", "weight":80},
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":20}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -648,20 +710,19 @@
         "biomes": [
         ]
     },
-    "Iron-y32": {
+    "Banded Iron-y32": {
         "template": "fractal",
         "generator": {
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:iron_ore", "weight":46.25},
-            {"name":"ImmersiveEngineering:ore", "metadata":4, "weight":12.25},
-            {"name":"libVulpes:libVulpesore0", "metadata":5, "weight":3}
+            {"name":"minecraft:iron_ore", "weight":80},
+            {"name":"ReactorCraft:reactorcraft_block_ore", "metadata":8, "weight":20}
             ],
         "material": [
-            "minecraft:stone",
-            "minecraft:dirt",
-            "GeoStrata:geostrata_block_lavarock"
+            {"name": "minecraft:stone"},
+            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
         "chunkChance": 768,
@@ -735,9 +796,9 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:quartz_ore", "weight":39},
-            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
-            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            {"name":"minecraft:quartz_ore", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":4}
             ],
         "material": [
             "minecraft:netherrack"
@@ -762,9 +823,9 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:quartz_ore", "weight":39},
-            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
-            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            {"name":"minecraft:quartz_ore", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":4}
             ],
         "material": [
             "minecraft:netherrack"
@@ -789,9 +850,9 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:quartz_ore", "weight":39},
-            {"name":"appliedenergistics2:tile.OreQuartz", "weight":24},
-            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":2}
+            {"name":"minecraft:quartz_ore", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartz", "weight":48},
+            {"name":"appliedenergistics2:tile.OreQuartzCharged", "weight":4}
             ],
         "material": [
             "minecraft:netherrack"
