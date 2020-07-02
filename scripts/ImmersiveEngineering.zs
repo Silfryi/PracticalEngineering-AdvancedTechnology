@@ -104,6 +104,17 @@ recipes.addShaped(<ImmersiveEngineering:metalDecoration:6> * 2,
  [<ore:stickSteel>, <ImmersiveEngineering:material:12>, <ore:stickSteel>],
  [<ore:ingotSteel>, <ImmersiveEngineering:storage:9>, <ore:ingotSteel>]]);
  
+//Lead-Acid Battery recipes, HV sulfuric acid only, LV must be redstone and MV can be either redstone or H2SO4
+recipes.remove(<ImmersiveEngineering:metalDevice:7>);
+recipes.addShaped(<ImmersiveEngineering:metalDevice:3>,
+ [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+ [<ore:ingotElectrum>, <ore:ingotLead>, <ore:ingotElectrum>],
+ [<ore:plankTreatedWood>, <customitems:sulfuricacid_bucket>, <ore:plankTreatedWood>]]);
+recipes.addShaped(<ImmersiveEngineering:metalDevice:7>,
+ [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
+ [<ore:ingotAluminum>, <ore:blockLead>, <ore:ingotAluminum>],
+ [<ore:plankTreatedWood>, <customitems:sulfuricacid_bucket>, <ore:plankTreatedWood>]]);
+
 //Wire Coil Crafting
 recipes.remove(<ImmersiveEngineering:coil:0>);
 recipes.remove(<ImmersiveEngineering:coil:1>);

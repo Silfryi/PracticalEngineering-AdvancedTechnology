@@ -35,7 +35,12 @@ game.setLocalization("item.circuitplate.1.name", "CPU Wafer");
 game.setLocalization("fluid.rocket_fuel", "Enhanced Fuel Alcohol");
 game.setLocalization("item.bucketRocket_fuel.name", "Enhanced Fuel Alcohol Bucket");
 game.setLocalization("tile.fluid.rocket_fuel.name", "Enhanced Fuel Alcohol");
+//Electrical Age coal dust
 game.setLocalization("Coal_Dust.name", "Purified Coal Dust");
+//Immersive Engineering capacitors to batteries
+game.setLocalization("tile.ImmersiveEngineering.metalDevice.capacitorLV.name", "LV Lead-Acid Battery");
+game.setLocalization("tile.ImmersiveEngineering.metalDevice.capacitorMV.name", "MV Lead-Acid Battery");
+game.setLocalization("tile.ImmersiveEngineering.metalDevice.capacitorHV.name", "HV Lead-Acid Battery");
 //Pressure hardened iron
 game.setLocalization("item.ingotIronCompressed.name", "Pressure-Hardened Iron Ingot");
 game.setLocalization("item.compressedIronGear.name", "Pressure-Hardened Iron Gear");

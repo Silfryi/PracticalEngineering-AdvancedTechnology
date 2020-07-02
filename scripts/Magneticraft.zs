@@ -412,7 +412,8 @@ Refinery.addRecipe(<liquid:hotswampgas> * 100, <liquid:lpg> * 15, <liquid:natura
 Refinery.addRecipe(<liquid:heavyoil> * 48, <liquid:lubricant> * 6, <liquid:diesel> * 42, <liquid:water> * 0);
 Refinery.addRecipe(<liquid:lightoil> * 48, <liquid:kerosene> * 28, <liquid:fuel> * 5, <liquid:gasoline> * 15);
 Refinery.addRecipe(<liquid:mixedrefinerygasses> * 4, <liquid:lpg> * 3, <liquid:naturalgas> * 1, <liquid:water> * 0);
-
+//Liquid nitrogen temporary fix
+OilDistillery.addRecipe(<liquid:rc liquid nitrogen> * 100, <liquid:nitrogen> * 300, 800);
 
 //Stone Anvil (Crushing Table) plates
 CrushingTable.addRecipe(<minecraft:iron_ingot>, <ImmersiveEngineering:metal:30>);
