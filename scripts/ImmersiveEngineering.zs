@@ -425,19 +425,3 @@ Excavator.addMineral("Cooperite", 5, 0.1, ["cobblestone", "stone", "gravel", "or
 //Rock and sediment veins
 Excavator.addMineral("Silt", 25, 0.05, ["blockClay", "sand", "gravel"], [50, 30, 20], [-1], true);
 Excavator.addMineral("Igneous Rock", 25, 0.05, ["stoneAndesite", "stoneGranite", "stoneBasalt", "stonePumice", "stonePeridotite", "blockObsidian"], [20, 20, 20, 20, 15, 5], [-1], true);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

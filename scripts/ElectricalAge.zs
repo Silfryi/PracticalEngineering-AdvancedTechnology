@@ -4,44 +4,6 @@ import minetweaker.item.IItemStack;
 import minetweaker.item.IIngredient;
 
 
-
-//Arrays For Removal              
-var toRemove = [//Machine parts & crafting components
-                <Eln:Eln.sharedItem:7703>,
-                <Eln:Eln.sharedItem:7735>,
-                <Eln:Eln.sharedItem:7682>,
-                <ore:dustAlloy>,
-                //Drills
-                <Eln:Eln.sharedItem:960>,
-                <Eln:Eln.sharedItem:961>,
-                <Eln:Eln.sharedItem:962>,
-                //Cables & power transmission
-                <Eln:Eln.SixNode:2064>,
-                <Eln:Eln.TransparentNode:453>,
-                //LED bulbs LibVulpes silicon
-                <Eln:Eln.sharedItem:293>,
-                <Eln:Eln.sharedItem:294>,
-                //Machines
-                <Eln:Eln.TransparentNode:2176>,
-                <Eln:Eln.TransparentNode:2116>,
-                <Eln:Eln.TransparentNode:2688>,
-                <Eln:Eln.TransparentNode:4224>,
-                //Steam turbine & solars
-                <Eln:Eln.TransparentNode:265>,
-                <Eln:Eln.TransparentNode:3075>,
-                <Eln:Eln.TransparentNode:266>,
-                //Experimental Battery
-                <Eln:Eln.TransparentNode:1030>,
-                //Change Converters to match tiers better
-                <Eln:eln.EnergyConverterElnToOtherMVUBlock>,
-                <Eln:eln.EnergyConverterElnToOtherHVUBlock>
-                ] as IIngredient[];
-
-//Remove and hide what all needs it
-for item in toRemove{
-    recipes.remove(item);
-}
-
 //Hide Useless items like ferrite ingot & gold plate (Why does it keep reappearing in NEI!?!?) (Why if I remove one does the entire _item ID_ go away?!?!?, commenting these out)
 //hide(<Eln:Eln.sharedItem:518>);
 //hide(<Eln:Eln.sharedItem:7688>);
@@ -55,7 +17,13 @@ hide(<Eln:Eln.ghostBlock>);
 //hide(<Eln:Eln.TransparentNode:2176>);
 
 
-//Shaped Electrical Age recipes
+//Remove alloy dust recipe to move into IE Arc Furnace
+recipes.remove(<ore:dustAlloy>);
+
+//Machine pieces
+recipes.remove(<Eln:Eln.sharedItem:7703>);
+recipes.remove(<Eln:Eln.sharedItem:7735>);
+recipes.remove(<Eln:Eln.sharedItem:7682>);
 recipes.addShaped(<Eln:Eln.sharedItem:7703>,
  [[<ore:plateAlloy>, <ore:circuitAdvanced>, <ore:plateAlloy>],
  [<ore:materialResin>, <Eln:Eln.sharedItem:4160>, <ore:materialResin>],
@@ -64,6 +32,10 @@ recipes.addShaped(<Eln:Eln.sharedItem:7682>,
  [[<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>],
  [<ore:materialResin>, <Eln:Eln.sharedItem:4160>, <ore:materialResin>],
  [<ore:plateSteel>, <ore:materialResin>, <ore:plateSteel>]]);
+ 
+//Power transmission changes
+recipes.remove(<Eln:Eln.SixNode:2064>);
+recipes.remove(<Eln:Eln.TransparentNode:453>);
 recipes.addShaped(<Eln:Eln.SixNode:2064> * 12,
  [[<ore:sheetRubber>, <ore:sheetRubber>, <ore:sheetRubber>],
  [<customitems:annealedcopperwire>, <customitems:annealedcopperwire>, <customitems:annealedcopperwire>],
@@ -72,11 +44,24 @@ recipes.addShaped(<Eln:Eln.TransparentNode:453>,
  [[<ore:plateIron>, null, <ore:ingotTungsten>],
  [null, <ore:plateIron>, <ore:circuitAdvanced>],
  [<ore:plateIron>, null, <ore:ingotTungsten>]]);
+
+//Experimental battery not requiring diamonds
+recipes.remove(<Eln:Eln.TransparentNode:1030>);
 recipes.addShaped(<Eln:Eln.TransparentNode:1030>, 
  [[<ore:plateLead>, <Eln:Eln.TransparentNode:1025>, <ore:plateLead>],
  [<Eln:Eln.TransparentNode:1026>, null, <Eln:Eln.TransparentNode:1027>],
  [<ore:plateLead>, <Eln:Eln.TransparentNode:1028>, <ore:plateLead>]]);
-//Turbine Bits
+
+//Turbine and machine pieces
+//Machines
+recipes.remove(<Eln:Eln.TransparentNode:2176>);
+recipes.remove(<Eln:Eln.TransparentNode:2116>);
+recipes.remove(<Eln:Eln.TransparentNode:2688>);
+recipes.remove(<Eln:Eln.TransparentNode:4224>);
+//Solar Panels to Precision Assembler
+recipes.remove(<Eln:Eln.TransparentNode:3075>);
+//Turbine pieces
+recipes.remove(<Eln:Eln.TransparentNode:266>);
 recipes.addShaped(<Eln:Eln.TransparentNode:265>,
  [[null, <ore:ingotTungsten>, null],
  [<ore:ingotTungsten>, <ore:blockSteel>, <ore:ingotTungsten>],
@@ -97,6 +82,10 @@ recipes.addShaped(<Eln:Eln.TransparentNode:2688>,
  [[<Eln:Eln.sharedItem:641>, <ore:circuitAdvanced>, <Eln:Eln.sharedItem:641>],
  [<Eln:Eln.sharedItem:7703>, <Eln:Eln.sharedItem:1024>, <Eln:Eln.sharedItem:7703>],
  [<Eln:Eln.sharedItem:4162>, <Eln:Eln.sharedItem:1088>, <Eln:Eln.sharedItem:4162>]]);
+
+//Change energy converters to better match their respective tiers
+recipes.remove(<Eln:eln.EnergyConverterElnToOtherMVUBlock>);
+recipes.remove(<Eln:eln.EnergyConverterElnToOtherHVUBlock>);
 recipes.addShaped(<Eln:eln.EnergyConverterElnToOtherMVUBlock>,
  [[<Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>],
  [<Eln:Eln.SixNode:2056>, <ore:circuitBasic>, <ore:ingotGold>], 
@@ -105,7 +94,11 @@ recipes.addShaped(<Eln:eln.EnergyConverterElnToOtherHVUBlock>,
  [[<Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>],
  [<Eln:Eln.SixNode:2060>, <ore:circuitAdvanced>, <ore:ingotTungsten>], 
  [<Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>, <Eln:Eln.sharedItem:4161>]]);
+
 //Drills
+recipes.remove(<Eln:Eln.sharedItem:960>);
+recipes.remove(<Eln:Eln.sharedItem:961>);
+recipes.remove(<Eln:Eln.sharedItem:962>);
 recipes.addShaped(<Eln:Eln.sharedItem:960>,
  [[<Eln:Eln.sharedItem:7680>, <Eln:Eln.sharedItem:640>, <Eln:Eln.sharedItem:7680>],
  [null, <Eln:Eln.sharedItem:1088>, null], 
@@ -118,7 +111,10 @@ recipes.addShaped(<Eln:Eln.sharedItem:962>,
  [[<Eln:Eln.sharedItem:641>, <Eln:Eln.sharedItem:7681>, <Eln:Eln.sharedItem:641>],
  [<ore:dustDiamond>, <Eln:Eln.sharedItem:1088>, <ore:dustDiamond>], 
  [null, <RotaryCraft:rotarycraft_item_borecraft>, null]]);
+
 //Silicon replacement in LEDs
+recipes.remove(<Eln:Eln.sharedItem:293>);
+recipes.remove(<Eln:Eln.sharedItem:294>);
 recipes.addShaped(<Eln:Eln.sharedItem:293> * 2,
  [[<ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>],
  [<ore:ingotSilicon>, <ore:ingotSilicon>, <ore:ingotSilicon>],
@@ -128,21 +124,6 @@ recipes.addShaped(<Eln:Eln.sharedItem:294> * 2,
  [<ore:ingotSilicon>, <ore:ingotSilicon>, <ore:ingotSilicon>],
  [null, <Eln:Eln.SixNode:2056>, null]]);
 
-//Shapeless Recipes, mostly for corp->cable
+
+//Wireless conversion because there's only a single item different
 recipes.addShapeless(<Eln:Eln.SixNode:5896>, [<Eln:Eln.SixNode:5888>, <ore:dustRedstone>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4160> * 7, [<Eln:Eln.sharedItem:64>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4160> * 14, [<Eln:Eln.sharedItem:65>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4160> * 28, [<Eln:Eln.sharedItem:66>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4160> * 56, [<Eln:Eln.sharedItem:67>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4161> * 7, [<Eln:Eln.sharedItem:68>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4161> * 14, [<Eln:Eln.sharedItem:69>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4161> * 28, [<Eln:Eln.sharedItem:70>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4161> * 56, [<Eln:Eln.sharedItem:71>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4162> * 7, [<Eln:Eln.sharedItem:72>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4162> * 14, [<Eln:Eln.sharedItem:73>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4162> * 28, [<Eln:Eln.sharedItem:74>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:4162> * 56, [<Eln:Eln.sharedItem:75>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:75> * 2, [<Eln:Eln.sharedItem:76>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:75> * 4, [<Eln:Eln.sharedItem:77>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:75> * 8, [<Eln:Eln.sharedItem:78>]);
-recipes.addShapeless(<Eln:Eln.sharedItem:75> * 16, [<Eln:Eln.sharedItem:79>]);

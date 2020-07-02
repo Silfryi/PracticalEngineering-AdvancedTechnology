@@ -4,7 +4,6 @@ import minetweaker.item.IItemStack;
 import mods.pneumaticcraft.Pressure;
 
 
-
 //Arrays For removal
 var toHide = [//Plastic plants and other items
               <PneumaticCraft:plasticPlant>,
@@ -30,16 +29,6 @@ var toHide = [//Plastic plants and other items
               <PneumaticCraft:aerialInterface>,
               <PneumaticCraft:electrostaticCompressor>
 			  ] as IItemStack[];
-			  
-var toRemove = [<PneumaticCraft:assemblyLaser>,
-                <PneumaticCraft:assemblyDrill>,
-                <PneumaticCraft:refinery>,
-                <PneumaticCraft:heatFrame>,
-				<PneumaticCraft:advancedPCB>,
-				<PneumaticCraft:pneumaticCilinder>,
-				<PneumaticCraft:gpsTool>,
-				<PneumaticCraft:universalSensor>
-			    ] as IItemStack[];
 				
 var upgrades = [<PneumaticCraft:machineUpgrade>,
                 <PneumaticCraft:machineUpgrade:1>,
@@ -53,10 +42,7 @@ var upgrades = [<PneumaticCraft:machineUpgrade>,
                 <PneumaticCraft:machineUpgrade:9>
 	            ] as IItemStack[];			
 
-//Remove and hide what all needs it
-for item in toRemove{
-    recipes.remove(item);
-}
+//Largescale removals for hiding and upgrades
 for item in toHide{
     recipes.remove(item);
     hide(item);
@@ -64,7 +50,6 @@ for item in toHide{
 for item in upgrades{
     recipes.remove(item);
 }
-
 
 
 //Shaped recipes, PneumaticCraft related
@@ -114,7 +99,8 @@ recipes.addShaped(<PneumaticCraft:machineUpgrade:9> * 4,
  [<PneumaticCraft:safetyTubeModule>, <PneumaticCraft:advancedPressureTube>, <PneumaticCraft:pressureGaugeModule>],
  [<ore:ingotIronCompressed>, <PneumaticCraft:plastic:15>, <ore:ingotIronCompressed>]]);
 
-//Blocks
+
+//Bootstrap steel recipes
 recipes.addShaped(<PneumaticCraft:pressureTube> * 4,
  [[<ore:ingotSteel>, <ore:blockGlass>, <ore:ingotSteel>]]);
 recipes.addShaped(<PneumaticCraft:airCompressor>,
@@ -125,6 +111,10 @@ recipes.addShaped(<PneumaticCraft:pressureChamberWall> * 12,
  [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
  [<ore:plateSteel>, null, <ore:plateSteel>],
  [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
+
+//Other recipe changes
+recipes.remove(<PneumaticCraft:gpsTool>);
+recipes.remove(<PneumaticCraft:universalSensor>);
 recipes.addShaped(<PneumaticCraft:universalSensor>, 
  [[<PneumaticCraft:ingotIronCompressed>, <PneumaticCraft:plastic:12>, <PneumaticCraft:ingotIronCompressed>],
  [<PneumaticCraft:plastic:5>, <minecraft:redstone>, <PneumaticCraft:plastic:5>],
@@ -133,6 +123,11 @@ recipes.addShaped(<PneumaticCraft:gpsTool>,
  [[null, <RotaryCraft:rotarycraft_item_borecraft:2>, null],
  [<PneumaticCraft:plastic:1>, <advancedRocketry:miscpart>, <PneumaticCraft:plastic:1>],
  [<PneumaticCraft:plastic:1>, <RotaryCraft:rotarycraft_item_borecraft:4>, <PneumaticCraft:plastic:1>]]);
+ 
+//Assembly recipes
+recipes.remove(<PneumaticCraft:assemblyLaser>);
+recipes.remove(<PneumaticCraft:assemblyDrill>);
+recipes.remove(<PneumaticCraft:pneumaticCilinder>);
 recipes.addShaped(<PneumaticCraft:assemblyDrill>,
  [[<RotaryCraft:rotarycraft_item_borecraft>, <PneumaticCraft:pneumaticCilinder>, <PneumaticCraft:pneumaticCilinder>],
  [<ore:dustDiamond>, null, <PneumaticCraft:pneumaticCilinder>],
@@ -141,6 +136,14 @@ recipes.addShaped(<PneumaticCraft:assemblyLaser>,
  [[<BuildCraft|Silicon:laserBlock>, <PneumaticCraft:pneumaticCilinder>, <PneumaticCraft:pneumaticCilinder>],
  [null, null, <PneumaticCraft:pneumaticCilinder>],
  [<ore:ingotIronCompressed>, <PneumaticCraft:printedCircuitBoard> ,<ore:ingotIronCompressed>]]);
+recipes.addShaped(<PneumaticCraft:pneumaticCilinder>, 
+ [[<PneumaticCraft:plastic:4>, <ore:ingotIronCompressed>, <PneumaticCraft:plastic:4>],
+ [<PneumaticCraft:plastic:4>, <ore:ingotIronCompressed>, <PneumaticCraft:plastic:4>],
+ [<PneumaticCraft:plastic:4>, <PneumaticCraft:pressureTube>, <PneumaticCraft:plastic:4>]]);
+ 
+//Refinery crafting diamond removal
+recipes.remove(<PneumaticCraft:refinery>);
+recipes.remove(<PneumaticCraft:heatFrame>);
 recipes.addShaped(<PneumaticCraft:refinery>, 
  [[<ore:ingotIronCompressed>, <ore:ingotIronCompressed>, <ore:ingotIronCompressed>],
  [<ore:blockGlass>, <PneumaticCraft:heatFrame>, <ore:blockGlass>],
@@ -149,12 +152,9 @@ recipes.addShaped(<PneumaticCraft:heatFrame>,
  [[<ore:ingotIronCompressed>, <PneumaticCraft:pressureTube>, <ore:ingotIronCompressed>],
  [<PneumaticCraft:pressureTube>, null, <PneumaticCraft:pressureTube>],
  [<ore:ingotIronCompressed>, <PneumaticCraft:pressureTube>, <ore:ingotIronCompressed>]]);
-recipes.addShaped(<PneumaticCraft:pneumaticCilinder>, 
- [[<PneumaticCraft:plastic:4>, <ore:ingotIronCompressed>, <PneumaticCraft:plastic:4>],
- [<PneumaticCraft:plastic:4>, <ore:ingotIronCompressed>, <PneumaticCraft:plastic:4>],
- [<PneumaticCraft:plastic:4>, <PneumaticCraft:pressureTube>, <PneumaticCraft:plastic:4>]]);
- 
-//Shapeless recipes
+
+//Advanced PCB recipe
+recipes.remove(<PneumaticCraft:advancedPCB>);
 recipes.addShapeless(<PneumaticCraft:advancedPCB>, [<customitems:unassembledadvancedpcb>, <PneumaticCraft:transistor>, <PneumaticCraft:transistor>, <PneumaticCraft:transistor>, <PneumaticCraft:capacitor>, <PneumaticCraft:capacitor>, <PneumaticCraft:capacitor>]);
 
   
@@ -173,6 +173,7 @@ Pressure.addRecipe([<ImmersiveEngineering:metal:19> * 8], 6, [<minecraft:diamond
 Pressure.removeRecipe([<PneumaticCraft:emptyPCB:100>]);
 Pressure.addRecipe([<ImmersiveEngineering:metal:31>, <PneumaticCraft:plastic:2>], 2, [<PneumaticCraft:emptyPCB:100>], false);
 
+
 //Assembly recipes
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:emptyadvancedpcb>, <customitems:unassembledadvancedpcb>);
 mods.pneumaticcraft.Assembly.addLaserRecipe(<PneumaticCraft:machineUpgrade:5>, <LogisticsPipes:item.itemUpgrade:20>);
@@ -184,6 +185,3 @@ mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbedengine>, <custom
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbedblade>, <customitems:dmlsbedblade:1>.withTag({display: {Lore: ["100% Complete"]}}));
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbeddrum>, <customitems:dmlsbeddrum:1>.withTag({display: {Lore: ["100% Complete"]}}));
 mods.pneumaticcraft.Assembly.addLaserRecipe(<customitems:dmlsbedbay>, <customitems:dmlsbedbay:1>.withTag({display: {Lore: ["100% Complete"]}}));
- 
- 
- 

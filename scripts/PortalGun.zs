@@ -2,11 +2,9 @@
 import mods.nei.NEI.hide;
 
 
-
 //Hide technical blocks
 hide(<PortalGun:Portal_BlockMulti>);
 hide(<PortalGun:PortalMulti:14>);
-
 
 
 //Remove Needed (Spacing recipes to make sure they work because of weird behavior)
@@ -15,7 +13,6 @@ recipes.remove(<PortalGun:PortalGunBlue>);
 recipes.remove(<PortalGun:AerialFaithPlate>);
 recipes.remove(<PortalGun:MiniBlackHole>);
 recipes.remove(<PortalGun:PortalGunSpawner>);
-
 
 
 //Add back needed

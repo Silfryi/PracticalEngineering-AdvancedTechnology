@@ -3,34 +3,23 @@ import mods.immersiveengineering.ArcFurnace;
 import minetweaker.item.IItemStack;
 
 
-
 //Arc Furnace - Alloying
-//Alloy Ingots to Remove
-var alloysToRemove = [<ImmersiveEngineering:metal:6>,
-                      <ImmersiveEngineering:metal:5>,
-                      <ImmersiveEngineering:metal:7>,
-                      <advancedRocketry:advancedRocketryproductingot:0>,
-                      <advancedRocketry:advancedRocketryproductingot:1>,
-                      <EnderIO:itemAlloy:0>,
-                      <EnderIO:itemAlloy:1>,
-                      <EnderIO:itemAlloy:2>,
-                      <EnderIO:itemAlloy:4>,
-                      <EnderIO:itemAlloy:5>,
-                      <EnderIO:itemAlloy:6>,
-			    ] as IItemStack[];
-
-//Remove Arc Furnace Alloy Ingot Smelting
-for item in alloysToRemove{
-    ArcFurnace.removeRecipe(item);
-}
-
-//Alloying Recipes
 //Miscelaneous
+ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:5>);
+ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:6>);
+ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:7>);
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7>, <ore:dustIron>, <ImmersiveEngineering:material:13>, 400, 682, [<ore:dustCoke>], "Alloying");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7>, <ore:dustIron>, <ImmersiveEngineering:material:13>, 400, 682, [<ore:dustCharcoal>, <ore:dustCharcoal>], "Alloying");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:5> * 2, <ore:dustNickel>, null, 100, 682, [<ore:dustCopper>], "Alloying");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:6> * 2, <ore:dustGold>, null, 100, 682, [<ore:dustSilver>], "Alloying");
+
 //Ender IO
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:0>);
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:1>);
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:2>);
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:4>);
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:5>);
+ArcFurnace.removeRecipe(<EnderIO:itemAlloy:6>);
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:0>, <RotaryCraft:rotarycraft_item_powders:14>, null, 400, 682, [<ore:dustSteel>], "Alloying");
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:1>, <ore:dustGold>, null, 200, 682, [<ore:dustRedstone>, <ore:dustGlowstone>], "Alloying");
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:2>, <customitems:energetic_alloy_dust>, null, 400, 682, [<ore:dustEnderPearl>], "Alloying");
@@ -39,11 +28,13 @@ ArcFurnace.addRecipe(<EnderIO:itemAlloy:4>, <ore:dustIron>, null, 200, 682, [<or
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:5>, <ore:dustIron>, null, 200, 682, [<ore:dustEnderPearl>], "Alloying");
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:6>, <ore:dustIron>, null, 200, 682, [<ore:dustObsidian>, <ore:dustObsidian>, <ore:dustObsidian>, <ore:dustObsidian>, <RotaryCraft:rotarycraft_item_extracts:33>], "Alloying");
 ArcFurnace.addRecipe(<EnderIO:itemAlloy:7>, <ore:dustGold>, null, 200, 682, [<minecraft:soul_sand>], "Alloying");
+
 //High-Level Alloys
+ArcFurnace.removeRecipe(<advancedRocketry:advancedRocketryproductingot:0>);
+ArcFurnace.removeRecipe(<advancedRocketry:advancedRocketryproductingot:1>);
 ArcFurnace.addRecipe(<Eln:Eln.sharedItem:9> * 4, <ore:dustTungsten>, <ImmersiveEngineering:material:13>, 400, 682, [<ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>, <ore:dustSteel>], "Alloying");
 ArcFurnace.addRecipe(<advancedRocketry:advancedRocketryproductdust:0> * 4, <RotaryCraft:rotarycraft_item_powders:14>, <ImmersiveEngineering:material:13> * 4, 800, 2728, [<ore:dustTitanium>, <ore:dustTitanium>, <ore:dustTitanium>, <ore:dustAluminum>, <ore:dustAluminum>, <ore:dustAluminum>, <ore:dustAluminum>, <ore:dustAluminum>, <ore:dustAluminum>, <ore:dustAluminum>], "Alloying");
 ArcFurnace.addRecipe(<advancedRocketry:advancedRocketryproductdust:1> * 2, <ore:dustIridium>, null, 800, 5436, [<ore:dustTitanium>], "Alloying");
-
 
 
 //Arc Furnace - Smelting
@@ -105,7 +96,6 @@ ArcFurnace.addRecipe(<EnderIO:blockFusedQuartz:3>, <EnderIO:blockFusedQuartz:1>,
 ArcFurnace.addRecipe(<EnderIO:blockFusedQuartz:4>, <EnderIO:blockFusedQuartz>, null, 200, 682, [<ore:dyeBlack>, <ore:dyeBlack>, <ore:dyeBlack>, <ore:dyeBlack>]);
 
 
-
 //Arc Furnace - Ores
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 3, <ore:oreIron>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 3, <ore:oreGold>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
@@ -120,7 +110,6 @@ ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 3, <ore:oreThorium
 ArcFurnace.addRecipe(<ReactorCraft:reactorcraft_item_raw:7> * 3, <ore:oreThorite>, <ImmersiveEngineering:material:13>, 400, 682, [], "Ores");
 
 
-
 //Arc Furnace - Recycling
 //Iron Tools
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <minecraft:iron_sword>, null, 100, 512, [], "Recycling");
@@ -133,6 +122,7 @@ ArcFurnace.addRecipe(<minecraft:iron_ingot> * 8, <minecraft:iron_chestplate>, nu
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 7, <minecraft:iron_leggings>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 4, <minecraft:iron_boots>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:iron_ingot> * 7, <minecraft:iron_horse_armor>, null, 100, 512, [], "Recycling");
+
 //Golden Tools
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 2, <minecraft:golden_sword>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 3, <minecraft:golden_pickaxe>, null, 100, 512, [], "Recycling");
@@ -144,6 +134,7 @@ ArcFurnace.addRecipe(<minecraft:gold_ingot> * 8, <minecraft:golden_chestplate>, 
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 7, <minecraft:golden_leggings>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 4, <minecraft:golden_boots>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 7, <minecraft:golden_horse_armor>, null, 100, 512, [], "Recycling");
+
 //Other
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:0> * 4, <ImmersiveEngineering:storage:8>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:6> * 4, <ImmersiveEngineering:storage:9>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");

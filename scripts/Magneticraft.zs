@@ -250,41 +250,21 @@ var toHide = [//Blocks to hide
               <Magneticraft:item.battery_small>
               ] as IItemStack[];
                
-var toRemove = [//Multiblock Parts
-                <Magneticraft:MB_EnergyIO>,
-                <Magneticraft:multi_io>,
-                <Magneticraft:refinery_tank>,
-                <Magneticraft:mb_controls>,
-                <Magneticraft:chasis>,
-                //Machines
-                <Magneticraft:electric_switch>,
-                <Magneticraft:rf_alternator>,
-                <Magneticraft:conveyor_low>,
-                <Magneticraft:pumpjack_1>,
-                //Items
-                <Magneticraft:item.motor>,
-                <Magneticraft:item.iron_hammer>,
-                //Upgrades
-                <Magneticraft:item.inserter_item_drop_upgrade>,
-                <Magneticraft:item.inserter_item_suck_upgrade>,
-                <Magneticraft:item.inserter_item_speed_upgrade>,
-                <Magneticraft:item.inserter_item_slow_upgrade>,
-                //Plates that shouldn't be craftable by hand
-                <ore:plateIron>,
-                <ore:plateGold>,
-                <ore:plateTin>,
-                <ore:plateCopper>,
-                <ore:plateSilver>,
-                <ore:plateLead>,
-                <ore:plateNickel>,
-                <ore:plateElectrum>,
-                <ore:plateConstantan>,
-                <ore:plateSteel>,
-                <ore:plateAluminum>
-                ] as IIngredient[];
+var plateRemove = [<ore:plateIron>,
+                   <ore:plateGold>,
+                   <ore:plateTin>,
+                   <ore:plateCopper>,
+                   <ore:plateSilver>,
+                   <ore:plateLead>,
+                   <ore:plateNickel>,
+                   <ore:plateElectrum>,
+                   <ore:plateConstantan>,
+                   <ore:plateSteel>,
+                   <ore:plateAluminum>
+                   ] as IIngredient[];
 
 //Remove and hide what all needs it
-for item in toRemove {
+for item in plateRemove {
     recipes.remove(item);
 }
 for item in oreHide {
@@ -307,6 +287,7 @@ for item in toHide {
 
 //Shaped recipes for MagnetiCraft blocks
 //Oil Processing
+recipes.remove(<Magneticraft:pumpjack_1>);
 recipes.addShaped(<Magneticraft:pumpjack_1>,
  [[<ore:blockSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
  [<ore:blockSteel>, <ImmersiveEngineering:metalDecoration>, <ore:stickSteel>],
@@ -319,7 +300,13 @@ recipes.addShaped(<Magneticraft:distillery_control>,
  [[<ore:ingotTungsten>, <ImmersiveEngineering:metalDevice:12>, <ore:ingotTungsten>],
  [<ore:ingotTungsten>, <Magneticraft:refinery_gap>, <ore:ingotTungsten>],
  [<ore:ingotTungsten>, <Magneticraft:chasis>, <ore:ingotTungsten>]]);
+ 
 //General Multiblocks
+recipes.remove(<Magneticraft:MB_EnergyIO>);
+recipes.remove(<Magneticraft:multi_io>);
+recipes.remove(<Magneticraft:refinery_tank>);
+recipes.remove(<Magneticraft:mb_controls>);
+recipes.remove(<Magneticraft:chasis>);
 recipes.addShaped(<Magneticraft:machine_housing> * 4,
  [[<ore:ingotTungsten>, <ore:sheetIron>, <ore:ingotTungsten>],
  [<ore:sheetIron>, null, <ore:sheetIron>],
@@ -341,7 +328,11 @@ recipes.addShaped(<Magneticraft:mb_controls>,
  [[<ore:ingotTungsten>, <ImmersiveEngineering:metalDevice2>, <ore:ingotTungsten>],
  [<minecraft:lever>, <minecraft:lever>, <minecraft:lever>],
  [<ore:ingotTungsten>, <Magneticraft:chasis>, <ore:ingotTungsten>]]);
+
 //Machines
+recipes.remove(<Magneticraft:electric_switch>);
+recipes.remove(<Magneticraft:rf_alternator>);
+recipes.remove(<Magneticraft:conveyor_low>);
 recipes.addShaped(<Magneticraft:electric_switch>,
  [[null, <ImmersiveEngineering:metalDevice2>, null],
  [<ImmersiveEngineering:coil>, <Magneticraft:machine_housing>, <ImmersiveEngineering:coil>]]);
@@ -360,11 +351,26 @@ recipes.addShaped(<Magneticraft:inserter>,
  [[<ore:ingotHSLA>, <RotaryCraft:rotarycraft_item_gearcraft>, <RotaryCraft:rotarycraft_item_gearcraft>],
  [<RotaryCraft:rotarycraft_item_gearcraft>, <RotaryCraft:rotarycraft_item_gearcraft:1>, null],
  [<ore:ingotSteel>, <Magneticraft:item.motor>, <ore:ingotSteel>]]);
-//Items
+
+//Crafting components
+recipes.remove(<Magneticraft:item.motor>);
 recipes.addShaped(<Magneticraft:item.motor>,
  [[<ImmersiveEngineering:coil>, <ImmersiveEngineering:coil>, <ore:ingotCopper>],
  [<ore:ingotIron>, <ore:ingotIron>, <ImmersiveEngineering:material:11>],
  [<ImmersiveEngineering:coil>, <ImmersiveEngineering:coil>, <ore:ingotCopper>]]);
+ 
+//Tools
+recipes.remove(<Magneticraft:item.iron_hammer>);
+recipes.addShaped(<Magneticraft:item.iron_hammer>,
+ [[<ore:plateIron>, <minecraft:string>, null],
+ [<ore:plateIron>, <ore:treatedStick>, <ore:ingotIron>],
+ [null, <ore:treatedStick>, null]]);
+ 
+//Upgrades
+recipes.remove(<Magneticraft:item.inserter_item_drop_upgrade>);
+recipes.remove(<Magneticraft:item.inserter_item_suck_upgrade>);
+recipes.remove(<Magneticraft:item.inserter_item_speed_upgrade>);
+recipes.remove(<Magneticraft:item.inserter_item_slow_upgrade>);
 recipes.addShaped(<Magneticraft:item.inserter_item_drop_upgrade>,
  [[<PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>],
  [<PneumaticCraft:plastic:15>, <ore:ingotCopper>, <PneumaticCraft:plastic:15>],
@@ -381,10 +387,6 @@ recipes.addShaped(<Magneticraft:item.inserter_item_slow_upgrade>,
  [[<PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>],
  [<PneumaticCraft:plastic:15>, <Eln:Eln.sharedItem:7708>, <PneumaticCraft:plastic:15>],
  [<PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>, <PneumaticCraft:plastic:15>]]);
-recipes.addShaped(<Magneticraft:item.iron_hammer>,
- [[<ore:plateIron>, <minecraft:string>, null],
- [<ore:plateIron>, <ore:treatedStick>, <ore:ingotIron>],
- [null, <ore:treatedStick>, null]]);
 
 
 //Oil processing tweaks

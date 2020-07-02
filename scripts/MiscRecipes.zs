@@ -143,36 +143,7 @@ var toHide = [//<ExtraUtilities:decorativeBlock1:5>,
               <ArchitectureCraft:cladding>
               ] as IItemStack[];
 
-var toRemove = [<libVulpes:libVulpesproductingot:9>,
-                <ExtraUtilities:drum>,
-                <ArchitectureCraft:sawbench>,
-                <appliedenergistics2:tile.BlockController>,
-                <extracells:pattern.fluid>,
-                <ExtraUtilities:decorativeBlock1:12>,
-                //Quantum needs platinum
-                <appliedenergistics2:tile.BlockQuantumLinkChamber>,
-                <appliedenergistics2:tile.BlockQuantumRing>,
-                //Re-do machines that need diamond tools
-                <minecraft:nether_star>,
-                <ExpandedRedstone:expanded redstone_item_placer:1>,
-                <Railcraft:cart.track.relayer>,
-                <Railcraft:cart.undercutter>,
-                 //OpenComputers diamond removal
-                <OpenComputers:item:40>,
-                <OpenComputers:item:7>,
-                <OpenComputers:rack>,
-                <OpenComputers:hologram2>,
-                <OpenComputers:case3>,
-                <extracells:oc.upgrade>,
-                //Remove diamonds from machines that don't need them and replace with more fitting alternatives
-                <minecraft:jukebox>,
-                <StorageDrawers:controller>
-                ] as IItemStack[];
-
 //Remove and hide what all needs it
-for item in toRemove{
-    recipes.remove(item);
-}
 for item in toHide{
     recipes.remove(item);
     hide(item);
@@ -180,13 +151,23 @@ for item in toHide{
 
 
 
+//Other recipe removals
+recipes.remove(<ExtraUtilities:decorativeBlock1:12>);
+recipes.remove(<minecraft:nether_star>);
+recipes.remove(<libVulpes:libVulpesproductingot:9>);
+
+
 //Shaped recipes, mostly Extra Utilities and AE2
 //StorageDrawers Controller
+recipes.remove(<StorageDrawers:controller>);
 recipes.addShaped(<StorageDrawers:controller>,
  [[<ore:stone>, <ore:stone>, <ore:stone>],
  [<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>],
  [<ore:stone>, <RotaryCraft:rotarycraft_item_machine:85>, <ore:stone>]]);
+
 //RailCraft carts
+recipes.remove(<Railcraft:cart.track.relayer>);
+recipes.remove(<Railcraft:cart.undercutter>);
 recipes.addShaped(<Railcraft:cart.track.relayer>,
  [[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>],
  [<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>],
@@ -195,7 +176,9 @@ recipes.addShaped(<Railcraft:cart.undercutter>,
  [[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>],
  [<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>],
  [<RotaryCraft:rotarycraft_item_borecraft>, <minecraft:minecart>, <minecraft:hopper>]]);
+
 //ExR Block Breakers
+recipes.remove(<ExpandedRedstone:expanded redstone_item_placer:1>);
 recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nbt: 1, dmg: 128}),
  [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
  [<ore:cobblestone>, <flintmod:item.pickaxeFlint>, <ore:cobblestone>],
@@ -208,16 +191,21 @@ recipes.addShaped(<ExpandedRedstone:expanded redstone_item_placer:1>.withTag({nb
  [[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
  [<ore:cobblestone>, <RotaryCraft:rotarycraft_item_steelpick>, <ore:cobblestone>],
  [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]);
+
 //Jukebox requires HSLA shaft to make it come earlier and remove diamond uses
+recipes.remove(<minecraft:jukebox>);
 recipes.addShaped(<minecraft:jukebox>,
  [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
  [<ore:plankWood>, <RotaryCraft:rotarycraft_item_gearcraft>, <ore:plankWood>],
  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
 //Deduplicate saws & similar, ArchitectureCraft
+recipes.remove(<ArchitectureCraft:sawbench>);
 recipes.addShaped(<ArchitectureCraft:sawbench>,
  [[<ore:ingotIron>, <RotaryCraft:rotarycraft_item_borecraft:7>, <ore:ingotIron>],
  [<ore:stickWood>, <RotaryCraft:rotarycraft_item_gearcraft:1>, <ore:stickWood>],
  [<ore:stickWood>, <minecraft:wooden_pressure_plate>, <ore:stickWood>]]);
+ 
 //Random CustomItems recipes
 recipes.addShaped(<customitems:red_sandstone_stairs> * 4,
  [[<customitems:red_sandstone>, null, null],
@@ -246,6 +234,7 @@ recipes.addShaped(<customitems:dark_quartz> * 8,
  [[<ore:burntQuartz>, <ore:burntQuartz>, <ore:burntQuartz>],
  [<ore:burntQuartz>, <ore:dyeBlue>, <ore:burntQuartz>],
  [<ore:burntQuartz>, <ore:burntQuartz>, <ore:burntQuartz>]]);
+
 //Aluminium for previously iron-only recipes
 recipes.addShaped(<minecraft:piston>,
  [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
@@ -258,12 +247,18 @@ recipes.addShaped(<minecraft:hopper>,
 recipes.addShaped(<HopperDuctMod:hopperDuct> * 4,
  [[<ore:ingotAluminum>, <ore:plankWood>, <ore:ingotAluminum>],
  [null, <ore:ingotAluminum>, null]]);
+
 //ExU drums
+recipes.remove(<ExtraUtilities:drum>);
 recipes.addShaped(<ExtraUtilities:drum>, 
  [[<RotaryCraft:rotarycraft_item_shaftcraft:1>, <RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_item_shaftcraft:1>],
  [<RotaryCraft:rotarycraft_item_shaftcraft:1>, <RotaryCraft:rotarycraft_item_machine:18>, <RotaryCraft:rotarycraft_item_shaftcraft:1>],
  [<RotaryCraft:rotarycraft_item_shaftcraft:1>, <RotaryCraft:rotarycraft_item_shaftcraft>, <RotaryCraft:rotarycraft_item_shaftcraft:1>]]);
+
+//Applied Energistics recipe changes
 //ME wireless platinum additions
+recipes.remove(<appliedenergistics2:tile.BlockQuantumLinkChamber>);
+recipes.remove(<appliedenergistics2:tile.BlockQuantumRing>);
 recipes.addShaped(<appliedenergistics2:tile.BlockQuantumRing>,
  [[<ore:ingotPlatinum>, <appliedenergistics2:item.ItemMultiMaterial:22>, <ore:ingotPlatinum>],
  [<appliedenergistics2:item.ItemMultiMaterial:24>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <appliedenergistics2:item.ItemMultiPart:76>],
@@ -277,22 +272,33 @@ Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:20>);
 Inscriber.addRecipe([<advancedRocketry:wafer>], <appliedenergistics2:item.ItemMultiMaterial:19>, null, <appliedenergistics2:item.ItemMultiMaterial:20> * 4, "Inscribe");
 Inscriber.addRecipe([<RotaryCraft:rotarycraft_item_compacts:10>], <appliedenergistics2:item.ItemMultiMaterial:19>, null, <appliedenergistics2:item.ItemMultiMaterial:20>, "Inscribe");
 //AE2 controller
+recipes.remove(<appliedenergistics2:tile.BlockController>);
 recipes.addShaped(<appliedenergistics2:tile.BlockController>, 
  [[<RotaryCraft:rotarycraft_item_compacts:11>, <appliedenergistics2:item.ItemMultiMaterial:12>, <RotaryCraft:rotarycraft_item_compacts:11>],
  [<appliedenergistics2:item.ItemMultiMaterial:12>, <appliedenergistics2:item.ItemMultiMaterial:24>, <appliedenergistics2:item.ItemMultiMaterial:12>],
  [<RotaryCraft:rotarycraft_item_compacts:11>, <appliedenergistics2:item.ItemMultiMaterial:12>, <RotaryCraft:rotarycraft_item_compacts:11>]]);
+recipes.remove(<extracells:pattern.fluid>);
+ 
 //DMLS beds
 recipes.addShaped(<customitems:dmlsbed>,
  [[null, <RotaryCraft:rotarycraft_item_gearcraft:118>, null],
  [<RotaryCraft:rotarycraft_item_machine:18>, <RotaryCraft:rotarycraft_item_shaftcraft:15>, <RotaryCraft:rotarycraft_item_machine:18>],
  [<PneumaticCraft:pneumaticCilinder>, <RotaryCraft:rotarycraft_item_shaftcraft:3>, <PneumaticCraft:pneumaticCilinder>]]);
+ 
 //Catwalks blowtorch
 recipes.remove(<catwalks:blowtorch>);
 recipes.addShaped(<catwalks:blowtorch>,
  [[null, <ImmersiveEngineering:toolupgrade>, <ImmersiveEngineering:material:9>],
  [<ore:stickAluminum>, <ImmersiveEngineering:metalDevice2:7>.withTag({tank: {FluidName: "kerosene", Amount: 12000}}), <ImmersiveEngineering:material:9>],
  [<ImmersiveEngineering:toolupgrade:7>, <minecraft:flint_and_steel>, null]]);
+
 //OpenComputers diamond replacement
+recipes.remove(<OpenComputers:item:40>);
+recipes.remove(<OpenComputers:item:7>);
+recipes.remove(<OpenComputers:rack>);
+recipes.remove(<OpenComputers:hologram2>);
+recipes.remove(<OpenComputers:case3>);
+recipes.remove(<extracells:oc.upgrade>);
 recipes.addShaped(<OpenComputers:item:40>,
  [[<ore:ingotAluminum>, <OpenComputers:item:39>, <ore:ingotAluminum>],
  [<OpenComputers:item:26>, <OpenComputers:item:72>, <OpenComputers:item:26>],
@@ -318,12 +324,10 @@ recipes.addShaped(<extracells:oc.upgrade>,
  [<OpenComputers:item:26>, <OpenComputers:item:13>, <OpenComputers:item:26>],
  [<ore:ingotAluminum>, <OpenComputers:item:32>, <ore:ingotAluminum>]]);
 
- 
 //Shapeless recipes, conversion recipes
 //Conversion to More Manageable Variants
 recipes.addShapeless(<minecraft:quartz> * 4, [<minecraft:quartz_block>]);
 recipes.addShapeless(<minecraft:netherbrick> * 4, [<minecraft:nether_brick>]);
-
 
 
 //Special EnderStorage removal
