@@ -120,7 +120,7 @@
         <planet name="Gauss-3" DIMID="11" customIcon="waterworld">
             <isKnown>true</isKnown>
             <gravitationalMultiplier>10</gravitationalMultiplier>
-            <orbitalDistance>50</orbitalDistance>
+            <orbitalDistance>250</orbitalDistance>
             <orbitalTheta>255</orbitalTheta>
             <orbitalPhi>135</orbitalPhi>
             <rotationalPeriod>1344000</rotationalPeriod>

@@ -566,12 +566,12 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore", "weight": 80},
-            {"name":"customitems:sulfur_ore", "weight": 20}
+            {"name":"minecraft:coal_ore", "weight": 85},
+            {"name":"customitems:sulfur_ore", "weight": 15}
             ],
         "material": [
             {"name": "minecraft:stone"},
-            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "minecraft:dirt"},
             {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 8192,
@@ -597,12 +597,12 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore", "weight": 80},
-            {"name":"customitems:sulfur_ore", "weight": 20}
+            {"name":"minecraft:coal_ore", "weight": 85},
+            {"name":"customitems:sulfur_ore", "weight": 15}
             ],
         "material": [
             {"name": "minecraft:stone"},
-            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "minecraft:dirt"},
             {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 8192,
@@ -628,12 +628,12 @@
             "type": "cluster"
         },
         "block": [
-            {"name":"minecraft:coal_ore", "weight": 80},
-            {"name":"customitems:sulfur_ore", "weight": 20}
+            {"name":"minecraft:coal_ore", "weight": 85},
+            {"name":"customitems:sulfur_ore", "weight": 15}
             ],
         "material": [
             {"name": "minecraft:stone"},
-            {"name": "minecraft:dirt", "metadata": 0},
+            {"name": "minecraft:dirt"},
             {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
@@ -670,7 +670,7 @@
             {"name": "GeoStrata:geostrata_block_lavarock"}
             ],
         "numClusters": 6144,
-        "chunkChance": 768,
+        "chunkChance": 512,
         "clusterSize": 4,
         "minHeight": 24,
         "veinHeight": 7,

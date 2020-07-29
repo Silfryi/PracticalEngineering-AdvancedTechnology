@@ -8,6 +8,7 @@ import minetweaker.item.IItemStack;
 ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:5>);
 ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:6>);
 ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:7>);
+ArcFurnace.removeRecipe(<Magneticraft:item.ingotBrass>);
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7>, <ore:dustIron>, <ImmersiveEngineering:material:13>, 400, 682, [<ore:dustCoke>], "Alloying");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7>, <ore:dustIron>, <ImmersiveEngineering:material:13>, 400, 682, [<ore:dustCharcoal>, <ore:dustCharcoal>], "Alloying");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:5> * 2, <ore:dustNickel>, null, 100, 682, [<ore:dustCopper>], "Alloying");
@@ -136,6 +137,7 @@ ArcFurnace.addRecipe(<minecraft:gold_ingot> * 4, <minecraft:golden_boots>, null,
 ArcFurnace.addRecipe(<minecraft:gold_ingot> * 7, <minecraft:golden_horse_armor>, null, 100, 512, [], "Recycling");
 
 //Other
+ArcFurnace.addRecipe(<RotaryCraft:rotarycraft_item_shaftcraft:1> * 7, <RotaryCraft:rotarycraft_item_machine:18>, null, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:0> * 4, <ImmersiveEngineering:storage:8>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:6> * 4, <ImmersiveEngineering:storage:9>, <minecraft:iron_ingot>, 100, 512, [], "Recycling");
 ArcFurnace.addRecipe(<ImmersiveEngineering:metal:7> * 2, <ImmersiveEngineering:storage:10>, <ImmersiveEngineering:metal:1> * 2, 100, 512, [], "Recycling");
