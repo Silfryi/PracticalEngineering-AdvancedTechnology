@@ -1,4 +1,4 @@
-F{
+{
     type = "Tungsten"
     inherit = "base"
     name = "Tungsten Ore"
